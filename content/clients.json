@@ -1,0 +1,506 @@
+[
+  {
+    "id": "client-01",
+    "order": 1,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-02",
+    "order": 2,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-03",
+    "order": 3,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-04",
+    "order": 4,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-05",
+    "order": 5,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-06",
+    "order": 6,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-07",
+    "order": 7,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-08",
+    "order": 8,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-09",
+    "order": 9,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-10",
+    "order": 10,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-11",
+    "order": 11,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-12",
+    "order": 12,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-13",
+    "order": 13,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-14",
+    "order": 14,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-15",
+    "order": 15,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-16",
+    "order": 16,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-17",
+    "order": 17,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-18",
+    "order": 18,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-19",
+    "order": 19,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-20",
+    "order": 20,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-21",
+    "order": 21,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-22",
+    "order": 22,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-23",
+    "order": 23,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-24",
+    "order": 24,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-25",
+    "order": 25,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-26",
+    "order": 26,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-27",
+    "order": 27,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-28",
+    "order": 28,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-29",
+    "order": 29,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-30",
+    "order": 30,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-31",
+    "order": 31,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-32",
+    "order": 32,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-33",
+    "order": 33,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-34",
+    "order": 34,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-35",
+    "order": 35,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-36",
+    "order": 36,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-37",
+    "order": 37,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-38",
+    "order": 38,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-39",
+    "order": 39,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-40",
+    "order": 40,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-41",
+    "order": 41,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  },
+  {
+    "id": "client-42",
+    "order": 42,
+    "name": {
+      "en": "",
+      "ar": ""
+    },
+    "logo": null,
+    "sector": null,
+    "attribution": null,
+    "approved": false
+  }
+]
