@@ -60,8 +60,8 @@ export default async function Layout({
             <span>
               © 2026 Total Organization Development.{" "}
               {locale === "ar"
-                ? "الرياض، المملكة العربية السعودية. سجل تجاري"
-                : "Riyadh, Kingdom of Saudi Arabia. CR"}{" "}
+                ? "الرياض، المملكة العربية السعودية"
+                : "Riyadh, Kingdom of Saudi Arabia"}{" "}
               {site.cr}
             </span>
             <div>
