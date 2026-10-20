@@ -1,26 +1,31 @@
 {
-  "name": "tod-arabia-option-02",
+  "name": "tod-website-v3",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 3010",
+    "dev": "next dev --port 3012",
     "build": "next build --webpack",
-    "start": "next start --port 3010",
-    "typecheck": "tsc --noEmit"
+    "start": "next start --port 3012",
+    "typecheck": "tsc --noEmit",
+    "check:content": "node scripts/check-content.mjs",
+    "media": "node tools/media-server.mjs",
+    "edit": "node tools/edit.mjs",
+    "test:media": "node --test tools/media.test.mjs"
   },
   "dependencies": {
+    "@fontsource-variable/inter": "^5.2.0",
+    "@fontsource-variable/noto-naskh-arabic": "^5.2.0",
+    "@fontsource-variable/source-serif-4": "^5.2.0",
     "next": "^16.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "@fontsource-variable/dm-sans": "^5.2.0",
-    "@fontsource-variable/inter": "^5.2.0",
-    "@fontsource-variable/noto-naskh-arabic": "^5.2.0"
+    "react-markdown": "^10.1.0"
   },
   "devDependencies": {
-    "typescript": "^5.0.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0"
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.0.0"
   },
   "engines": {
     "node": ">=20.9.0"

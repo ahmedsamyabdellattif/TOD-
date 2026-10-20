@@ -1,0 +1,1018 @@
+WEBSITE HANDOVER PACK
+Website Content, Brand and Development Brief
+Everything needed to design and build todarabia.com, in one place. This pack replaces the TOD Arabia Website Content and Development Brief (Revised), the Website Content and Services Brief v1.1 and the Website and Platform Brand Specifications v1.1.
+Version 2.0  |  October 2026
+Prepared for Ahmed, website developer  |  Issued by TOD, Riyadh
+Contents
+1  About this pack
+2  Decisions confirmed
+3  Open items
+4  Site map and navigation
+5  Page content
+6  Interactive components
+7  Brand system
+8  Arabic version
+9  Associate profile template
+10  Development Library
+11  Page titles and descriptions
+12  Technical and ownership requirements
+13  Accessibility and pre-launch checks
+14  Materials and confirmation
+1  About this pack
+This pack is the single source of truth for the TOD website. It sets out the approved copy for every page, how each section should be built, the brand system, the logo files to use, and the technical and ownership requirements. Where an earlier document, mock-up or demo conflicts with this pack, this pack takes priority.
+What is included
+Approved decisions and the open items TOD still has to supply (sections 2 and 3).
+Site map and navigation (section 4).
+Page-by-page copy, ready to paste, with build notes for each section (section 5).
+Specifications for the interactive components that replace the Company Overview infographics (section 6).
+Brand system: colors, typography, layout, imagery, motion and logo files (section 7).
+Arabic, Associates, Development Library, SEO, technical, accessibility and launch requirements (sections 8 to 13).
+Sent separately
+Associate profiles and photographs, using the template in section 9.
+The final logo package (Total_Organization_Development_Logo_Final_Files.zip).
+The TOD Company Overview, for background reading. Its copy has already been adapted into this pack; do not copy text directly from it, as it uses British spelling.
+Approved photography and the first Development Library articles, when ready.
+Visual preview
+A visual preview of the Home, Services and Our Approach pages accompanies this pack. It shows the intended tone, hierarchy and use of the brand system. It is a direction, not a pixel-perfect design: the copy and specifications in this pack govern.
+Source of truth
+Element
+Authority
+Logo artwork
+Final TOD logo package. Never redraw, retype or trace the mark.
+Website copy and service names
+Section 5 of this pack
+Colors, typography and components
+Sections 6 and 7 of this pack
+Associate content
+Profiles supplied separately by TOD
+Platform client branding
+Approved tenant configuration and client agreement
+2  Decisions confirmed
+These decisions are final for this build and supersede anything in earlier documents.
+Topic
+Decision
+Language standard
+American English for all English content: navigation, copy, metadata, forms and future updates (organization, behavior, program, center, judgment, prioritize, analyze). The registered name remains Total Organization Development.
+Services structure
+Three service streams, with all 24 services published as listed in section 5.4.
+Service language
+Use "workshops" or "capability workshops", never "corporate training", until TOD holds the relevant TVTC license.
+Heading typeface
+A serif display face (Source Serif 4) for headings, echoing the wordmark and the Company Overview. Inter for body and interface text. This replaces DM Sans.
+Colors
+Aligned to the final logo package. The values in section 7.1 replace the v1.1 values (#2B2B2B, #C9A56A, #F7F2EA).
+Client experience
+Shown as names in a consistent typographic treatment. A client logo appears only after TOD confirms written approval for that client.
+Infographics
+Rebuilt as live HTML and SVG components (section 6). The PNG images in the Company Overview are reference only and must not be placed on the site.
+Arabic
+A complete, first-class Arabic version with right-to-left layout, built alongside English rather than added afterwards.
+3  Open items
+Build with the placeholders shown in square brackets, for example [EMAIL]. TOD will supply or approve the items below. No placeholder may remain at launch.
+#
+Item
+Owner
+Status
+1
+Hero heading. The pack uses "A clearer way of seeing organizations as human systems." with "Leadership. Organizations. Human Systems." as the line above it. TOD to confirm or swap.
+TOD
+To approve
+2
+Public-facing name. The copy uses "TOD" and "Total Organization Development". Confirm whether "TOD Arabia" should appear anywhere beyond the domain.
+TOD
+To confirm
+3
+New copy written for this pack: the three stream introductions, the Who We Work With descriptions, the Associates, Library and Contact introductions, and all page metadata.
+TOD
+To approve
+4
+Client list: confirm the attribution basis for each name and any logo approvals. Confirm whether current clients should be added.
+TOD
+To confirm
+5
+Contact details: email, phone, office address and CR number.
+TOD
+Pending registration
+6
+LinkedIn company page URL.
+TOD
+Pending
+7
+Privacy Policy, Terms of Use and cookie notice, compliant with the Saudi Personal Data Protection Law (PDPL), reviewed by a legal adviser.
+TOD
+Pending
+8
+Associate profiles and photographs.
+TOD
+Sent separately
+9
+Approved photography for hero, section and article images.
+TOD
+Pending
+10
+At least three Development Library articles for launch.
+TOD
+Pending
+11
+Arabic translation and native review of all copy.
+TOD
+Pending
+12
+Mentoring platform name and whether it is linked at launch.
+TOD
+Pending
+13
+Logo files: a white-and-gold logo SVG on a transparent background, and tightly cropped logo exports (see 7.6).
+TOD designer
+Requested
+4  Site map and navigation
+Page
+URL
+Purpose
+Home
+/
+Introduce TOD, the Human Systems perspective, the three streams and selected experience.
+About TOD
+/about
+Identity, purpose, mission and vision, values (CIRCLES), promise and ambition.
+Our Approach
+/approach
+Human Systems, How TOD Thinks, Five Layers of Seeing, inquiry and way of working.
+Associates
+/associates
+Profiles of consultants, coaches, mentors and specialists.
+Services
+/services
+All three streams and 24 services, filterable by stream.
+Who We Work With
+/who-we-work-with
+Audiences, the challenges they face, sectors and selected experience.
+The Development Library
+/library
+Articles, filterable by category, with individual article pages.
+Contact
+/contact
+Enquiry form and contact details.
+Legal
+/privacy, /terms
+Privacy Policy, Terms of Use and cookie notice.
+Arabic
+/ar/...
+Mirror of every page above.
+Main navigation
+About (drop-down: About TOD, Our Approach, Associates)
+Services
+Who We Work With
+Development Library
+Start a Conversation (button, links to Contact)
+Language switch: English / العربية
+Build note: On mobile, collapse navigation into an accessible menu button. The header logo links to Home. Mark the current page with aria-current.
+Footer
+Light (white-and-gold) logo on charcoal.
+Links: About, Services, Who We Work With, Development Library, Contact, LinkedIn.
+Legal line: © 2026 Total Organization Development. Riyadh, Kingdom of Saudi Arabia. CR [NUMBER]
+Privacy Policy, Terms of Use and language switch.
+5  Page content
+Copy in serif type below is the approved website copy. Paste it as written. Labels in bronze capitals are section eyebrows, which appear on the site as small uppercase labels above headings.
+5.1  Home
+HERO
+Eyebrow: Leadership. Organizations. Human Systems.
+Heading (H1): A clearer way of seeing organizations as human systems.
+Statement: We help leaders and organizations understand complexity, align around what matters and build the capability to create lasting change.
+Buttons: Start a Conversation (to Contact)  |  Explore Our Services (to Services)
+Build note: Ivory background. The gold icon may sit beside the heading on desktop as a calm visual anchor; it is hidden or reduced on mobile. No carousel or video in the hero.
+WHO WE ARE
+Total Organization Development (TOD) is a Saudi-based organizational consulting practice. We work with boards, leaders and organizations where performance cannot be understood through strategy, structure or process alone, and where relationships, authority, culture and unseen patterns shape what actually happens.
+Before attempting to change a system, we seek to understand it.
+Link: About TOD
+OUR PERSPECTIVE (DARK SECTION)
+Heading: Human Systems
+An organization is more than its chart, strategy, processes or individual employees. It is an interconnected system in which every element continuously influences the others.
+For TOD, Human Systems is not a separate service. It is the perspective through which we understand and approach all of our work.
+Elements: Purpose, People, Relationships, Authority, Identity, Culture, Decisions, Behavior, Meaning, Structure, Patterns, Context.
+Link: See our approach
+SERVICES
+Heading: Three streams, designed around each client's context.
+01  Organizational Systems and Transformation: For boards, executive teams and family enterprises working with governance, continuity and significant change. (7 services)
+02  Leadership, Coaching and Mentoring: For leaders and teams who need space to think, stronger judgment and the capability to lead within complex systems. (8 services)
+03  Capability and Applied Workshops: Practical, context-specific workshops that turn insight into everyday behavior and shared ways of working. (9 services)
+Link: View all services
+HOW WE WORK
+Heading: See clearly, understand deeply, engage the system, develop what is required, and sustain it.
+01  See: Observe the system before prescribing solutions.
+02  Understand: Explore relationships, patterns, assumptions, structures and dynamics.
+03  Engage: Work with the people within the system rather than treating them as passive recipients of change.
+04  Develop: Design interventions appropriate to what the system actually requires.
+05  Sustain: Build capability within the organization so that progress does not remain dependent on TOD.
+WHO WE WORK WITH
+Heading: Where the challenge is as human as it is technical.
+Short list of the seven audiences in section 5.5, each with its one-line description, and a link to Who We Work With.
+SELECTED EXPERIENCE
+TOD and its associates have supported leaders, teams and organizations across government, national institutions and leading corporations in Saudi Arabia, the GCC and international markets.
+Build note: Client row as specified in 5.5. On Home, show a curated subset of about 12 to 14 names; the full list sits on Who We Work With.
+THE DEVELOPMENT LIBRARY
+Heading: Perspectives on leadership, organizations and human systems.
+Latest three articles, then link: Visit the Library
+CLOSING CALL TO ACTION (DARK SECTION)
+Heading: Start a conversation
+Every engagement begins with understanding. Tell us a little about your organization and what you are working with.
+Button: Contact TOD
+5.2  About TOD
+PAGE HEADING
+H1: Who we are
+Total Organization Development (TOD) is a Saudi-based organizational consulting practice focused on understanding and developing organizations as human systems.
+We work with organizations, boards, leaders and other human systems where performance cannot be understood through strategy, structure or process alone. Organizations are also shaped by relationships, authority, identity, culture, behavior, meaning, assumptions and patterns, many of which may not be immediately visible.
+Our work therefore begins with understanding the system more completely before deciding how to intervene.
+TOD brings together perspectives from organization development, systems thinking, leadership, coaching, mentoring, psychology, complexity and other relevant disciplines to support healthier human systems and stronger organizational performance.
+WHY TOD EXISTS
+Organizations rarely struggle because they lack strategy, structure or technical capability alone. They can also become constrained by:
+Fragmented approaches that separate leadership, culture and organizational systems.
+Technical solutions applied to fundamentally human challenges.
+Relationships, authority and invisible dynamics that undermine trust, collaboration and decision-making.
+Assumptions and patterns that remain unexamined.
+Short-term interventions that create activity without building lasting capability.
+TOD exists to offer a more complete way of seeing and working with these realities.
+Before attempting to change a system, we seek to understand it.
+OUR PURPOSE
+To help organizations understand and develop the human systems through which people, purpose and performance come together.
+TOD seeks to develop healthier human systems while strengthening organizational performance. Our purpose is not simply to solve an immediate problem, but to help organizations become more capable of understanding, developing and sustaining themselves.
+MISSION AND VISION
+Mission
+Vision
+To help organizations build healthier relationships, wiser leadership, stronger cultures and greater adaptive capacity.
+We combine evidence-informed practice with a deeper understanding of human systems so that our work leaves people and organizations more capable than before.
+To become a recognized body of knowledge and professional practice for understanding and developing human systems.
+Our longer-term ambition extends beyond consulting engagements toward a living institution where practice, learning, research and knowledge creation continually strengthen one another.
+Practice cycle: Practice (real organizational work), then Learning (reflection and capability), then Research (disciplined inquiry), then Knowledge (improved practice), returning to practice.
+Build note: Build the cycle as component 6.5.
+OUR VALUES: CIRCLES
+CIRCLES is a set of seven values that shape how TOD thinks, works and creates impact. A circle represents connection, wholeness, continuity and interdependence, all central to a Human Systems perspective.
+Value
+Line
+Description
+C
+Curiosity
+Before certainty.
+We enter situations with questions rather than predetermined answers. We remain open to what we may not yet understand and resist assuming that our first interpretation is necessarily correct.
+I
+Integration
+Rather than fragmentation.
+We seek to understand the whole human system. Leadership, relationships, culture, structure, purpose, behavior and performance are interconnected rather than isolated issues.
+R
+Reflection
+Before reaction.
+We create space to observe and understand before acting. Reflection allows us to notice patterns, assumptions and dynamics that immediate action can overlook.
+C
+Courage
+With compassion.
+We are prepared to surface difficult realities, challenge assumptions and engage in necessary conversations while maintaining respect, empathy and awareness of human impact.
+L
+Learning
+Before judgment.
+We approach people and organizations as capable of development. Rather than beginning with blame, we seek to understand what can be learned and what new capability can emerge.
+E
+Empathy
+People before methodology.
+We recognize the dignity, experience and agency of every person within a human system. Frameworks and methodologies should serve people, not reduce people to the framework.
+S
+Stewardship
+Over personal recognition.
+Our responsibility is to strengthen the system rather than create dependency on TOD or seek recognition for ourselves. We aim to leave people and organizations more capable than we found them.
+CIRCLES gives TOD a behavioral language: not simply what we value, but how those values influence judgment and action.
+Build note: Build as component 6.2.
+BUILDING CAPABILITY, NOT DEPENDENCY
+TOD does not seek to become indispensable to a client. Our aim is to leave organizations more able to understand, develop and sustain themselves. We therefore seek to leave behind:
+Stronger internal capability.
+Improved quality of thinking and decision-making.
+Greater capacity for reflection and learning.
+Healthier relationships and systems.
+Practices that can continue beyond an individual consultant or intervention.
+Success is not dependency on TOD. Success is increased capability within the system.
+OUR LONGER-TERM AMBITION
+TOD is being built not only as a consulting organization, but as an institution capable of learning from its practice.
+Our ambition is for experience in organizations to contribute to knowledge, and for that knowledge to continually improve how we understand and work with human systems.
+The services we provide may change as organizations and society change. The commitment beneath them should remain constant:
+To see more clearly, understand more deeply, and help human systems become more capable of developing themselves.
+5.3  Our Approach
+PAGE HEADING
+Eyebrow: Our approach
+H1: Before attempting to change a system, we seek to understand it.
+Our work begins with understanding the system more completely before deciding how to intervene. These are the ideas and disciplines that shape how we see, think and work.
+HUMAN SYSTEMS
+An organization is more than its organizational chart, strategy, processes or individual employees. It is an interconnected system shaped by people, purpose, relationships, authority, identity, culture, decisions, behavior, meaning, structure, patterns and context.
+These elements continuously influence one another. A leadership challenge may also involve authority, relationships or organizational identity. A succession challenge may involve capability, trust, ownership, culture and continuity. A transformation may be technically well designed yet fail because the human system has not moved with it.
+For TOD, Human Systems is not a separate service. It is the perspective through which we understand and approach our work.
+Build note: Build as component 6.1, with the twelve elements and their descriptions.
+HOW TOD THINKS
+TOD's work begins with the quality of its thinking. These principles guide how we make sense of complex organizational realities:
+Think systemically before acting locally.
+Look for patterns rather than isolated events.
+Consider conscious and unconscious dynamics.
+Work with emergence rather than forcing certainty.
+Integrate multiple disciplines into one coherent perspective.
+Ask better questions before seeking better answers.
+The aim is not to arrive at certainty too quickly. It is to improve the quality of observation and inquiry before action.
+THE FIVE LAYERS OF SEEING
+The Five Layers of Seeing move inquiry from what is immediately visible toward patterns, assumptions, emergence and the development required of those within the system.
+Layer
+Question
+Focus
+01
+Observe
+What is happening?
+Understand the current reality.
+02
+Explore
+What patterns are emerging?
+Look beyond isolated events.
+03
+Question
+What assumptions are shaping these patterns?
+Explore the beliefs, interpretations and mental models.
+04
+Discern
+What is trying to emerge that we cannot yet see?
+Remain attentive to possibility, change and emerging conditions.
+05
+Become
+Who must we become to meet what is emerging?
+Consider the development required of those within the system.
+Build note: Build as component 6.3.
+OUR PHILOSOPHY OF INQUIRY
+No single lens owns reality.
+Human systems are too complex to be fully understood through one model, methodology or discipline. TOD therefore draws from multiple perspectives while remaining clear about the basis and limitations of each. We may learn from:
+Empirical evidence and measurement.
+Psychology and human behavior.
+Relationships and group dynamics.
+Organizational and systems theory.
+Philosophy, meaning and interpretation.
+Lived experience, reflection and observation.
+Complexity, adaptation and emergence.
+Other relevant traditions of human inquiry.
+The task is not to force reality into a preferred model. It is to improve the quality of observation, inquiry and understanding through which we approach the system.
+Callout, Intellectual discipline: TOD distinguishes between empirically supported knowledge, theoretical or interpretive frameworks, and reflective or contemplative insight. We remain open to multiple ways of knowing without presenting different kinds of knowledge as equivalent.
+HOW TOD WORKS
+We work with human systems through a considered and collaborative process. Each stage informs the next, allowing us to design interventions that are relevant, practical and enduring.
+Stage
+Description
+Activities
+See
+Observe the system before prescribing solutions.
+Listen, Gather, Understand context, Identify key dynamics
+Understand
+Explore relationships, patterns, assumptions, structures and dynamics.
+Analyze, Make sense, Identify what matters, Develop shared understanding
+Engage
+Work with the people within the system rather than treating them as passive recipients of change.
+Involve, Co-create, Build trust, Establish shared ownership
+Develop
+Design interventions appropriate to what the system actually requires.
+Design, Facilitate, Build capability, Adapt to context
+Sustain
+Build capability within the organization so that progress does not remain dependent on TOD.
+Embed, Strengthen internal capability, Review and learn, Support long-term impact
+This is a way of working rather than a rigid methodology. The sequence may flex according to context, but the discipline remains: see clearly, understand deeply, engage those within the system, develop what is required, and build capability that can endure.
+Build note: Build as component 6.4.
+5.4  Services
+PAGE HEADING
+Eyebrow: Services
+H1: Designed around each client's context.
+TOD's services are designed around each client's context. They are organized into three streams, and services from more than one stream may be combined to create an integrated intervention for a specific organization, leadership team, board or family business.
+Build note: Provide filter buttons: All streams (24), 01, 02 and 03. Each stream is a section with its number, name, introduction and service count, followed by its services as title and description pairs. Give each stream an anchor (#systems-transformation, #leadership-coaching-mentoring, #capability-workshops). Structure services in the CMS so individual service pages can be added later without redesign.
+STREAM 01
+Organizational Systems and Transformation
+For boards, executive teams and family enterprises working with governance, continuity and significant change.
+Service
+Website description
+Boardroom Governance
+Helping boards strengthen oversight, clarify responsibilities and improve the quality of strategic decision-making.
+Boardroom Dynamics
+Supporting boards and senior leadership groups to understand how relationships, influence, assumptions and competing perspectives affect collective performance.
+Boardroom Onboarding
+Helping new board members understand their responsibilities, the organization's context, governance expectations and the dynamics required for effective contribution from the outset.
+Executive Alignment
+Helping senior leaders establish shared priorities, clarify direction and work with greater coherence.
+Family Business Consultation
+Supporting family-owned organizations to navigate governance, relationships, growth, professionalization and the transition between family and business roles.
+Succession Planning
+Helping organizations and families prepare for leadership continuity, develop successors and manage transition responsibly.
+Organizational Transformation Initiatives
+Supporting organizations through significant change by aligning leadership, culture, structures, capability and ways of working.
+STREAM 02
+Leadership, Coaching and Mentoring
+For leaders and teams who need space to think, stronger judgment and the capability to lead within complex systems.
+Service
+Website description
+Organizational Coaching
+Helping leaders examine the wider system around them and make more thoughtful, effective decisions within their organizational context.
+Executive Coaching
+A confidential space for senior leaders to reflect, strengthen judgment and address complex leadership challenges.
+Leadership Development
+Developing the self-awareness, judgment, communication and influence required for effective leadership.
+Mentoring Programs
+Designing and supporting structured mentoring programs that connect people with the guidance, experience and challenge needed for meaningful development.
+Early Leadership Development
+Helping emerging leaders build confidence, responsibility and practical leadership capability.
+Communication and Feedback
+Strengthening the quality of conversations, feedback and relationships that influence trust and performance.
+Emotional Intelligence
+Developing the awareness and interpersonal capability needed to manage oneself, understand others and lead effectively.
+Team Coaching
+Helping teams improve collective awareness, collaboration, accountability and performance.
+STREAM 03
+Capability and Applied Workshops
+Practical, context-specific workshops that turn insight into everyday behavior and shared ways of working.
+Service
+Website description
+Communication Workshops
+Practical workshops that help people communicate with greater clarity, confidence and impact.
+Relationship Building and Team Effectiveness
+Helping teams strengthen trust, collaboration, communication and shared responsibility.
+Conflict Management
+Developing the understanding and skills needed to approach disagreement constructively and protect working relationships.
+Time Management and Personal Effectiveness
+Helping individuals prioritize, organize their work and focus their effort on what matters most.
+Leadership in Action
+Practical experiences that help participants apply leadership behaviors in realistic situations.
+KPI, KRA and OKR Workshops
+Helping teams understand performance frameworks and connect organizational priorities with meaningful action.
+Safety Champions Development
+Building the communication, ownership and leadership behaviors needed to support a stronger safety culture.
+Workplace Communication and Reading Skills
+Developing the practical communication skills people need to understand information, participate effectively and perform confidently at work.
+Tailored Capability Workshops
+Customized workshops designed around the client's context, objectives, audience and organizational needs.
+CLOSING CALL TO ACTION
+Heading: Not sure where to begin?
+Most engagements start with a conversation about what is happening in the system, before deciding which services fit.
+Button: Start a Conversation
+5.5  Who We Work With
+PAGE HEADING
+H1: Where the challenge is as human as it is technical.
+We work where the challenge is as much human as it is technical. The people and organizations we work with share one thing: what they are facing cannot be solved by structure or process alone.
+Audience
+Description
+Boards and committees
+Clarifying authority, accountability and the quality of collective decisions.
+CEOs and executives
+Space to think for leaders carrying complexity, ambiguity and consequence.
+Leadership teams
+Building alignment and coherence where priorities, perspectives and personalities compete.
+Government entities
+Developing capability at scale while transformation agendas move quickly.
+Family businesses
+Navigating the meeting point of family, ownership, governance and succession.
+Organizations undergoing transformation
+Making sure the human system moves with the strategy, not behind it.
+Emerging and early-career leaders
+Building confidence, responsibility and judgment early in a leadership journey.
+Our work spans government, education, aviation, healthcare, sports and the corporate sector.
+SELECTED EXPERIENCE
+TOD and its associates have supported leaders, teams and organizations across government, national institutions and leading corporations in Saudi Arabia, the GCC and international markets.
+Build note: Horizontal, slowly scrolling row of client names in Source Serif 4 at one consistent size, with generous spacing on ivory or white. No cards, shadows or gold boxes. Pause on hover and focus, provide a visible pause control, and show a static wrapped list when reduced motion is requested. About 5 to 7 names visible on desktop and 2 to 3 on mobile. Order: government and national, then corporate, then regional and international. Logos replace names only for clients TOD confirms in writing; when used, show them in a single monochrome tone at a consistent visual height.
+#
+Organization
+Group
+1
+Public Investment Fund (PIF)
+Government and national
+2
+Ministry of Finance, KSA
+Government and national
+3
+MCIT, KSA
+Government and national
+4
+Ministry of Education, KSA
+Government and national
+5
+Ministry of Interior, KSA
+Government and national
+6
+Ministry of Labor, KSA
+Government and national
+7
+Ministry of Defense, Healthcare Sector
+Government and national
+8
+National Transformation Program, KSA
+Government and national
+9
+Decision Support Center (DSC)
+Government and national
+10
+Center for National Health Insurance (CNHI)
+Government and national
+11
+Council of Health Insurance (CHI)
+Government and national
+12
+INFATH, KSA
+Government and national
+13
+Saudi Food and Drug Authority (SFDA)
+Government and national
+14
+Capital Market Authority (CMA)
+Government and national
+15
+Saudi Industrial Development Fund (SIDF)
+Government and national
+16
+Royal Commission, KSA
+Government and national
+17
+Real Estate Authority, KSA
+Government and national
+18
+King Abdullah Financial District (KAFD)
+Government and national
+19
+Saudi Arabian Military Industries (SAMI)
+Government and national
+20
+Saudi Standards, Metrology and Quality Organization (SASO)
+Government and national
+21
+Institute of Public Administration (IPA)
+Government and national
+22
+Saudi Digital Academy
+Government and national
+23
+Princess Nourah University (PNU)
+Government and national
+24
+Misk 2030 Leaders
+Government and national
+25
+ELM, KSA
+Corporate, Saudi Arabia
+26
+Takamol, KSA
+Corporate, Saudi Arabia
+27
+Global Defense Corporation (GDC)
+Corporate, Saudi Arabia
+28
+ARX Aerospace and Defense
+Corporate, Saudi Arabia
+29
+STC
+Corporate, Saudi Arabia
+30
+Almarai, KSA
+Corporate, Saudi Arabia
+31
+SPIMACO
+Corporate, Saudi Arabia
+32
+Alinma Bank
+Corporate, Saudi Arabia
+33
+SATORP
+Corporate, Saudi Arabia
+34
+Government of Dubai
+Regional
+35
+Ministry of Labor / Etimad Project, Oman
+Regional
+36
+Asyad, Oman
+Regional
+37
+OQ8, Oman
+Regional
+38
+Radisson Blu, Bahrain
+Regional
+39
+TNT, Bahrain
+Regional
+40
+Fresenius Medical Care, Germany
+International
+41
+Daiichi Sankyo, Germany
+International
+42
+Tata Consultancy Services, India
+International
+5.6  Associates
+H1: Associates
+TOD works through a network of consultants, coaches, mentors and specialists who share a Human Systems perspective. Each engagement brings together the people best suited to the system in question.
+Build note: Profile grid with photograph, name and title; each card opens a profile page or panel. Profiles are CMS entries so TOD can add, edit or remove them without a developer. Field definitions are in section 9.
+5.7  The Development Library
+H1: The Development Library
+The Development Library is TOD's home for articles, reflections and practical perspectives on organizations, leadership and human systems. Every engagement is an opportunity to observe, practice, learn and reflect. The Library is where that learning is shared.
+Categories: Leadership; Organizations and human systems; Boardroom governance and dynamics; Organizational culture and transformation; Family business and succession; Mentoring and capability development; Emerging organizational issues in Saudi Arabia and the region.
+Build note: Listing page with category filter, featured article and pagination. Field definitions are in section 10.
+5.8  Contact
+H1: Start a conversation
+Every engagement begins with understanding. Tell us a little about your organization and what you are working with, and we will arrange a first conversation.
+Field
+Rule
+Full name
+Required
+Organization
+Required
+Role or title
+Optional
+Email
+Required, validated
+Phone
+Optional, with country code
+Area of interest
+Dropdown: Organizational Systems and Transformation; Leadership, Coaching and Mentoring; Capability and Applied Workshops; Not sure yet
+Message
+Required, multi-line
+Privacy consent
+Required checkbox linking to the Privacy Policy
+Confirmation message: Thank you. We have received your message and will be in touch within [X] working days.
+Contact details: [EMAIL]  |  [PHONE]  |  [OFFICE ADDRESS], Riyadh, Kingdom of Saudi Arabia
+Build note: Submissions go to a TOD-owned inbox and are stored only as long as the Privacy Policy states. Add spam protection that does not rely on a visual puzzle alone. Confirm delivery before launch.
+5.9  Legal pages
+Privacy Policy, Terms of Use and a cookie notice. TOD will supply final text after legal review (open item 7). Build the templates now with placeholder text clearly marked [LEGAL TEXT PENDING]. If analytics or other cookies are used, a consent banner is required before they load.
+6  Interactive components
+The Company Overview illustrates TOD's ideas with five infographics. On the website these are rebuilt as live components rather than images, for four reasons: text inside an image cannot be read by screen readers or search engines, it cannot be translated into Arabic, it blurs on large screens, and the infographics introduce colors outside the brand palette.
+Requirement
+Applies to every component
+Text
+All labels and descriptions are real HTML text drawn from the CMS, in English and Arabic.
+Graphics
+Lines, rings and markers in inline SVG or CSS, using only the colors in 7.1.
+Responsive
+Each component has a mobile layout that stacks into a readable list rather than shrinking the diagram.
+RTL
+The Arabic version mirrors direction where order matters (sequences and arrows).
+Accessibility
+Meaningful reading order, keyboard access to anything interactive, no information conveyed by color alone.
+Motion
+Optional, subtle reveal on scroll only, disabled under reduced motion.
+6.1  Human Systems
+A ring of twelve elements around a central "Human Systems" circle. Each element shows its name; its description appears on hover, focus or tap. On mobile, render as a two-column list of names and descriptions.
+Element
+Description
+Purpose
+Why we exist and where we are going
+People
+Individuals, leadership and collective capability
+Relationships
+Trust, collaboration and social dynamics
+Authority
+Decision-making, accountability and influence
+Identity
+Who we are, individually and collectively
+Culture
+Shared values, behaviors and norms
+Decisions
+Choices, trade-offs and consequences
+Behavior
+How we act and respond
+Meaning
+Narratives, assumptions and sense-making
+Structure
+Systems, processes and design
+Patterns
+Recurring dynamics and unintended consequences
+Context
+The environment the system operates within
+Note: the Overview image shows eleven elements. "Context" has been added to match the Overview text, which lists twelve.
+6.2  CIRCLES values
+Seven value cards, each with its letter in a gold ring, the value name, its italic line and a short description. Desktop grid of three or four columns; one column on mobile. The letters spell CIRCLES in reading order.
+6.3  Five Layers of Seeing
+Five stacked bands, from Observe at the top to Become at the bottom, each slightly deeper in tone and indented to suggest depth. Each band shows number, layer name, question in italic serif and focus line.
+6.4  Way of working
+Five stages in a row: See, Understand, Engage, Develop, Sustain. Each shows number, stage name, description and activities. Connect stages with a thin line or chevron. On mobile, a vertical sequence. In Arabic, the sequence runs right to left.
+6.5  Practice cycle
+Four words, Practice, Learning, Research and Knowledge, arranged in a cycle with a short line under each. Keep it simple: a ring of four points or a single line of four steps returning to the start.
+6.6  Services filter
+Filter buttons for All streams and each stream. Buttons are real button elements with aria-pressed, at least 44 px tall. Filtering does not reload the page and keeps the URL in sync (for example /services#leadership-coaching-mentoring).
+7  Brand system
+TOD stands for Total Organization Development. The organizing idea is Human Systems: organizations understood as living networks of people, purpose, relationships, decisions, structures and behavior. The site should feel intelligent, reflective, senior and calm, and relevant to Saudi Arabia without relying on clichés. It should not look like a generic coaching, recruitment or training website.
+Expression principles
+Thoughtful: depth through clarity, not complexity.
+Human: real relationships, context and experience.
+Senior: calm confidence and commercial relevance.
+Practical: insight connected to decisions, behavior and measurable work.
+Contextual: Saudi Arabia and the region, without clichés.
+7.1  Colors
+Values are taken from the final logo package so that page backgrounds match the logo artwork exactly. Define them once as design tokens.
+Token
+Hex
+Use
+Contrast rule
+Charcoal
+#333333
+Primary text, dark sections, buttons, navigation
+11.4:1 on Ivory. Matches the dark logo background.
+Warm Ivory
+#F7F3EC
+Primary page background
+Matches the cream logo background.
+Beige
+#EAE0D5
+Supporting sections, cards, image placeholders
+Use Charcoal or Stone text only.
+White
+#FFFFFF
+Alternate sections, cards, text on Charcoal
+12.6:1 with Charcoal.
+Stone
+#5C5852
+Secondary text, captions, metadata
+6.4:1 on Ivory, 5.4:1 on Beige.
+Deep Bronze
+#8A6428
+Eyebrow labels, links, small accents on light backgrounds
+4.8:1 on Ivory, 5.3:1 on White. Not on Beige.
+TOD Gold
+#C99E69
+Rules, rings, icons and highlights; text and buttons on Charcoal only
+5.2:1 on Charcoal. Decorative only on light backgrounds (2.2:1).
+Black
+#000000
+Logo artwork only
+Not used for page text.
+Logo gold gradient (#B08757 to #E5BF8F): exists only inside the logo artwork. Do not use it for interface elements, backgrounds or text.
+Diagram accents
+Optional muted accents for the components in section 6, only where distinguishing items helps. All carry white text or icons at 4.7:1 or better.
+Token
+Hex
+White on it
+Sage
+#6B7664
+4.8:1
+Slate
+#5E6E7E
+5.2:1
+Plum
+#75636F
+5.6:1
+Clay
+#8C5A45
+5.7:1
+Status colors (forms)
+Error #9A3B2E (6.3:1 on Ivory). Success #2F6B4F (5.7:1 on Ivory). Always pair with a text message, never color alone.
+7.2  Typography
+Role
+Typeface
+Use
+Display and headings
+Source Serif 4 (regular 400, medium 500, italic)
+H1 to H3, pull quotes, stream and service titles, client names
+Body and interface
+Inter (400, 500, 600)
+Body copy, navigation, buttons, forms, labels, captions
+Arabic
+Noto Naskh Arabic (400, 500, 600)
+All Arabic content; test headings, numerals and line height with real text
+Fallback
+Georgia (serif), Arial (sans-serif)
+Only when web fonts fail to load
+All three families are published under the SIL Open Font License and are free for web use. Self-host the font files rather than loading them from a third party, for speed and privacy.
+Type scale
+Token
+Desktop
+Mobile
+Face
+Display (hero)
+64 to 76 px / 1.06
+40 to 46 px / 1.1
+Source Serif 4, 400
+H1
+48 to 66 px / 1.08
+36 to 42 px / 1.12
+Source Serif 4, 400
+H2
+36 to 48 px / 1.12
+28 to 34 px / 1.18
+Source Serif 4, 400
+H3
+21 to 26 px / 1.25
+20 to 22 px / 1.3
+Source Serif 4, 500
+Lead
+19 to 20 px / 1.55
+18 px / 1.55
+Inter, 400
+Body
+17 px / 1.6
+16 to 17 px / 1.6
+Inter, 400
+Eyebrow
+13 px, uppercase, 0.18em tracking
+12 to 13 px
+Inter, 600, Deep Bronze
+UI label
+14 to 15 px / 1.35
+14 to 15 px
+Inter, 500
+7.3  Layout
+Calm editorial grid: 12 columns, 1240 px maximum content width, 32 px side padding (20 px on mobile).
+Generous vertical rhythm: 96 to 112 px section padding on desktop, 64 px on mobile.
+Deliberate alternation of Ivory, White, Beige and Charcoal sections; never two Charcoal sections in a row.
+Thin rules (1 px, #D9CDBD or Gold) instead of heavy cards and shadows. Corners square or 2 px.
+Buttons: primary Charcoal with white text; secondary outlined Charcoal; on dark sections, Gold with charcoal text.
+7.4  Photography
+Grounded leadership and organizational life, natural light, Saudi and regional context, credible work settings and calm human detail. Avoid generic stock handshakes, staged boardrooms, heavy filters and imagery that suggests a training classroom. Use only images TOD has approved and licensed.
+7.5  Motion
+Small, purposeful transitions only: gentle fades on scroll and simple hover states. Respect prefers-reduced-motion. No parallax-heavy sections, ornamental loading sequences or logo animation. The client row is the only continuously moving element, and it must be pausable.
+7.6  Logo files
+Use only the files in the final logo package. Never redraw the interlocking rings, retype the wordmark or use an image taken from a PDF or screenshot.
+Context
+File
+Notes
+Header on Ivory or White
+Svg/Logo/White Background with black and gold logo.svg
+Despite its name, this file has no background, so it sits cleanly on Ivory.
+Footer and dark sections
+Svg/Logo/Charcol Background with White and gold logo.svg
+Has a built-in #333333 background. Use only on exactly #333333 until the transparent version arrives.
+Transparent, light background (raster)
+Png/Logo/Black and Gold Logo with Transparent Background.png
+For email, documents or tools without SVG support.
+Transparent, dark background (raster)
+Png/Logo/White and Gold Logo with Transparent Background.png
+Interim option for dark areas that are not #333333.
+Favicon and app icon
+Svg/Icon/Cream Background with Gold icon.svg
+Gold on cream reads better at 32 px than gold on transparent white.
+Social avatar
+Jpeg/Icon/Black Background with Gold icon.jpg
+Centered within the platform safe zone.
+Social preview image
+Built from the cream logo file at 1200 x 630 px
+Logo centered on Warm Ivory.
+Sizing and clear space
+Clear space around the logo of at least half the height of the capital T.
+Minimum width of the visible logo: 160 px on desktop, 128 px on mobile. The supplied files include padding (the artwork fills about 56% of the canvas), so crop the viewBox or size by the visible artwork, not the file.
+Do not distort, rotate, recolor, outline, shadow or animate the logo, or alter the rings.
+Requested from the logo designer
+A white-and-gold logo SVG on a transparent background.
+Tightly cropped SVG and PNG exports with no surrounding padding.
+Consistent file names (for example "Charcoal", not "Charcol").
+8  Arabic version
+Complete Arabic version of every page under /ar/, with dir="rtl" and lang="ar".
+Arabic navigation, page titles, metadata, form labels, error messages and legal pages.
+Arabic article support in the Development Library, with each article linked to its English counterpart where one exists.
+Mirrored layout: navigation, alignment, sequences and directional icons reverse. The logo itself does not mirror.
+Noto Naskh Arabic for all Arabic text, with line height and sizes tuned separately from English.
+Language switch on every page, keeping the user on the equivalent page.
+hreflang tags linking English and Arabic pages.
+Test with real Arabic content, not machine placeholder text.
+9  Associate profile template
+TOD will supply profiles in this structure. Build each field as a CMS field so profiles can be added without redesign.
+Field
+Format
+Guide
+Name
+Text
+As the associate wishes to be known
+Professional title
+Text
+One line
+Photograph
+JPG or WebP
+Portrait, 4:5 ratio, minimum 1200 x 1500 px, consistent lighting and background across all associates
+Short biography
+Rich text
+80 to 120 words, third person
+Areas of expertise
+Tags
+Three to six, linked to service names where possible
+Sectors or client experience
+Text list
+Sectors rather than client names unless approved
+Qualifications and accreditations
+Text list
+Concise titles
+Languages
+Tags
+For example English, Arabic
+LinkedIn
+URL
+Optional
+Arabic fields
+Mirror of the above
+Name, title, biography and expertise in Arabic
+Display order
+Number
+Controls order in the grid
+10  The Development Library
+TOD must be able to publish, edit and unpublish articles without a developer.
+Field
+Guide
+Title
+Required
+Summary
+30 to 50 words; used on listing cards and as the meta description
+Author
+Linked to an Associate profile where applicable
+Publication date
+Required
+Category
+One of: Leadership; Organizations and human systems; Boardroom governance and dynamics; Organizational culture and transformation; Family business and succession; Mentoring and capability development; Emerging organizational issues in Saudi Arabia and the region
+Reading time
+Calculated automatically
+Featured image
+16:10, minimum 1600 x 1000 px, with alt text
+Body
+Rich text with headings, quotes, lists and images
+Related articles
+Up to three, manual or by category
+Language
+English or Arabic, with a link to the other version
+Sharing
+LinkedIn share and copy link
+11  Page titles and descriptions
+Page
+Title tag
+Meta description
+Home
+TOD | Organizational Development Consultancy in Saudi Arabia
+TOD helps leaders, boards and organizations in Saudi Arabia understand complexity, align around what matters and build lasting capability.
+About TOD
+About TOD | Total Organization Development
+A Saudi-based organizational consulting practice focused on understanding and developing organizations as human systems.
+Our Approach
+Our Approach | Human Systems | TOD
+How TOD sees, understands and works with organizations: Human Systems, the Five Layers of Seeing and our way of working.
+Services
+Services | Governance, Leadership and Capability | TOD
+Board governance, executive alignment, coaching, mentoring programs and applied capability workshops, designed around each client's context.
+Who We Work With
+Who We Work With | TOD
+Boards, executives, leadership teams, government entities and family businesses facing challenges that are as human as they are technical.
+Associates
+Associates | TOD
+The consultants, coaches, mentors and specialists who deliver TOD's work.
+The Development Library
+The Development Library | TOD
+Articles and perspectives on leadership, organizations and human systems in Saudi Arabia and the region.
+Contact
+Contact TOD | Start a Conversation
+Tell us about your organization and arrange a first conversation with TOD.
+Add Open Graph and LinkedIn preview tags on every page using the social preview image in 7.6. Arabic pages need their own titles and descriptions.
+12  Technical and ownership requirements
+Confirm the technology, framework and content management system in use.
+Give TOD access to the source code repository.
+Confirm ownership of, and TOD admin access to, the Vercel project.
+Domain and DNS control remain with TOD.
+Give TOD access to analytics and to contact form submissions.
+Confirm how backups are handled and how often.
+Confirm how the website can be handed to, or further developed by, another developer.
+All code, design files, copy, assets and website intellectual property are owned by TOD on completion.
+Page templates for home, standard page, service, article, profile, contact and legal pages.
+Handover documentation covering content fields, image ratios, component behavior and accessibility notes.
+A short guide for TOD staff on updating services, profiles and articles.
+13  Accessibility and pre-launch checks
+WCAG 2.2 AA throughout, in English and Arabic.
+Responsive on mobile, tablet and desktop, tested on real devices.
+Keyboard navigation with a visible focus state on every interactive element.
+Logical heading order, labeled form fields and descriptive link text.
+Text contrast of at least 4.5:1 (3:1 for large text and interface elements), using the rules in 7.1.
+Reduced-motion support, including a static client list.
+Touch targets of at least 44 x 44 px.
+Alt text on every meaningful image; decorative images marked as such.
+Page speed: optimized and responsive images (WebP or AVIF), self-hosted fonts, Core Web Vitals in the green.
+Page titles, descriptions, sitemap, robots file, hreflang, favicon and social preview image.
+Contact form delivery tested, privacy consent recorded, spam protection active.
+Domain connected, SSL active, redirects from www and http.
+Arabic right-to-left tested with real content.
+No placeholder text remaining (search for "[" before launch).
+14  Materials and confirmation
+Materials status
+Material
+Status
+This handover pack (copy, brand, requirements)
+Provided
+Visual preview of Home, Services and Our Approach
+Provided
+Final logo package
+Provided
+Company Overview (background reading)
+Provided
+Associate profiles and photographs
+Will send separately
+Contact details, CR number and LinkedIn URL
+Pending
+Legal page text
+Pending
+Approved photography
+Pending
+Development Library launch articles
+Pending
+Arabic copy
+Pending
+Transparent and cropped logo files
+Requested
+Please confirm
+Which materials have been received.
+What additional information is required.
+Which pages are complete and which remain in development.
+Whether the current demo is connected to the production codebase.
+How TOD will update services, profiles and articles.
+The timeline for the remaining pages, the Arabic version and launch.
+The proposed handover and ownership arrangements.

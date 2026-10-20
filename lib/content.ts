@@ -1,25 +1,209 @@
-export type Locale = 'en' | 'ar';
-export type Localized = { en: string; ar: string | null };
-export type Attribution = 'tod' | 'leadership' | 'partner' | 'confidential';
-export interface Insight { slug: string; title: Localized; excerpt: Localized; body: Localized; theme: string; publishedAt: string; approved: boolean }
-export interface CaseStudy { slug: string; title: Localized; context: Localized; challenge: Localized; approach: Localized; scale?: Localized; outcome: Localized; attribution: Attribution; approved: boolean }
-export interface TeamProfile { id: string; name: Localized; role: Localized; biography: Localized; photo: string; expertise: Localized[]; credentials: Localized[]; languages: string[]; approved: boolean }
-export const nav = [['','Home','الرئيسية'],['services','Services','الخدمات'],['our-thinking','Our Thinking','رؤانا'],['who-we-work-with','Who We Work With','مع من نعمل'],['about','About','عن TOD'],['contact','Contact','تواصل معنا']] as const;
-export const hero = 'Leadership. Organizations. Human Systems.';
-export const intro = 'We help leaders and organisations understand complexity, align around what matters and build the capability to create lasting change.';
-export const about = 'Total Organization Development is a Saudi-based organisational development and leadership consultancy. We bring together organisational advisory, leadership development, executive coaching, mentoring and learning design to help organisations build capability that lasts.';
-export const context = 'Our work begins with context. We seek to understand the organisation as it is: its ambition, pressures, relationships, strengths and patterns. From there, we work alongside leaders to design development and change that is practical, relevant and owned by the people who will carry it forward.';
-export const human = 'Human Systems is more than a strapline. It reflects how we see organisations: not as charts, processes or isolated individuals, but as living networks of people, purpose, relationships, decisions and behaviour. Sustainable change happens when these elements are understood and developed together.';
-export const preview = 'We see beneath the surface to help you lead what matters. TOD is an organisational development and leadership consultancy based in Saudi Arabia. We work with leaders, teams and organisations to understand the human systems shaping performance, then design practical interventions that strengthen leadership, capability, culture and sustainable organisational effectiveness.';
-export const closing = 'In every organisation, something is trying to emerge. Our work is to help leaders see it, understand it and lead it.';
-export const audiences = [['CEOs and executives','Navigate complexity and lead with clarity.'],['Leadership teams','Strengthen alignment, trust and collective performance.'],['Government entities','Build institutional capability and deliver meaningful impact.'],['Boards and committees','Strengthen governance, oversight and strategic direction.'],['Organisations','Transform systems, culture and ways of working.']];
-export const principles = [['See the whole system','Connect leadership, structure, culture, capability and context.'],['Start with understanding','Diagnose before prescribing and listen before designing.'],['Design for the real world','Create work that is practical and relevant to the client environment.'],['Build ownership','Develop capability with clients rather than creating dependency.'],['Learn through application','Build reflection, practice and feedback into the work.'],['Measure what matters','Track participation, capability, application and organisational value.']];
-export const themes = ['Human systems and organisational patterns','Leadership in complexity','Mentoring, coaching and developing others','Culture, change and organisational effectiveness','Team dynamics, trust and alignment','Learning transfer and capability building','Regional leadership practice in Saudi Arabia and the Gulf'];
-export const sectors = ['Government and public sector','Aviation and defence','Education and universities','Sport','Corporate and real estate','Technology and emerging sectors'];
-export const services = [
-{slug:'organisation-transformation', title:'Organisation and Transformation Advisory', ar:null, audience:'For organisations navigating growth, transition, complexity or strategic change.', outcome:'Clearer direction, stronger alignment and healthier organisational systems.', paragraphs:['Organisations are living systems. Structure, culture, leadership, relationships and strategy shape one another, often in ways that are not immediately visible.','TOD works with leaders to understand what is happening beneath the surface, identify the few issues that matter most and design practical change that fits the organisation’s context. We combine rigorous diagnosis with close partnership, helping clients move from insight to alignment and sustained action.'], offerings:['Organisational diagnosis and development','Organisation design and ways of working','Strategy alignment and execution','Change and transformation','Culture and employee experience','Executive and stakeholder alignment','Family business governance and succession','Team and organisational effectiveness'], situations:['A strategy is clear, but execution remains fragmented.','Growth or restructuring has created unclear roles and decision rights.','A leadership team needs stronger alignment and collective accountability.','Culture is not supporting the organisation’s ambition.','A family business needs to prepare for governance or succession.','A transformation requires stronger ownership, communication and adoption.'], engagement:'We begin with discovery. We listen to the people closest to the work, examine the formal and informal system, and agree what success should look like. The engagement may combine diagnosis, facilitated alignment, organisation design, leadership work, change support and ongoing advisory.'},
-{slug:'leadership-coaching-mentoring',title:'Leadership, Coaching and Mentoring', ar:null,audience:'For leaders and teams who need to strengthen judgement, impact and their ability to develop others.',outcome:'Capable leaders, stronger relationships and development that transfers into work.',paragraphs:['Leadership develops through experience, reflection, challenge and application. Our journeys help leaders understand themselves, strengthen how they work with others and apply new capability to real organisational priorities.','Programmes may combine workshops, executive coaching, mentoring, team coaching, practical assignments, peer learning and digital support. Each journey is designed around the organisation’s context and the leaders’ level of responsibility.'],offerings:['Executive coaching','Mentoring strategy, programme design and digital enablement','Leadership development journeys','Emerging and early-career leadership','Team coaching and effectiveness','Communication, feedback and influence','Emotional intelligence and self-awareness','Conflict navigation and political savvy','Decision-making and leading through uncertainty'],formats:[['Executive coaching','Individual leadership reflection and applied development'],['Mentoring systems','Strategy, mentor development, governance and platform enablement'],['Leadership journeys','Multi-touch development linked to real organisational priorities'],['Team coaching','Collective alignment, trust and performance'],['Focused programmes','Communication, feedback, influence, conflict and emotional intelligence']]},
-{slug:'learning-capability',title:'Learning and Capability Solutions', ar:null,audience:'For organisations seeking structured and scalable learning capability rather than isolated training events.',outcome:'Relevant learning systems that support application and produce measurable insight.',paragraphs:['TOD turns development priorities into structured learning experiences and organisational capability. We design learning that is relevant to the role, practical in delivery and supported beyond the classroom.','Our work ranges from focused workshops to multi-month academies, facilitator development, assessment and specialist programmes. Delivery can combine in-person and virtual learning, bilingual facilitation, digital resources, communities of practice and measurement.'],offerings:['Custom academies and capability pathways','Learning needs analysis and curriculum design','Instructor and facilitator development','Assessment and development centres','Communities of practice','Leadership and management workshops','Away days and facilitated strategic events','Aviation, safety and human factors learning','Digital learning resources and platform-enabled programmes']}
+import settings from "@/content/site.json";
+import serviceData from "@/content/services.json";
+import audienceData from "@/content/audiences.json";
+import clientData from "@/content/clients.json";
+import systemData from "@/content/systems.json";
+import valueData from "@/content/values.json";
+import stageData from "@/content/stages.json";
+import aboutData from "@/content/about.json";
+import approachData from "@/content/approach.json";
+import articleData from "@/content/articles.json";
+import associateData from "@/content/associates.json";
+export type Locale = "en" | "ar";
+export type Text = { en: string; ar: string };
+export const text = (en: string, ar: string): Text => ({ en, ar });
+export const t = (value: Text, l: Locale) => value[l];
+export const site = settings;
+export const streams = serviceData.streams;
+export const audiences = audienceData.items;
+export const clients = clientData.items;
+export const systems = systemData.items;
+export const values = valueData.items;
+export const stages = stageData.items;
+export const about = aboutData.sections;
+export const approach = approachData;
+export const categories = [
+  text("Leadership", "القيادة"),
+  text("Organizations and human systems", "المؤسسات والأنظمة الإنسانية"),
+  text(
+    "Boardroom governance and dynamics",
+    "حوكمة مجالس الإدارة وديناميكياتها",
+  ),
+  text("Organizational culture and transformation", "الثقافة المؤسسية والتحول"),
+  text("Family business and succession", "الأعمال العائلية والتعاقب"),
+  text("Mentoring and capability development", "الإرشاد وتطوير القدرات"),
+  text(
+    "Emerging organizational issues in Saudi Arabia and the region",
+    "القضايا المؤسسية الناشئة في السعودية والمنطقة",
+  ),
 ];
-export const connected = 'The streams are designed as connected routes, not organisational silos. A transformation engagement may require leadership alignment and capability building; a mentoring programme may combine advisory, development and digital enablement.';
-export const routes = ['',...nav.slice(1).map(n=>n[0]),...services.map(s=>'services/'+s.slug)];
+export type Article = {
+  slug: string;
+  title: Text;
+  summary: Text;
+  body: Text;
+  date: string;
+  category: number;
+  author: string;
+  image: string;
+  imageAlt: Text;
+  featured: boolean;
+  published: boolean;
+  related: string[];
+};
+export type Associate = {
+  slug: string;
+  name: Text;
+  title: Text;
+  bio: Text;
+  photo: string;
+  expertise: Text[];
+  sectors: Text[];
+  qualifications: Text[];
+  languages: Text[];
+  linkedin: string;
+  order: number;
+  published: boolean;
+};
+export const articles = (articleData.items as Article[])
+  .filter((x) => x.published)
+  .sort((a, b) => b.date.localeCompare(a.date));
+export const associates = (associateData.items as Associate[])
+  .filter((x) => x.published)
+  .sort((a, b) => a.order - b.order);
+export const pageNames: Record<string, Text> = {
+  legal: text("Legal", "المعلومات القانونية"),
+  "": text("Home", "الرئيسية"),
+  about: text("About TOD", "عن TOD"),
+  approach: text("Our Approach", "منهجنا"),
+  associates: text("Associates", "خبراؤنا"),
+  services: text("Services", "الخدمات"),
+  "who-we-work-with": text("Who We Work With", "مع من نعمل"),
+  library: text("The Development Library", "مكتبة التطوير"),
+  contact: text("Contact", "تواصل معنا"),
+  privacy: text("Privacy Policy", "سياسة الخصوصية"),
+  terms: text("Terms of Use", "شروط الاستخدام"),
+};
+export const pathFor = (l: Locale, path = "") =>
+  `/${l}${path ? "/" + path : ""}`;
+export const cta = text("Start a Conversation", "ابدأ حوارًا");
+export const intro = {
+  who: text(
+    "Total Organization Development (TOD) is a Saudi-based organizational consulting practice. We work with boards, leaders and organizations where performance cannot be understood through strategy, structure or process alone, and where relationships, authority, culture and unseen patterns shape what actually happens.",
+    "توتال أورغنايزيشن ديفيلوبمنت (TOD) ممارسة استشارية مؤسسية مقرها المملكة العربية السعودية. نعمل مع مجالس الإدارة والقادة والمؤسسات التي لا يمكن فهم أدائها من خلال الاستراتيجية أو الهيكل أو العمليات وحدها؛ حيث تشكل العلاقات والسلطة والثقافة والأنماط غير المرئية ما يحدث فعليًا.",
+  ),
+  understand: text(
+    "Before attempting to change a system, we seek to understand it.",
+    "قبل محاولة تغيير النظام، نسعى إلى فهمه.",
+  ),
+  perspective: text(
+    "For TOD, Human Systems is not a separate service. It is the perspective through which we understand and approach all of our work.",
+    "بالنسبة إلى TOD، ليست الأنظمة الإنسانية خدمة منفصلة، بل المنظور الذي نفهم من خلاله جميع أعمالنا ونقاربها.",
+  ),
+  experience: text(
+    "TOD and its associates have supported leaders, teams and organizations across government, national institutions and leading corporations in Saudi Arabia, the GCC and international markets.",
+    "دعمت TOD وخبراؤها القادة والفرق والمؤسسات في القطاع الحكومي والمؤسسات الوطنية والشركات الرائدة في المملكة العربية السعودية ودول مجلس التعاون والأسواق الدولية.",
+  ),
+  audience: text(
+    "We work where the challenge is as much human as it is technical. The people and organizations we work with share one thing: what they are facing cannot be solved by structure or process alone.",
+    "نعمل حيث يكون التحدي إنسانيًا بقدر ما هو تقني. يجمع الأفراد والمؤسسات الذين نعمل معهم أمر واحد: لا يمكن معالجة ما يواجهونه بالهيكل أو الإجراءات وحدها.",
+  ),
+  associates: text(
+    "TOD works through a network of consultants, coaches, mentors and specialists who share a Human Systems perspective. Each engagement brings together the people best suited to the system in question.",
+    "تعمل TOD عبر شبكة من المستشارين والكوتشز والمرشدين والمتخصصين الذين يجمعهم منظور الأنظمة الإنسانية. ويجمع كل تعاون الأشخاص الأنسب للنظام المعني.",
+  ),
+  library: text(
+    "The Development Library is TOD's home for articles, reflections and practical perspectives on organizations, leadership and human systems. Every engagement is an opportunity to observe, practice, learn and reflect. The Library is where that learning is shared.",
+    "مكتبة التطوير هي مساحة TOD للمقالات والتأملات والرؤى العملية حول المؤسسات والقيادة والأنظمة الإنسانية. كل تعاون فرصة للملاحظة والممارسة والتعلم والتأمل، وفي المكتبة نشارك ما نتعلمه.",
+  ),
+  contact: text(
+    "Every engagement begins with understanding. Tell us a little about your organization and what you are working with, and we will arrange a first conversation.",
+    "يبدأ كل تعاون بالفهم. أخبرنا قليلًا عن مؤسستك وما تعمل عليه، وسنرتب معك حوارًا أوليًا.",
+  ),
+  services: text(
+    "TOD's services are designed around each client's context. They are organized into three streams, and services from more than one stream may be combined to create an integrated intervention for a specific organization, leadership team, board or family business.",
+    "تُصمم خدمات TOD بحسب سياق كل عميل. وتنظم في ثلاثة مسارات، ويمكن الجمع بين خدمات من أكثر من مسار لتشكيل تدخل متكامل يناسب مؤسسة أو فريق قيادة أو مجلس إدارة أو عملًا عائليًا بعينه.",
+  ),
+  mission: text(
+    "To help organizations build healthier relationships, wiser leadership, stronger cultures and greater adaptive capacity. We combine evidence-informed practice with a deeper understanding of human systems so that our work leaves people and organizations more capable than before.",
+    "مساعدة المؤسسات على بناء علاقات أكثر صحة وقيادة أكثر حكمة وثقافات أقوى وقدرة أكبر على التكيف. نجمع بين الممارسة المستنيرة بالأدلة والفهم الأعمق للأنظمة الإنسانية، ليترك عملنا الأفراد والمؤسسات أكثر قدرة مما كانوا عليه.",
+  ),
+  vision: text(
+    "To become a recognized body of knowledge and professional practice for understanding and developing human systems. Our longer-term ambition extends beyond consulting engagements toward a living institution where practice, learning, research and knowledge creation continually strengthen one another.",
+    "أن نصبح مرجعًا معرفيًا ومهنيًا معترفًا به لفهم الأنظمة الإنسانية وتطويرها. ويتجاوز طموحنا بعيد المدى المشاريع الاستشارية نحو مؤسسة حية تعزز فيها الممارسة والتعلم والبحث وإنتاج المعرفة بعضها بعضًا باستمرار.",
+  ),
+};
+export const metadataCopy: Record<string, { title: Text; description: Text }> =
+  {
+    "": {
+      title: text(
+        "TOD | Organizational Development Consultancy in Saudi Arabia",
+        "TOD | استشارات التطوير المؤسسي في السعودية",
+      ),
+      description: text(
+        "TOD helps leaders, boards and organizations in Saudi Arabia understand complexity, align around what matters and build lasting capability.",
+        "تساعد TOD القادة ومجالس الإدارة والمؤسسات في السعودية على فهم التعقيد والتوافق حول ما يهم وبناء قدرات مستدامة.",
+      ),
+    },
+    about: {
+      title: text(
+        "About TOD | Total Organization Development",
+        "عن TOD | توتال أورغنايزيشن ديفيلوبمنت",
+      ),
+      description: text(
+        "A Saudi-based organizational consulting practice focused on understanding and developing organizations as human systems.",
+        "ممارسة استشارية مؤسسية مقرها السعودية، تركز على فهم المؤسسات وتطويرها بوصفها أنظمة إنسانية.",
+      ),
+    },
+    approach: {
+      title: text(
+        "Our Approach | Human Systems | TOD",
+        "منهجنا | الأنظمة الإنسانية | TOD",
+      ),
+      description: text(
+        "How TOD sees, understands and works with organizations: Human Systems, the Five Layers of Seeing and our way of working.",
+        "كيف ترى TOD المؤسسات وتفهمها وتعمل معها: الأنظمة الإنسانية وطبقات الرؤية الخمس وطريقتنا في العمل.",
+      ),
+    },
+    services: {
+      title: text(
+        "Services | Governance, Leadership and Capability | TOD",
+        "الخدمات | الحوكمة والقيادة والقدرات | TOD",
+      ),
+      description: text(
+        "Board governance, executive alignment, coaching, mentoring programs and applied capability workshops, designed around each client's context.",
+        "حوكمة المجالس والتوافق التنفيذي والكوتشينج وبرامج الإرشاد وورش بناء القدرات التطبيقية، وفق سياق كل عميل.",
+      ),
+    },
+    "who-we-work-with": {
+      title: text("Who We Work With | TOD", "مع من نعمل | TOD"),
+      description: text(
+        "Boards, executives, leadership teams, government entities and family businesses facing challenges that are as human as they are technical.",
+        "مجالس الإدارة والقيادات وفرق القيادة والجهات الحكومية والأعمال العائلية التي تواجه تحديات إنسانية وتقنية.",
+      ),
+    },
+    associates: {
+      title: text("Associates | TOD", "خبراؤنا | TOD"),
+      description: text(
+        "The consultants, coaches, mentors and specialists who deliver TOD's work.",
+        "المستشارون والكوتشز والمرشدون والمتخصصون الذين يقدمون أعمال TOD.",
+      ),
+    },
+    library: {
+      title: text("The Development Library | TOD", "مكتبة التطوير | TOD"),
+      description: text(
+        "Articles and perspectives on leadership, organizations and human systems in Saudi Arabia and the region.",
+        "مقالات ورؤى حول القيادة والمؤسسات والأنظمة الإنسانية في السعودية والمنطقة.",
+      ),
+    },
+    contact: {
+      title: text(
+        "Contact TOD | Start a Conversation",
+        "تواصل مع TOD | ابدأ حوارًا",
+      ),
+      description: text(
+        "Tell us about your organization and arrange a first conversation with TOD.",
+        "حدثنا عن مؤسستك ورتب حوارًا أوليًا مع TOD.",
+      ),
+    },
+  };

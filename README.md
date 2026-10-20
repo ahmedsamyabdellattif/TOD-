@@ -1,87 +1,86 @@
-# المقترح الثاني — توزيع مستوحى من المرجع
+# TOD Arabia — Version 3
 
-هذه نسخة مستقلة. النسخة الأولى وملف ZIP الأصلي لم يتم تعديلهما.
+نسخة مستقلة مبنية على TOD Website Handover Pack (October 2026). النسختان السابقتان لم تُعدّلا. Next.js + TypeScript، English/Arabic، LTR/RTL.
 
-- الواجهة بصورة مدينة الرياض التوضيحية، ثم الفئات المستهدفة، والتعريف بـTOD، والخدمات، وشريط الشعارات، والخاتمة.
-- الصورة المرجعية استُخدمت للتوزيع فقط. لم تُنسخ بيانات الاتصال أو التواريخ أو الأرقام أو الشخص أو مسميات الخدمات منها.
-- النصوص من البريف الأصلي. الخطوط الأصلية DM Sans / Inter / Noto Naskh Arabic مستمرة.
-- أيقونات LinkedIn وInstagram وX في التذييل. الحسابات غير مؤكدة؛ لا توجد روابط وهمية. لإضافة الحسابات عدّل `content/social.json` واستبدل `null` برابط HTTPS الحقيقي، واحذف أي منصة غير مطلوبة.
-- صورة الواجهة هي الصورة البديلة المرفقة من المستخدم، ولا تُستخدم كادعاء عن مقر TOD أو مشروعاتها.
-- تشغيل هذه النسخة على منفذ 3010 يسمح بمقارنتها مع النسخة الأولى على منفذ 3000.
+## تشغيل محلي
 
-```bash
+Node.js 20.9 أو أحدث:
+
+```sh
 npm install
 npm run dev
 ```
 
-افتح http://localhost:3010/en أو http://localhost:3010/ar.
+English: http://localhost:3012/en — العربية: http://localhost:3012/ar
 
----
+إذا كان المنفذ مستخدمًا: افتح الرابط الموجود بالفعل أو استخدم `npx next dev --port 3013`.
 
-# TOD Arabia — Option 02 / المقترح الثاني
-
-Next.js App Router + TypeScript. Original TOD PNG assets, locally bundled DM Sans / Inter / Noto Naskh Arabic fonts, responsive layouts, English and Arabic routing. No CMS account, API key or external font request is required.
-
-## تشغيل سريع / Quick start
-
-Use Node.js 20.9+ (Node 22 or 24 recommended).
-
-```bash
-npm install
-npm run dev
-```
-
-Open http://localhost:3010/en or http://localhost:3010/ar.
-
-```bash
+```sh
+npm run check:content
 npm run typecheck
 npm run build
-npm start
+npm run start
 ```
-
-`npm ci` uses the supplied lockfile for reproducible installs. `npm run build` is a production build, not a static export. Deploy to Vercel or a Node.js host; do not upload source files to a static-only web host.
 
 ## GitHub / Vercel
 
-1. Extract the ZIP. Upload the contents of `tod-arabia` to a new GitHub repository (package.json must be at the repository root).
-2. In Vercel, import that repository. Choose Next.js; keep the default install/build/output settings.
-3. Set `SITE_URL` to your final https domain. Leave `SITE_INDEXABLE=false` during prototype review.
-4. Deploy. No additional services are required for the prototype.
-5. After the launch items below are completed, set `SITE_INDEXABLE=true` and redeploy. The unapproved Arabic shell remains noindex.
+هذا المجلد هو جذر المشروع. انقل محتوياته إلى نسخة محلية **مستنسخة من مستودع GitHub المتصل بفيرسل**، مع الاحتفاظ بمجلد `.git` لذلك المستودع. لا تنقل `node_modules` أو `.next` أو `.env.local`.
 
-## Pages
+راجع التغييرات ثم commit وpush إلى الفرع المرتبط بفيرسل. Framework: Next.js، Build: `npm run build`، output الافتراضي. لا تستخدم static export لأن نموذج التواصل وإعدادات CMS يستعملان server routes. إذا وضعت المشروع داخل مجلد فرعي فحدده في Root Directory.
 
-- `/en` and `/ar`
-- `/{locale}/services`
-- `/{locale}/services/organisation-transformation`
-- `/{locale}/services/leadership-coaching-mentoring`
-- `/{locale}/services/learning-capability`
-- `/{locale}/our-thinking`
-- `/{locale}/who-we-work-with`
-- `/{locale}/about`
-- `/{locale}/contact`
+انسخ `.env.example` إلى `.env.local` للتطوير، وأضف القيم نفسها عبر Vercel Environment Variables للإنتاج، ثم أعد النشر. لا ترفع الأسرار إلى GitHub. ضع `SITE_URL` الصحيح. `SITE_INDEXABLE=false` يمنع فهرسة المعاينة؛ فعّله فقط عند اعتماد النسخة.
 
-The root redirects to `/en`. Language switching preserves the current page. Unknown pages return 404. Arabic navigation and form labels are draft UI translations; brief copy remains English with explicit `lang="en" dir="ltr"` until approved Arabic text is supplied. The root Arabic document uses `lang="ar" dir="rtl"` and Noto Naskh Arabic. Do not present the Arabic prototype as approved translated copy.
+## ما تم تنفيذه
 
-## Content and CMS integration
+- Home، About TOD، Our Approach، Associates، Services، Who We Work With، Development Library، Contact، Privacy، Terms باللغتين.
+- 24 خدمة بثلاثة مسارات، 7 شرائح مستهدفة، 42 اسم جهة بالترتيب، 14 اسمًا في الرئيسية.
+- إنفوجرافيك CIRCLES في About وHuman Systems داخل Our Approach. SVG وHTML تفاعليان للمؤشر واللمس ولوحة المفاتيح؛ تم نقل رسومات الأيقونات المعتمدة وإضافة Context وفق الملف الجديد.
+- صورة الرياض المرفقة + ثلاث مساحات صور تتبدل تلقائيًا كل 7 ثوانٍ مع تحكم يدوي وإيقاف مؤقت، ومساحات صور الصفحات.
+- بيانات البريد والجوال وأيقونات السوشيال، روابط قديمة معاد توجيهها، SEO، خطوط محلية، reduced motion.
+- مكتبة مقالات وخبراء جاهزة للبيانات الفعلية، مرشحات وتصنيفات وصفحات تفاصيل، دون أسماء أو مقالات وهمية.
+- إدارة محتوى Decap في `/admin/index.html` بعد إعداد OAuth؛ راجع docs/CMS.md.
 
-- `lib/content.ts`: original English brief copy, services, themes, sectors, and reusable TypeScript types with paired EN/AR fields.
-- `content/clients.json`: 42 ordered placeholder slots. Set `name.en`, `name.ar`, `logo` (e.g. `/clients/name.svg`), `sector`, `attribution`, and `approved: true` after permission. Assets go in `public/clients`. Slots are capacity, **not a claim of 42 clients**.
-- `content/editorial.json`: empty insight, case study and team collections. Their reusable schemas are in `lib/content.ts`; publication is deliberately empty without approved content. No invented articles, people, testimonials or case outcomes.
-- Replace the local content imports with a CMS repository/adapter. Keep approval filtering server-side, add detail routes for published editorial records, map paired translation fields, and preview drafts separately. This prototype has no CMS administration or database.
-- `docs/source-brief.txt`: extracted supplied brief for traceability. Do not publish this internal handover document as website content.
-- `public/brand`: original supplied PNG artwork, transparently cropped and downscaled for web use without redrawing the marks.
+## التواصل الفعلي
 
-Carousel: uninterrupted 180-second horizontal loop, 6 slots desktop, 4 tablet, 2.5 mobile. Hover and keyboard focus pause it; a persistent toggle lets users pause/resume. Reduced motion disables animation and enables manual horizontal scrolling. The duplicated set is hidden from assistive technology. No cards, shadows, rounded boxes or gold-filled logo boxes.
+المستقبل ثابت من إعداد المحتوى: **info@todarabia.com**. واجهة النموذج والـAPI مكتملتان، لكن الإرسال يظل معطلاً حتى إعداد:
 
-## Contact form — deliberately frontend only
+1. Resend: تحقق من نطاق الإرسال وأدخل `RESEND_API_KEY` و`CONTACT_FROM` بعنوان مرسل من النطاق المعتمد.
+2. Cloudflare Turnstile: أضف نطاق الموقع، وأدخل `NEXT_PUBLIC_TURNSTILE_SITE_KEY` و`TURNSTILE_SECRET_KEY`.
+3. أضف سياسة الخصوصية المعتمدة في `content/site.json` واجعل `privacyApproved=true`، ثم `CONTACT_ENABLED=true` وأعد البناء والنشر.
+4. اختبر إرسالًا فعليًا من متصفح وتحقق من وصوله للصندوق والرد على بريد المرسل. لم تُرسل رسائل اختبار أثناء التنفيذ.
 
-Required fields, email validation, optional telephone, interest, enquiry, preferred contact method, and a demonstration acknowledgement. Submission validates fields and explicitly reports **no enquiry sent**. Nothing is transmitted, stored or logged. There is no fake success message. Before live use: add the approved privacy notice and privacy consent wording, connect a server-side form endpoint/email service, validate input server-side, configure delivery and spam/rate controls, and test delivery/error handling. Do not collect real enquiries through this demo.
+الحماية تشمل validation، same-origin، honeypot، Turnstile، وحدًا محليًا 5 محاولات/10 دقائق. هذا الحد داخل ذاكرة كل instance؛ أضف حدًا دائمًا عبر Vercel Firewall أو مخزن مشترك للإنتاج. لا توجد تحليلات أو أدوات تسويق مدمجة. Turnstile لا يُحمّل إلا عند تفعيل النموذج.
 
-## Before public launch
+## ما يحتاج بيانات العميل / إعداد حساباته
 
-TOD must supply/approve client assets and attribution; Arabic translations; leadership biographies/photos; contact details; privacy notice and consent; any articles/case studies. Connect contact delivery, confirm domain/admin ownership, and review final accessibility and performance on target devices. There are no analytics or cookies in this prototype. Mentoring remains a separate future product; no platform or unapproved external platform URL is included.
+- حزمة الشعار SVG النهائية دون نقطة بعد Human Systems. النصوص بالموقع بلا نقطة؛ ملفات PNG الموروثة محفوظة كما وصلت ولم يُعد رسم الشعار.
+- الصور الثلاث الإضافية وصور الصفحات، بيانات الخبراء، أول المقالات، عنوان المكتب ورقم السجل.
+- اعتماد النصوص القانونية، مراجعة الترجمة العربية السياقية، والتحقق من نسب الخبرات وأذونات أي شعارات.
+- مفاتيح خدمة البريد وTurnstile، ومزود OAuth الخاص بإدارة المحتوى. لا تتوفر هذه الأسرار داخل التسليم.
 
-SEO includes individual titles/descriptions, canonical and language links, sitemap and robots controls. Preview indexing is off by default. Fonts are installed through Fontsource and self-hosted in the build; package licence files remain available in installed dependencies.
+## الملفات
 
-Official framework setup: https://nextjs.org/docs/app/getting-started/installation
+`content/`: المحتوى باللغتين. `components/`: الواجهات والإنفوجرافيك. `app/`: الصفحات وواجهات الخادم. `public/uploads/`: صور المحتوى. `docs/source-handover.txt`: النص المستخرج من ملف العميل. `docs/VERIFICATION.md`: نطاق التحقق. `docs/CMS.md`: دليل الإدارة.
+
+لا تتضمن هذه النسخة mentoring platform.
+
+## إدارة الصور والشعارات من الكمبيوتر
+
+شغّل `npm run edit` (أو افتح `Open TOD Editor.command` على Mac).
+
+- لوحة الرفع: http://127.0.0.1:3014
+- المعاينة: http://127.0.0.1:3013/en أو /ar
+- اختر صور الصفحات أو شعارات TOD أو شعارات العملاء، اختر ملفًا من الكمبيوتر واضغط حفظ.
+- تدعم PNG/JPG/WebP حتى 12MB. استخدم PNG شفافًا للشعارات. يمكن تعديل أسماء الشركات والوصف البديل للصور.
+- الملفات تُحفظ في `public/uploads` والمحتوى في `content/site.json` و`content/clients.json`. توجد نسخة احتياطية قبل كل حفظ داخل `.media-backups`.
+- التعديلات تظهر في المعاينة المحلية بعد تحديث الصفحة. لعرضها على Vercel ارفع تغييرات المحتوى والصور إلى مستودع GitHub المرتبط.
+- اللوحة تعمل على جهازك فقط ولا تُنشر على Vercel. لوحة `/admin` المنفصلة تحتاج إعداد GitHub OAuth كما هو موضح أعلاه.
+- اترك نافذة التشغيل مفتوحة. أغلق المعاينة السابقة على 3013 قبل تشغيل هذا الأمر.
+
+### الخط العربي
+
+تم استخدام ملفّي Riyad Bank المرفقين: Regular بوزن 400 وBold بوزن 700، محليًا داخل `public/fonts`. النسخة العربية تستخدم RB، مع Arial كبديل عند تعذر التحميل.
+
+### التحقق من إدارة الصور
+
+`npm run test:media` يتحقق من حفظ الصور وأسماء الشركات، النسخ الاحتياطية ورفض الملفات والمسارات غير المسموحة.

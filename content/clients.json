@@ -1,506 +1,340 @@
-[
-  {
-    "id": "client-01",
-    "order": 1,
-    "name": {
-      "en": "",
-      "ar": ""
+{
+  "items": [
+    {
+      "order": 1,
+      "name": "Public Investment Fund (PIF)",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-02",
-    "order": 2,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 2,
+      "name": "Ministry of Finance, KSA",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-03",
-    "order": 3,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 3,
+      "name": "MCIT, KSA",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-04",
-    "order": 4,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 4,
+      "name": "Ministry of Education, KSA",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-05",
-    "order": 5,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 5,
+      "name": "Ministry of Interior, KSA",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-06",
-    "order": 6,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 6,
+      "name": "Ministry of Labor, KSA",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-07",
-    "order": 7,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 7,
+      "name": "Ministry of Defense, Healthcare Sector",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-08",
-    "order": 8,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 8,
+      "name": "National Transformation Program, KSA",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-09",
-    "order": 9,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 9,
+      "name": "Decision Support Center (DSC)",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-10",
-    "order": 10,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 10,
+      "name": "Center for National Health Insurance (CNHI)",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-11",
-    "order": 11,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 11,
+      "name": "Council of Health Insurance (CHI)",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-12",
-    "order": 12,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 12,
+      "name": "INFATH, KSA",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-13",
-    "order": 13,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 13,
+      "name": "Saudi Food and Drug Authority (SFDA)",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-14",
-    "order": 14,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 14,
+      "name": "Capital Market Authority (CMA)",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-15",
-    "order": 15,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 15,
+      "name": "Saudi Industrial Development Fund (SIDF)",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-16",
-    "order": 16,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 16,
+      "name": "Royal Commission, KSA",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-17",
-    "order": 17,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 17,
+      "name": "Real Estate Authority, KSA",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-18",
-    "order": 18,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 18,
+      "name": "King Abdullah Financial District (KAFD)",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-19",
-    "order": 19,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 19,
+      "name": "Saudi Arabian Military Industries (SAMI)",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-20",
-    "order": 20,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 20,
+      "name": "Saudi Standards, Metrology and Quality Organization (SASO)",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-21",
-    "order": 21,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 21,
+      "name": "Institute of Public Administration (IPA)",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-22",
-    "order": 22,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 22,
+      "name": "Saudi Digital Academy",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-23",
-    "order": 23,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 23,
+      "name": "Princess Nourah University (PNU)",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-24",
-    "order": 24,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 24,
+      "name": "Misk 2030 Leaders",
+      "group": "Government and national",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-25",
-    "order": 25,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 25,
+      "name": "ELM, KSA",
+      "group": "Corporate, Saudi Arabia",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-26",
-    "order": 26,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 26,
+      "name": "Takamol, KSA",
+      "group": "Corporate, Saudi Arabia",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-27",
-    "order": 27,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 27,
+      "name": "Global Defense Corporation (GDC)",
+      "group": "Corporate, Saudi Arabia",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-28",
-    "order": 28,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 28,
+      "name": "ARX Aerospace and Defense",
+      "group": "Corporate, Saudi Arabia",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-29",
-    "order": 29,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 29,
+      "name": "STC",
+      "group": "Corporate, Saudi Arabia",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-30",
-    "order": 30,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 30,
+      "name": "Almarai, KSA",
+      "group": "Corporate, Saudi Arabia",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-31",
-    "order": 31,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 31,
+      "name": "SPIMACO",
+      "group": "Corporate, Saudi Arabia",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-32",
-    "order": 32,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 32,
+      "name": "Alinma Bank",
+      "group": "Corporate, Saudi Arabia",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-33",
-    "order": 33,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 33,
+      "name": "SATORP",
+      "group": "Corporate, Saudi Arabia",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-34",
-    "order": 34,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 34,
+      "name": "Government of Dubai",
+      "group": "Regional",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-35",
-    "order": 35,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 35,
+      "name": "Ministry of Labor / Etimad Project, Oman",
+      "group": "Regional",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-36",
-    "order": 36,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 36,
+      "name": "Asyad, Oman",
+      "group": "Regional",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-37",
-    "order": 37,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 37,
+      "name": "OQ8, Oman",
+      "group": "Regional",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-38",
-    "order": 38,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 38,
+      "name": "Radisson Blu, Bahrain",
+      "group": "Regional",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-39",
-    "order": 39,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 39,
+      "name": "TNT, Bahrain",
+      "group": "Regional",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-40",
-    "order": 40,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 40,
+      "name": "Fresenius Medical Care, Germany",
+      "group": "International",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-41",
-    "order": 41,
-    "name": {
-      "en": "",
-      "ar": ""
+    {
+      "order": 41,
+      "name": "Daiichi Sankyo, Germany",
+      "group": "International",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
     },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  },
-  {
-    "id": "client-42",
-    "order": 42,
-    "name": {
-      "en": "",
-      "ar": ""
-    },
-    "logo": null,
-    "sector": null,
-    "attribution": null,
-    "approved": false
-  }
-]
+    {
+      "order": 42,
+      "name": "Tata Consultancy Services, India",
+      "group": "International",
+      "logo": null,
+      "logoApproved": false,
+      "attributionConfirmed": false
+    }
+  ]
+}

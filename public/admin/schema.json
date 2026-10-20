@@ -1,0 +1,1191 @@
+{
+  "load_config_file": false,
+  "backend": {
+    "name": "github",
+    "repo": "ahmedsamyabdellattif/TOD-",
+    "branch": "main",
+    "base_url": "",
+    "auth_endpoint": "api/cms/auth"
+  },
+  "media_folder": "public/uploads",
+  "public_folder": "/uploads",
+  "publish_mode": "editorial_workflow",
+  "collections": [
+    {
+      "name": "content",
+      "label": "TOD Content / المحتوى",
+      "files": [
+        {
+          "name": "site",
+          "label": "Site",
+          "file": "content/site.json",
+          "fields": [
+            {
+              "name": "brand",
+              "label": "Brand",
+              "widget": "string",
+              "required": true
+            },
+            {
+              "name": "legalName",
+              "label": "Legalname",
+              "widget": "string",
+              "required": true
+            },
+            {
+              "name": "email",
+              "label": "Email",
+              "widget": "string",
+              "required": true
+            },
+            {
+              "name": "phone",
+              "label": "Phone",
+              "widget": "string",
+              "required": true
+            },
+            {
+              "name": "phoneDisplay",
+              "label": "Phonedisplay",
+              "widget": "string",
+              "required": true
+            },
+            {
+              "name": "address",
+              "label": "Address",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "en",
+                  "label": "En",
+                  "widget": "text"
+                },
+                {
+                  "name": "ar",
+                  "label": "Ar",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "cr",
+              "label": "Cr",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "name": "social",
+              "label": "Social",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "name",
+                  "label": "Name",
+                  "widget": "string",
+                  "required": true
+                },
+                {
+                  "name": "url",
+                  "label": "Url",
+                  "widget": "string",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "name": "hero",
+              "label": "Hero",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "en",
+                  "label": "En",
+                  "widget": "text"
+                },
+                {
+                  "name": "ar",
+                  "label": "Ar",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "statement",
+              "label": "Statement",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "en",
+                  "label": "En",
+                  "widget": "text"
+                },
+                {
+                  "name": "ar",
+                  "label": "Ar",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "images",
+              "label": "Images",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "id",
+                  "label": "Id",
+                  "widget": "string",
+                  "required": true
+                },
+                {
+                  "name": "src",
+                  "label": "Src",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "name": "alt",
+                  "label": "Alt",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "pageImages",
+              "label": "Pageimages",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "page",
+                  "label": "Page",
+                  "widget": "string",
+                  "required": true
+                },
+                {
+                  "name": "src",
+                  "label": "Src",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "name": "alt",
+                  "label": "Alt",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "privacyApproved",
+              "label": "Privacyapproved",
+              "widget": "boolean",
+              "default": false,
+              "required": false
+            },
+            {
+              "name": "termsApproved",
+              "label": "Termsapproved",
+              "widget": "boolean",
+              "default": false,
+              "required": false
+            },
+            {
+              "name": "privacy",
+              "label": "Privacy",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "en",
+                  "label": "En",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "ar",
+                  "label": "Ar",
+                  "widget": "markdown"
+                }
+              ]
+            },
+            {
+              "name": "terms",
+              "label": "Terms",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "en",
+                  "label": "En",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "ar",
+                  "label": "Ar",
+                  "widget": "markdown"
+                }
+              ]
+            },
+            {
+              "name": "cookieNotice",
+              "label": "Cookienotice",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "en",
+                  "label": "En",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "ar",
+                  "label": "Ar",
+                  "widget": "markdown"
+                }
+              ]
+            },
+            {
+              "name": "brandAssets",
+              "label": "TOD logos / شعارات TOD",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "darkLogo",
+                  "label": "Header logo",
+                  "widget": "image"
+                },
+                {
+                  "name": "lightLogo",
+                  "label": "Footer logo",
+                  "widget": "image"
+                },
+                {
+                  "name": "icon",
+                  "label": "Brand icon",
+                  "widget": "image"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "services",
+          "label": "Services",
+          "file": "content/services.json",
+          "fields": [
+            {
+              "name": "streams",
+              "label": "Streams",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "id",
+                  "label": "Id",
+                  "widget": "string",
+                  "required": true
+                },
+                {
+                  "name": "name",
+                  "label": "Name",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "intro",
+                  "label": "Intro",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "services",
+                  "label": "Services",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "id",
+                      "label": "Id",
+                      "widget": "string",
+                      "required": true
+                    },
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "object",
+                      "fields": [
+                        {
+                          "name": "en",
+                          "label": "En",
+                          "widget": "text"
+                        },
+                        {
+                          "name": "ar",
+                          "label": "Ar",
+                          "widget": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "description",
+                      "label": "Description",
+                      "widget": "object",
+                      "fields": [
+                        {
+                          "name": "en",
+                          "label": "En",
+                          "widget": "text"
+                        },
+                        {
+                          "name": "ar",
+                          "label": "Ar",
+                          "widget": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "audiences",
+          "label": "Audiences",
+          "file": "content/audiences.json",
+          "fields": [
+            {
+              "name": "items",
+              "label": "Items",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "clients",
+          "label": "Clients",
+          "file": "content/clients.json",
+          "fields": [
+            {
+              "name": "items",
+              "label": "Items",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "order",
+                  "label": "Order",
+                  "widget": "number",
+                  "value_type": "int"
+                },
+                {
+                  "name": "name",
+                  "label": "Name",
+                  "widget": "string",
+                  "required": true
+                },
+                {
+                  "name": "group",
+                  "label": "Group",
+                  "widget": "string",
+                  "required": true
+                },
+                {
+                  "name": "logo",
+                  "label": "Logo",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "name": "logoApproved",
+                  "label": "Logoapproved",
+                  "widget": "boolean",
+                  "default": false,
+                  "required": false
+                },
+                {
+                  "name": "attributionConfirmed",
+                  "label": "Attributionconfirmed",
+                  "widget": "boolean",
+                  "default": false,
+                  "required": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "systems",
+          "label": "Systems",
+          "file": "content/systems.json",
+          "fields": [
+            {
+              "name": "items",
+              "label": "Items",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "name",
+                  "label": "Name",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "values",
+          "label": "Values",
+          "file": "content/values.json",
+          "fields": [
+            {
+              "name": "items",
+              "label": "Items",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "letter",
+                  "label": "Letter",
+                  "widget": "string",
+                  "required": true
+                },
+                {
+                  "name": "name",
+                  "label": "Name",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "motto",
+                  "label": "Motto",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "stages",
+          "label": "Stages",
+          "file": "content/stages.json",
+          "fields": [
+            {
+              "name": "items",
+              "label": "Items",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "name",
+                  "label": "Name",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "activities",
+                  "label": "Activities",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "about",
+          "label": "About",
+          "file": "content/about.json",
+          "fields": [
+            {
+              "name": "sections",
+              "label": "Sections",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "paragraphs",
+                  "label": "Paragraphs",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text",
+                      "required": true
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text",
+                      "required": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "approach",
+          "label": "Approach",
+          "file": "content/approach.json",
+          "fields": [
+            {
+              "name": "human",
+              "label": "Human",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "en",
+                  "label": "En",
+                  "widget": "text",
+                  "required": true
+                },
+                {
+                  "name": "ar",
+                  "label": "Ar",
+                  "widget": "text",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "name": "thinking",
+              "label": "Thinking",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "en",
+                  "label": "En",
+                  "widget": "text",
+                  "required": true
+                },
+                {
+                  "name": "ar",
+                  "label": "Ar",
+                  "widget": "string",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "name": "inquiry",
+              "label": "Inquiry",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "en",
+                  "label": "En",
+                  "widget": "string",
+                  "required": true
+                },
+                {
+                  "name": "ar",
+                  "label": "Ar",
+                  "widget": "string",
+                  "required": true
+                }
+              ]
+            },
+            {
+              "name": "layers",
+              "label": "Layers",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "name",
+                  "label": "Name",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "question",
+                  "label": "Question",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "focus",
+                  "label": "Focus",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "articles",
+          "label": "Articles",
+          "file": "content/articles.json",
+          "fields": [
+            {
+              "name": "items",
+              "label": "Items",
+              "widget": "list",
+              "summary": "{{fields.slug}}",
+              "fields": [
+                {
+                  "name": "slug",
+                  "label": "Slug",
+                  "widget": "string",
+                  "pattern": [
+                    "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+                    "Use lowercase words separated by hyphens"
+                  ]
+                },
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "summary",
+                  "label": "Summary",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "body",
+                  "label": "Body",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "markdown"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "date",
+                  "label": "Date",
+                  "widget": "datetime",
+                  "format": "YYYY-MM-DD",
+                  "date_format": "YYYY-MM-DD",
+                  "time_format": false
+                },
+                {
+                  "name": "category",
+                  "label": "Category",
+                  "widget": "select",
+                  "options": [
+                    {
+                      "label": "Leadership",
+                      "value": 0
+                    },
+                    {
+                      "label": "Organizations and human systems",
+                      "value": 1
+                    },
+                    {
+                      "label": "Boardroom governance and dynamics",
+                      "value": 2
+                    },
+                    {
+                      "label": "Organizational culture and transformation",
+                      "value": 3
+                    },
+                    {
+                      "label": "Family business and succession",
+                      "value": 4
+                    },
+                    {
+                      "label": "Mentoring and capability development",
+                      "value": 5
+                    },
+                    {
+                      "label": "Emerging organizational issues in Saudi Arabia and the region",
+                      "value": 6
+                    }
+                  ]
+                },
+                {
+                  "name": "author",
+                  "label": "Author",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "image",
+                  "label": "Image",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "name": "imageAlt",
+                  "label": "Imagealt",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "string"
+                    }
+                  ]
+                },
+                {
+                  "name": "featured",
+                  "label": "Featured",
+                  "widget": "boolean",
+                  "default": false,
+                  "required": false
+                },
+                {
+                  "name": "published",
+                  "label": "Published",
+                  "widget": "boolean",
+                  "default": false,
+                  "required": false
+                },
+                {
+                  "name": "related",
+                  "label": "Related",
+                  "widget": "list",
+                  "field": {
+                    "name": "slug",
+                    "label": "Slug",
+                    "widget": "string"
+                  },
+                  "required": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "associates",
+          "label": "Associates",
+          "file": "content/associates.json",
+          "fields": [
+            {
+              "name": "items",
+              "label": "Items",
+              "widget": "list",
+              "summary": "{{fields.slug}}",
+              "fields": [
+                {
+                  "name": "slug",
+                  "label": "Slug",
+                  "widget": "string",
+                  "pattern": [
+                    "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+                    "Use lowercase words separated by hyphens"
+                  ]
+                },
+                {
+                  "name": "name",
+                  "label": "Name",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "string"
+                    }
+                  ]
+                },
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "bio",
+                  "label": "Bio",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "markdown"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "photo",
+                  "label": "Photo",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "name": "expertise",
+                  "label": "Expertise",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "sectors",
+                  "label": "Sectors",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "qualifications",
+                  "label": "Qualifications",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "languages",
+                  "label": "Languages",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "en",
+                      "label": "En",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "ar",
+                      "label": "Ar",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "linkedin",
+                  "label": "Linkedin",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "order",
+                  "label": "Order",
+                  "widget": "number",
+                  "value_type": "int",
+                  "default": 1
+                },
+                {
+                  "name": "published",
+                  "label": "Published",
+                  "widget": "boolean",
+                  "default": false,
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "brand": "TOD",
+  "legalName": "Total Organization Development",
+  "email": "info@todarabia.com",
+  "phone": "+966552714226",
+  "phoneDisplay": "+966 55 271 4226",
+  "address": {
+    "en": "[OFFICE ADDRESS], Riyadh, Kingdom of Saudi Arabia",
+    "ar": "[عنوان المكتب]، الرياض، المملكة العربية السعودية"
+  },
+  "cr": "[NUMBER]",
+  "social": [
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/company/todarabia/home/"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/todarabia/"
+    },
+    {
+      "name": "X",
+      "url": "https://x.com/todarabia"
+    }
+  ],
+  "hero": {
+    "en": "A clearer way of seeing organizations as human systems",
+    "ar": "رؤية أوضح للمؤسسات بوصفها أنظمة إنسانية."
+  },
+  "statement": {
+    "en": "We help leaders and organizations understand complexity, align around what matters and build the capability to create lasting change.",
+    "ar": "نساعد القادة والمؤسسات على فهم التعقيد والتوافق حول ما يهم وبناء القدرة على إحداث تغيير مستدام."
+  },
+  "images": [
+    {
+      "id": "home-1",
+      "src": "/images/riyadh-user-hero.png",
+      "alt": {
+        "en": "Architecture in Riyadh at sunset",
+        "ar": "عمارة الرياض عند الغروب"
+      }
+    },
+    {
+      "id": "home-2",
+      "src": null,
+      "alt": {
+        "en": "Organizational life",
+        "ar": "الحياة المؤسسية"
+      }
+    },
+    {
+      "id": "home-3",
+      "src": null,
+      "alt": {
+        "en": "Leadership in context",
+        "ar": "القيادة في سياقها"
+      }
+    },
+    {
+      "id": "home-4",
+      "src": null,
+      "alt": {
+        "en": "People and collaboration",
+        "ar": "الأفراد والتعاون"
+      }
+    }
+  ],
+  "pageImages": [
+    {
+      "page": "about",
+      "src": null,
+      "alt": {
+        "en": "Image awaiting supply",
+        "ar": "مساحة لصورة تُضاف لاحقًا"
+      }
+    },
+    {
+      "page": "approach",
+      "src": null,
+      "alt": {
+        "en": "Image awaiting supply",
+        "ar": "مساحة لصورة تُضاف لاحقًا"
+      }
+    },
+    {
+      "page": "associates",
+      "src": null,
+      "alt": {
+        "en": "Image awaiting supply",
+        "ar": "مساحة لصورة تُضاف لاحقًا"
+      }
+    },
+    {
+      "page": "services",
+      "src": null,
+      "alt": {
+        "en": "Image awaiting supply",
+        "ar": "مساحة لصورة تُضاف لاحقًا"
+      }
+    },
+    {
+      "page": "who-we-work-with",
+      "src": null,
+      "alt": {
+        "en": "Image awaiting supply",
+        "ar": "مساحة لصورة تُضاف لاحقًا"
+      }
+    },
+    {
+      "page": "library",
+      "src": null,
+      "alt": {
+        "en": "Image awaiting supply",
+        "ar": "مساحة لصورة تُضاف لاحقًا"
+      }
+    },
+    {
+      "page": "about-detail-1",
+      "src": "/images/riyadh-user-hero.png",
+      "alt": {
+        "en": "Riyadh architecture at sunset",
+        "ar": "عمارة الرياض عند الغروب"
+      }
+    },
+    {
+      "page": "about-detail-3",
+      "src": "/images/riyadh-user-hero.png",
+      "alt": {
+        "en": "Riyadh architecture at sunset",
+        "ar": "عمارة الرياض عند الغروب"
+      }
+    },
+    {
+      "page": "about-detail-4",
+      "src": "/images/riyadh-user-hero.png",
+      "alt": {
+        "en": "Riyadh architecture at sunset",
+        "ar": "عمارة الرياض عند الغروب"
+      }
+    },
+    {
+      "page": "home-about",
+      "src": null,
+      "alt": {
+        "en": "Image awaiting supply",
+        "ar": "مساحة لصورة تُضاف لاحقًا"
+      }
+    },
+    {
+      "page": "home-service-1",
+      "src": null,
+      "alt": {
+        "en": "Image awaiting supply",
+        "ar": "مساحة لصورة تُضاف لاحقًا"
+      }
+    },
+    {
+      "page": "home-service-2",
+      "src": null,
+      "alt": {
+        "en": "Image awaiting supply",
+        "ar": "مساحة لصورة تُضاف لاحقًا"
+      }
+    },
+    {
+      "page": "home-service-3",
+      "src": null,
+      "alt": {
+        "en": "Image awaiting supply",
+        "ar": "مساحة لصورة تُضاف لاحقًا"
+      }
+    },
+    {
+      "page": "home-library-1",
+      "src": null,
+      "alt": {
+        "en": "Image awaiting supply",
+        "ar": "مساحة لصورة تُضاف لاحقًا"
+      }
+    },
+    {
+      "page": "home-library-2",
+      "src": null,
+      "alt": {
+        "en": "Image awaiting supply",
+        "ar": "مساحة لصورة تُضاف لاحقًا"
+      }
+    },
+    {
+      "page": "home-library-3",
+      "src": null,
+      "alt": {
+        "en": "Image awaiting supply",
+        "ar": "مساحة لصورة تُضاف لاحقًا"
+      }
+    },
+    {
+      "page": "contact",
+      "src": null,
+      "alt": {
+        "en": "Image awaiting supply",
+        "ar": "مساحة لصورة تُضاف لاحقًا"
+      }
+    },
+    {
+      "page": "legal",
+      "src": null,
+      "alt": {
+        "en": "Image awaiting supply",
+        "ar": "مساحة لصورة تُضاف لاحقًا"
+      }
+    }
+  ],
+  "privacyApproved": false,
+  "termsApproved": false,
+  "privacy": {
+    "en": "[LEGAL TEXT PENDING]",
+    "ar": "[النص القانوني بانتظار الاعتماد]"
+  },
+  "terms": {
+    "en": "[LEGAL TEXT PENDING]",
+    "ar": "[النص القانوني بانتظار الاعتماد]"
+  },
+  "cookieNotice": {
+    "en": "[LEGAL TEXT PENDING]",
+    "ar": "[النص القانوني بانتظار الاعتماد]"
+  },
+  "brandAssets": {
+    "darkLogo": "/brand/logo-dark.png",
+    "lightLogo": "/brand/logo-light.png",
+    "icon": "/brand/icon-gold.png"
+  }
+}
