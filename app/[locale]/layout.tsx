@@ -58,10 +58,10 @@ export default async function Layout({
           <Social locale={locale} />
           <div className="footer-bottom">
             <span>
-              © 2026 Total Organization Development.{" "}
+              © 2026 Total Organization Development.
               {locale === "ar"
                 ? "الرياض، المملكة العربية السعودية"
-                : "Riyadh, Kingdom of Saudi Arabia"}{" "}
+                : "Riyadh, Kingdom of Saudi Arabia"}
               {site.cr}
             </span>
             <div>
