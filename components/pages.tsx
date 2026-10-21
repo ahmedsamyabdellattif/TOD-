@@ -478,11 +478,10 @@ export function ContactPage({ locale: l }: { locale: Locale }) {
             <Social locale={l} />
             <p>{t(site.address, l)}</p>
             <p className="muted">
-              {tx(
-                l,
-                "Office address awaiting confirmation.",
-                "عنوان المكتب بانتظار التأكيد.",
-              )}
+              
+          
+                
+              
             </p>
             <iframe
   title={l === "ar" ? "خريطة الرياض" : "Map of Riyadh"}
