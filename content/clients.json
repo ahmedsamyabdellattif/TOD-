@@ -100,8 +100,8 @@
       "order": 13,
       "name": "Saudi Food and Drug Authority (SFDA)",
       "group": "Government and national",
-      "logo": null,
-      "logoApproved": false,
+      "logo": "/uploads/3424f1f8ba3debdf2179e4ef.png",
+      "logoApproved": true,
       "attributionConfirmed": false
     },
     {
@@ -140,24 +140,24 @@
       "order": 18,
       "name": "King Abdullah Financial District (KAFD)",
       "group": "Government and national",
-      "logo": null,
-      "logoApproved": false,
+      "logo": "/uploads/dd1bb28eed1ac1196f1772a3.webp",
+      "logoApproved": true,
       "attributionConfirmed": false
     },
     {
       "order": 19,
       "name": "Saudi Arabian Military Industries (SAMI)",
       "group": "Government and national",
-      "logo": null,
-      "logoApproved": false,
+      "logo": "/uploads/9cd9bd859d39ef67cfe1ff58.webp",
+      "logoApproved": true,
       "attributionConfirmed": false
     },
     {
       "order": 20,
       "name": "Saudi Standards, Metrology and Quality Organization (SASO)",
       "group": "Government and national",
-      "logo": null,
-      "logoApproved": false,
+      "logo": "/uploads/bf25fc30fed391c3cfaf4d5b.webp",
+      "logoApproved": true,
       "attributionConfirmed": false
     },
     {
