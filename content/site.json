@@ -8,10 +8,6 @@
     "en": " Riyadh, Kingdom of Saudi Arabia",
     "ar": "[الرياض، المملكة العربية السعوديةCR: 1010420000"
   },
- 
-
-
-  
   "social": [
     {
       "name": "LinkedIn",
@@ -45,7 +41,7 @@
     },
     {
       "id": "home-2",
-      "src": null,
+      "src": "/uploads/7e2e654f7128b33dee67b809.jpg",
       "alt": {
         "en": "Organizational life",
         "ar": "الحياة المؤسسية"
@@ -53,7 +49,7 @@
     },
     {
       "id": "home-3",
-      "src": null,
+      "src": "/uploads/ad92c4801f25b45c2ae99c6d.png",
       "alt": {
         "en": "Leadership in context",
         "ar": "القيادة في سياقها"
@@ -61,7 +57,7 @@
     },
     {
       "id": "home-4",
-      "src": null,
+      "src": "/uploads/f61c306fd6eaa00bb8086047.jpg",
       "alt": {
         "en": "People and collaboration",
         "ar": "الأفراد والتعاون"
