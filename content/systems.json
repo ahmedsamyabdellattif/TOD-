@@ -1,0 +1,124 @@
+{
+  "items": [
+    {
+      "name": {
+        "en": "Purpose",
+        "ar": "الغرض"
+      },
+      "description": {
+        "en": "Why we exist and where we are going",
+        "ar": "لماذا نوجد وإلى أين نتجه"
+      }
+    },
+    {
+      "name": {
+        "en": "People",
+        "ar": "الأفراد"
+      },
+      "description": {
+        "en": "Individuals, leadership and collective capability",
+        "ar": "الأفراد والقيادة والقدرات الجماعية"
+      }
+    },
+    {
+      "name": {
+        "en": "Relationships",
+        "ar": "العلاقات"
+      },
+      "description": {
+        "en": "Trust, collaboration and social dynamics",
+        "ar": "الثقة والتعاون والديناميكيات الاجتماعية"
+      }
+    },
+    {
+      "name": {
+        "en": "Authority",
+        "ar": "السلطة"
+      },
+      "description": {
+        "en": "Decision-making, accountability and influence",
+        "ar": "اتخاذ القرار والمساءلة والتأثير"
+      }
+    },
+    {
+      "name": {
+        "en": "Identity",
+        "ar": "الهوية"
+      },
+      "description": {
+        "en": "Who we are, individually and collectively",
+        "ar": "من نحن، أفرادًا وجماعات"
+      }
+    },
+    {
+      "name": {
+        "en": "Culture",
+        "ar": "الثقافة"
+      },
+      "description": {
+        "en": "Shared values, behaviors and norms",
+        "ar": "القيم والسلوكيات والمعايير المشتركة"
+      }
+    },
+    {
+      "name": {
+        "en": "Decisions",
+        "ar": "القرارات"
+      },
+      "description": {
+        "en": "Choices, trade-offs and consequences",
+        "ar": "الخيارات والمفاضلات والنتائج"
+      }
+    },
+    {
+      "name": {
+        "en": "Behavior",
+        "ar": "السلوك"
+      },
+      "description": {
+        "en": "How we act and respond",
+        "ar": "كيف نتصرف ونستجيب"
+      }
+    },
+    {
+      "name": {
+        "en": "Meaning",
+        "ar": "المعنى"
+      },
+      "description": {
+        "en": "Narratives, assumptions and sense-making",
+        "ar": "السرديات والافتراضات وصناعة المعنى"
+      }
+    },
+    {
+      "name": {
+        "en": "Structure",
+        "ar": "الهيكل"
+      },
+      "description": {
+        "en": "Systems, processes and design",
+        "ar": "الأنظمة والعمليات والتصميم"
+      }
+    },
+    {
+      "name": {
+        "en": "Patterns",
+        "ar": "الأنماط"
+      },
+      "description": {
+        "en": "Recurring dynamics and unintended consequences",
+        "ar": "الديناميكيات المتكررة والنتائج غير المقصودة"
+      }
+    },
+    {
+      "name": {
+        "en": "Context",
+        "ar": "السياق"
+      },
+      "description": {
+        "en": "The environment the system operates within",
+        "ar": "البيئة التي يعمل فيها النظام"
+      }
+    }
+  ]
+}

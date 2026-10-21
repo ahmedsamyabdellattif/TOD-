@@ -1,0 +1,307 @@
+{
+  "streams": [
+    {
+      "id": "systems-transformation",
+      "name": {
+        "en": "Organizational Systems and Transformation",
+        "ar": "الأنظمة المؤسسية والتحول"
+      },
+      "intro": {
+        "en": "For boards, executive teams and family enterprises working with governance, continuity and significant change.",
+        "ar": "لمجالس الإدارة والفرق التنفيذية والمنشآت العائلية التي تعمل على الحوكمة والاستمرارية والتغيير الجوهري."
+      },
+      "services": [
+        {
+          "id": "1-1",
+          "title": {
+            "en": "Boardroom Governance",
+            "ar": "حوكمة مجالس الإدارة"
+          },
+          "description": {
+            "en": "Helping boards strengthen oversight, clarify responsibilities and improve the quality of strategic decision-making.",
+            "ar": "نساعد مجالس الإدارة على تعزيز الإشراف وتوضيح المسؤوليات وتحسين جودة اتخاذ القرارات الاستراتيجية."
+          }
+        },
+        {
+          "id": "1-2",
+          "title": {
+            "en": "Boardroom Dynamics",
+            "ar": "ديناميكيات مجالس الإدارة"
+          },
+          "description": {
+            "en": "Supporting boards and senior leadership groups to understand how relationships, influence, assumptions and competing perspectives affect collective performance.",
+            "ar": "ندعم مجالس الإدارة وفرق القيادة العليا لفهم أثر العلاقات والنفوذ والافتراضات وتباين وجهات النظر على الأداء الجماعي."
+          }
+        },
+        {
+          "id": "1-3",
+          "title": {
+            "en": "Boardroom Onboarding",
+            "ar": "تهيئة أعضاء مجالس الإدارة"
+          },
+          "description": {
+            "en": "Helping new board members understand their responsibilities, the organization's context, governance expectations and the dynamics required for effective contribution from the outset.",
+            "ar": "نساعد الأعضاء الجدد على فهم مسؤولياتهم وسياق المؤسسة ومتطلبات الحوكمة والديناميكيات اللازمة للمساهمة الفاعلة منذ البداية."
+          }
+        },
+        {
+          "id": "1-4",
+          "title": {
+            "en": "Executive Alignment",
+            "ar": "التوافق التنفيذي"
+          },
+          "description": {
+            "en": "Helping senior leaders establish shared priorities, clarify direction and work with greater coherence.",
+            "ar": "نساعد القيادات العليا على تحديد أولويات مشتركة وتوضيح الاتجاه والعمل بمزيد من الاتساق."
+          }
+        },
+        {
+          "id": "1-5",
+          "title": {
+            "en": "Family Business Consultation",
+            "ar": "استشارات الأعمال العائلية"
+          },
+          "description": {
+            "en": "Supporting family-owned organizations to navigate governance, relationships, growth, professionalization and the transition between family and business roles.",
+            "ar": "ندعم المؤسسات العائلية في التعامل مع الحوكمة والعلاقات والنمو والتطوير المؤسسي والانتقال بين الأدوار العائلية وأدوار العمل."
+          }
+        },
+        {
+          "id": "1-6",
+          "title": {
+            "en": "Succession Planning",
+            "ar": "تخطيط التعاقب القيادي"
+          },
+          "description": {
+            "en": "Helping organizations and families prepare for leadership continuity, develop successors and manage transition responsibly.",
+            "ar": "نساعد المؤسسات والعائلات على الاستعداد لاستمرارية القيادة وتطوير الخلفاء وإدارة الانتقال بمسؤولية."
+          }
+        },
+        {
+          "id": "1-7",
+          "title": {
+            "en": "Organizational Transformation Initiatives",
+            "ar": "مبادرات التحول المؤسسي"
+          },
+          "description": {
+            "en": "Supporting organizations through significant change by aligning leadership, culture, structures, capability and ways of working.",
+            "ar": "ندعم المؤسسات خلال التغييرات الجوهرية من خلال تحقيق التوافق بين القيادة والثقافة والهياكل والقدرات وأساليب العمل."
+          }
+        }
+      ]
+    },
+    {
+      "id": "leadership-coaching-mentoring",
+      "name": {
+        "en": "Leadership, Coaching and Mentoring",
+        "ar": "القيادة والكوتشينج والإرشاد"
+      },
+      "intro": {
+        "en": "For leaders and teams who need space to think, stronger judgment and the capability to lead within complex systems.",
+        "ar": "للقادة والفرق الذين يحتاجون إلى مساحة للتفكير وحُسن التقدير والقدرة على القيادة داخل أنظمة معقدة."
+      },
+      "services": [
+        {
+          "id": "2-1",
+          "title": {
+            "en": "Organizational Coaching",
+            "ar": "الكوتشينج المؤسسي"
+          },
+          "description": {
+            "en": "Helping leaders examine the wider system around them and make more thoughtful, effective decisions within their organizational context.",
+            "ar": "نساعد القادة على تأمل النظام الأوسع المحيط بهم واتخاذ قرارات أكثر وعيًا وفاعلية في سياق مؤسساتهم."
+          }
+        },
+        {
+          "id": "2-2",
+          "title": {
+            "en": "Executive Coaching",
+            "ar": "الكوتشينج التنفيذي"
+          },
+          "description": {
+            "en": "A confidential space for senior leaders to reflect, strengthen judgment and address complex leadership challenges.",
+            "ar": "مساحة سرية للقيادات العليا للتأمل وتعزيز حُسن التقدير والتعامل مع تحديات القيادة المعقدة."
+          }
+        },
+        {
+          "id": "2-3",
+          "title": {
+            "en": "Leadership Development",
+            "ar": "تطوير القيادات"
+          },
+          "description": {
+            "en": "Developing the self-awareness, judgment, communication and influence required for effective leadership.",
+            "ar": "نطوّر الوعي الذاتي وحُسن التقدير والتواصل والتأثير اللازمة للقيادة الفاعلة."
+          }
+        },
+        {
+          "id": "2-4",
+          "title": {
+            "en": "Mentoring Programs",
+            "ar": "برامج الإرشاد"
+          },
+          "description": {
+            "en": "Designing and supporting structured mentoring programs that connect people with the guidance, experience and challenge needed for meaningful development.",
+            "ar": "نصمم وندعم برامج إرشاد منظمة تصل الأفراد بالتوجيه والخبرة والتحدي اللازم للتطور الهادف."
+          }
+        },
+        {
+          "id": "2-5",
+          "title": {
+            "en": "Early Leadership Development",
+            "ar": "تطوير القيادات الناشئة"
+          },
+          "description": {
+            "en": "Helping emerging leaders build confidence, responsibility and practical leadership capability.",
+            "ar": "نساعد القادة الناشئين على بناء الثقة والمسؤولية والقدرات القيادية العملية."
+          }
+        },
+        {
+          "id": "2-6",
+          "title": {
+            "en": "Communication and Feedback",
+            "ar": "التواصل والتغذية الراجعة"
+          },
+          "description": {
+            "en": "Strengthening the quality of conversations, feedback and relationships that influence trust and performance.",
+            "ar": "نعزز جودة الحوارات والتغذية الراجعة والعلاقات التي تؤثر في الثقة والأداء."
+          }
+        },
+        {
+          "id": "2-7",
+          "title": {
+            "en": "Emotional Intelligence",
+            "ar": "الذكاء العاطفي"
+          },
+          "description": {
+            "en": "Developing the awareness and interpersonal capability needed to manage oneself, understand others and lead effectively.",
+            "ar": "نطوّر الوعي والقدرات في التعامل مع الآخرين لإدارة الذات وفهم الآخرين والقيادة بفاعلية."
+          }
+        },
+        {
+          "id": "2-8",
+          "title": {
+            "en": "Team Coaching",
+            "ar": "كوتشينج الفرق"
+          },
+          "description": {
+            "en": "Helping teams improve collective awareness, collaboration, accountability and performance.",
+            "ar": "نساعد الفرق على تحسين الوعي الجماعي والتعاون والمساءلة والأداء."
+          }
+        }
+      ]
+    },
+    {
+      "id": "capability-workshops",
+      "name": {
+        "en": "Capability and Applied Workshops",
+        "ar": "بناء القدرات وورش العمل التطبيقية"
+      },
+      "intro": {
+        "en": "Practical, context-specific workshops that turn insight into everyday behavior and shared ways of working.",
+        "ar": "ورش عمل عملية مصممة بحسب السياق، تحوّل الفهم إلى سلوك يومي وأساليب عمل مشتركة."
+      },
+      "services": [
+        {
+          "id": "3-1",
+          "title": {
+            "en": "Communication Workshops",
+            "ar": "ورش التواصل"
+          },
+          "description": {
+            "en": "Practical workshops that help people communicate with greater clarity, confidence and impact.",
+            "ar": "ورش عملية تساعد الأفراد على التواصل بوضوح وثقة وتأثير أكبر."
+          }
+        },
+        {
+          "id": "3-2",
+          "title": {
+            "en": "Relationship Building and Team Effectiveness",
+            "ar": "بناء العلاقات وفاعلية الفرق"
+          },
+          "description": {
+            "en": "Helping teams strengthen trust, collaboration, communication and shared responsibility.",
+            "ar": "نساعد الفرق على تعزيز الثقة والتعاون والتواصل والمسؤولية المشتركة."
+          }
+        },
+        {
+          "id": "3-3",
+          "title": {
+            "en": "Conflict Management",
+            "ar": "إدارة الخلافات"
+          },
+          "description": {
+            "en": "Developing the understanding and skills needed to approach disagreement constructively and protect working relationships.",
+            "ar": "نطوّر الفهم والمهارات اللازمة للتعامل البنّاء مع الاختلاف وحماية علاقات العمل."
+          }
+        },
+        {
+          "id": "3-4",
+          "title": {
+            "en": "Time Management and Personal Effectiveness",
+            "ar": "إدارة الوقت والفاعلية الشخصية"
+          },
+          "description": {
+            "en": "Helping individuals prioritize, organize their work and focus their effort on what matters most.",
+            "ar": "نساعد الأفراد على ترتيب الأولويات وتنظيم العمل وتوجيه الجهد نحو ما يهم فعلًا."
+          }
+        },
+        {
+          "id": "3-5",
+          "title": {
+            "en": "Leadership in Action",
+            "ar": "القيادة في الممارسة"
+          },
+          "description": {
+            "en": "Practical experiences that help participants apply leadership behaviors in realistic situations.",
+            "ar": "خبرات عملية تساعد المشاركين على تطبيق السلوكيات القيادية في مواقف واقعية."
+          }
+        },
+        {
+          "id": "3-6",
+          "title": {
+            "en": "KPI, KRA and OKR Workshops",
+            "ar": "ورش مؤشرات الأداء ومجالات النتائج والأهداف والنتائج الرئيسية"
+          },
+          "description": {
+            "en": "Helping teams understand performance frameworks and connect organizational priorities with meaningful action.",
+            "ar": "نساعد الفرق على فهم أطر الأداء وربط الأولويات المؤسسية بإجراءات هادفة، عبر KPI وKRA وOKR."
+          }
+        },
+        {
+          "id": "3-7",
+          "title": {
+            "en": "Safety Champions Development",
+            "ar": "تطوير روّاد السلامة"
+          },
+          "description": {
+            "en": "Building the communication, ownership and leadership behaviors needed to support a stronger safety culture.",
+            "ar": "نبني سلوكيات التواصل وتحمّل المسؤولية والقيادة اللازمة لدعم ثقافة سلامة أقوى."
+          }
+        },
+        {
+          "id": "3-8",
+          "title": {
+            "en": "Workplace Communication and Reading Skills",
+            "ar": "مهارات التواصل والقراءة في بيئة العمل"
+          },
+          "description": {
+            "en": "Developing the practical communication skills people need to understand information, participate effectively and perform confidently at work.",
+            "ar": "نطوّر مهارات التواصل العملية التي يحتاجها الأفراد لفهم المعلومات والمشاركة الفاعلة والأداء بثقة."
+          }
+        },
+        {
+          "id": "3-9",
+          "title": {
+            "en": "Tailored Capability Workshops",
+            "ar": "ورش بناء القدرات المصممة حسب الاحتياج"
+          },
+          "description": {
+            "en": "Customized workshops designed around the client's context, objectives, audience and organizational needs.",
+            "ar": "ورش مخصصة تُصمم وفق سياق العميل وأهدافه وجمهوره واحتياجاته المؤسسية."
+          }
+        }
+      ]
+    }
+  ]
+}

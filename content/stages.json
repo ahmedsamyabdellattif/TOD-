@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "name": {
+        "en": "See",
+        "ar": "نرى"
+      },
+      "description": {
+        "en": "Observe the system before prescribing solutions.",
+        "ar": "نلاحظ النظام قبل اقتراح الحلول."
+      },
+      "activities": {
+        "en": "Listen, Gather, Understand context, Identify key dynamics",
+        "ar": "نستمع، نجمع المعلومات، نفهم السياق، ونحدد الديناميكيات الرئيسية"
+      }
+    },
+    {
+      "name": {
+        "en": "Understand",
+        "ar": "نفهم"
+      },
+      "description": {
+        "en": "Explore relationships, patterns, assumptions, structures and dynamics.",
+        "ar": "نستكشف العلاقات والأنماط والافتراضات والهياكل والديناميكيات."
+      },
+      "activities": {
+        "en": "Analyze, Make sense, Identify what matters, Develop shared understanding",
+        "ar": "نحلل، نصنع المعنى، نحدد ما يهم، ونطوّر فهمًا مشتركًا"
+      }
+    },
+    {
+      "name": {
+        "en": "Engage",
+        "ar": "نُشرك"
+      },
+      "description": {
+        "en": "Work with the people within the system rather than treating them as passive recipients of change.",
+        "ar": "نعمل مع الأفراد داخل النظام، لا نتعامل معهم كمتلقين سلبيين للتغيير."
+      },
+      "activities": {
+        "en": "Involve, Co-create, Build trust, Establish shared ownership",
+        "ar": "نُشرك، نصمم معًا، نبني الثقة، ونرسخ المسؤولية المشتركة"
+      }
+    },
+    {
+      "name": {
+        "en": "Develop",
+        "ar": "نطوّر"
+      },
+      "description": {
+        "en": "Design interventions appropriate to what the system actually requires.",
+        "ar": "نصمم تدخلات تلائم ما يحتاجه النظام فعلًا."
+      },
+      "activities": {
+        "en": "Design, Facilitate, Build capability, Adapt to context",
+        "ar": "نصمم، نيسّر، نبني القدرات، ونتكيف مع السياق"
+      }
+    },
+    {
+      "name": {
+        "en": "Sustain",
+        "ar": "نُديم"
+      },
+      "description": {
+        "en": "Build capability within the organization so that progress does not remain dependent on TOD.",
+        "ar": "نبني القدرات داخل المؤسسة حتى لا يبقى التقدم معتمدًا على TOD."
+      },
+      "activities": {
+        "en": "Embed, Strengthen internal capability, Review and learn, Support long-term impact",
+        "ar": "نرسخ الممارسات، نقوي القدرات الداخلية، نراجع ونتعلم، وندعم الأثر المستدام"
+      }
+    }
+  ]
+}

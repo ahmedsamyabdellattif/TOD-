@@ -1,0 +1,109 @@
+{
+  "items": [
+    {
+      "letter": "C",
+      "name": {
+        "en": "Curiosity",
+        "ar": "الفضول"
+      },
+      "motto": {
+        "en": "Before certainty.",
+        "ar": "قبل اليقين."
+      },
+      "description": {
+        "en": "We enter situations with questions rather than predetermined answers. We remain open to what we may not yet understand and resist assuming that our first interpretation is necessarily correct.",
+        "ar": "ندخل المواقف بأسئلة لا بإجابات مسبقة. ونظل منفتحين على ما قد لا نفهمه بعد، ونتجنب افتراض أن تفسيرنا الأول هو الصحيح بالضرورة."
+      }
+    },
+    {
+      "letter": "I",
+      "name": {
+        "en": "Integration",
+        "ar": "التكامل"
+      },
+      "motto": {
+        "en": "Rather than fragmentation.",
+        "ar": "بدلًا من التجزئة."
+      },
+      "description": {
+        "en": "We seek to understand the whole human system. Leadership, relationships, culture, structure, purpose, behavior and performance are interconnected rather than isolated issues.",
+        "ar": "نسعى لفهم النظام الإنساني كاملًا؛ فالقيادة والعلاقات والثقافة والهيكل والغرض والسلوك والأداء عناصر مترابطة وليست قضايا منفصلة."
+      }
+    },
+    {
+      "letter": "R",
+      "name": {
+        "en": "Reflection",
+        "ar": "التأمل"
+      },
+      "motto": {
+        "en": "Before reaction.",
+        "ar": "قبل رد الفعل."
+      },
+      "description": {
+        "en": "We create space to observe and understand before acting. Reflection allows us to notice patterns, assumptions and dynamics that immediate action can overlook.",
+        "ar": "نفسح مجالًا للملاحظة والفهم قبل التصرف. يتيح لنا التأمل إدراك أنماط وافتراضات وديناميكيات قد يغفلها التحرك الفوري."
+      }
+    },
+    {
+      "letter": "C",
+      "name": {
+        "en": "Courage",
+        "ar": "الشجاعة"
+      },
+      "motto": {
+        "en": "With compassion.",
+        "ar": "مع التعاطف."
+      },
+      "description": {
+        "en": "We are prepared to surface difficult realities, challenge assumptions and engage in necessary conversations while maintaining respect, empathy and awareness of human impact.",
+        "ar": "نحن مستعدون لإظهار الحقائق الصعبة ومساءلة الافتراضات وخوض الحوارات الضرورية، مع الحفاظ على الاحترام والتعاطف والوعي بالأثر الإنساني."
+      }
+    },
+    {
+      "letter": "L",
+      "name": {
+        "en": "Learning",
+        "ar": "التعلم"
+      },
+      "motto": {
+        "en": "Before judgment.",
+        "ar": "قبل الحكم."
+      },
+      "description": {
+        "en": "We approach people and organizations as capable of development. Rather than beginning with blame, we seek to understand what can be learned and what new capability can emerge.",
+        "ar": "نتعامل مع الأفراد والمؤسسات باعتبارهم قادرين على التطور. وبدلًا من البدء باللوم، نسعى لفهم ما يمكن تعلمه وما يمكن أن ينشأ من قدرات جديدة."
+      }
+    },
+    {
+      "letter": "E",
+      "name": {
+        "en": "Empathy",
+        "ar": "التعاطف"
+      },
+      "motto": {
+        "en": "People before methodology.",
+        "ar": "الإنسان قبل المنهجية."
+      },
+      "description": {
+        "en": "We recognize the dignity, experience and agency of every person within a human system. Frameworks and methodologies should serve people, not reduce people to the framework.",
+        "ar": "نحترم كرامة كل فرد وخبرته وقدرته على الفعل داخل النظام الإنساني. ينبغي للأطر والمنهجيات أن تخدم الناس، لا أن تختزلهم فيها."
+      }
+    },
+    {
+      "letter": "S",
+      "name": {
+        "en": "Stewardship",
+        "ar": "الرعاية المسؤولة"
+      },
+      "motto": {
+        "en": "Over personal recognition.",
+        "ar": "قبل التقدير الشخصي."
+      },
+      "description": {
+        "en": "Our responsibility is to strengthen the system rather than create dependency on TOD or seek recognition for ourselves. We aim to leave people and organizations more capable than we found them.",
+        "ar": "مسؤوليتنا هي تقوية النظام، لا خلق اعتماد على TOD أو السعي إلى التقدير لأنفسنا. نهدف إلى ترك الأفراد والمؤسسات أكثر قدرة مما وجدناهم."
+      }
+    }
+  ]
+}

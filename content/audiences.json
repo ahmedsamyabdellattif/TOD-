@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "title": {
+        "en": "Boards and committees",
+        "ar": "مجالس الإدارة واللجان"
+      },
+      "description": {
+        "en": "Clarifying authority, accountability and the quality of collective decisions.",
+        "ar": "توضيح السلطة والمساءلة وتعزيز جودة القرارات الجماعية."
+      }
+    },
+    {
+      "title": {
+        "en": "CEOs and executives",
+        "ar": "الرؤساء التنفيذيون والقيادات العليا"
+      },
+      "description": {
+        "en": "Space to think for leaders carrying complexity, ambiguity and consequence.",
+        "ar": "مساحة للتفكير للقادة الذين يتحملون مسؤولية التعقيد والغموض وتبعات القرارات."
+      }
+    },
+    {
+      "title": {
+        "en": "Leadership teams",
+        "ar": "فرق القيادة"
+      },
+      "description": {
+        "en": "Building alignment and coherence where priorities, perspectives and personalities compete.",
+        "ar": "بناء التوافق والاتساق حين تتنافس الأولويات ووجهات النظر والشخصيات."
+      }
+    },
+    {
+      "title": {
+        "en": "Government entities",
+        "ar": "الجهات الحكومية"
+      },
+      "description": {
+        "en": "Developing capability at scale while transformation agendas move quickly.",
+        "ar": "تطوير القدرات على نطاق واسع في ظل تسارع أجندات التحول."
+      }
+    },
+    {
+      "title": {
+        "en": "Family businesses",
+        "ar": "الأعمال العائلية"
+      },
+      "description": {
+        "en": "Navigating the meeting point of family, ownership, governance and succession.",
+        "ar": "التعامل مع تقاطع العائلة والملكية والحوكمة والتعاقب القيادي."
+      }
+    },
+    {
+      "title": {
+        "en": "Organizations undergoing transformation",
+        "ar": "المؤسسات التي تمر بالتحول"
+      },
+      "description": {
+        "en": "Making sure the human system moves with the strategy, not behind it.",
+        "ar": "ضمان أن يتحرك النظام الإنساني مع الاستراتيجية لا أن يتأخر عنها."
+      }
+    },
+    {
+      "title": {
+        "en": "Emerging and early-career leaders",
+        "ar": "القيادات الناشئة وفي بداية المسار المهني"
+      },
+      "description": {
+        "en": "Building confidence, responsibility and judgment early in a leadership journey.",
+        "ar": "بناء الثقة والمسؤولية وحُسن التقدير في المراحل الأولى من الرحلة القيادية."
+      }
+    }
+  ]
+}
