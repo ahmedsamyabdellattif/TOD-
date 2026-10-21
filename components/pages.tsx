@@ -484,7 +484,15 @@ export function ContactPage({ locale: l }: { locale: Locale }) {
                 "عنوان المكتب بانتظار التأكيد.",
               )}
             </p>
-            <ImageSlot page="contact" locale={l}/>
+            <iframe
+  title={l === "ar" ? "خريطة الرياض" : "Map of Riyadh"}
+  src="https://maps.google.com/maps?q=Riyadh%2C%20Saudi%20Arabia&z=10&output=embed"
+  width="100%"
+  height="320"
+  style={{ border: 0 }}
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
           </aside>
           <ContactForm
             locale={l}
