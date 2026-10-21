@@ -33,7 +33,7 @@
   "images": [
     {
       "id": "home-1",
-      "src": "/images/riyadh-user-hero.png",
+      "src": "/uploads/18d810e025828951004afd9e.png",
       "alt": {
         "en": "Architecture in Riyadh at sunset",
         "ar": "عمارة الرياض عند الغروب"
@@ -41,7 +41,7 @@
     },
     {
       "id": "home-2",
-      "src": "/uploads/7e2e654f7128b33dee67b809.jpg",
+      "src": "/uploads/11f219381a4c5de22f441314.png",
       "alt": {
         "en": "Organizational life",
         "ar": "الحياة المؤسسية"
@@ -49,7 +49,7 @@
     },
     {
       "id": "home-3",
-      "src": "/uploads/ad92c4801f25b45c2ae99c6d.png",
+      "src": "/uploads/67f356c07b790ec199b585e2.png",
       "alt": {
         "en": "Leadership in context",
         "ar": "القيادة في سياقها"
@@ -57,7 +57,7 @@
     },
     {
       "id": "home-4",
-      "src": "/uploads/f61c306fd6eaa00bb8086047.jpg",
+      "src": "/uploads/1ee270d23ccf368044cec7a5.png",
       "alt": {
         "en": "People and collaboration",
         "ar": "الأفراد والتعاون"
