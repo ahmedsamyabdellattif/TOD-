@@ -14,6 +14,26 @@ import {
   type Locale,
   type Article,
 } from "@/lib/content";
+function ArrowIcon() {
+  return (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      focusable="false"
+      style={{ display: "inline-block", width: "1em", height: "1em", flexShrink: 0, verticalAlign: "-0.125em" }}
+    >
+      <path d="M7 17 17 7M7 7h10v10" />
+    </svg>
+  );
+}
+
 export function UtilityIcon({ name }: { name: string }) {
   return (
     <svg
@@ -95,7 +115,7 @@ export function Header({ locale }: { locale: Locale }) {
     >
       <Link
         href={pathFor(locale)}
-        aria-label={locale === "ar" ? "TOD — الرئيسية" : "TOD — Home"}
+        aria-label={locale === "ar" ? "TOD — الرئيسية" : "TOD — Home"}
         className="logo"
       >
         <img
@@ -112,7 +132,7 @@ export function Header({ locale }: { locale: Locale }) {
         aria-controls="site-navigation"
         onClick={() => setOpen(!open)}
       >
-        {locale === "ar" ? "القائمة" : "Menu"}{" "}
+        {locale === "ar" ? "القائمة" : "Menu"}{" "}
         <span aria-hidden="true">{open ? "−" : "+"}</span>
       </button>
       <div
@@ -121,12 +141,12 @@ export function Header({ locale }: { locale: Locale }) {
         id="site-navigation"
       >
         <nav
-          aria-label={locale === "ar" ? "التنقل الرئيسي" : "Main navigation"}
+          aria-label={locale === "ar" ? "التنقل الرئيسي" : "Main navigation"}
         >
           {["", "about", "approach", "associates", "services", "who-we-work-with", "library", "contact", "legal"].map(p=><Link key={p} href={pathFor(locale,p)} aria-current={current(p)}>{t(pageNames[p],locale)}</Link>)}
         </nav>
         <Link className="button small" href={pathFor(locale, "contact")}>
-          {t(cta, locale)} <span aria-hidden="true">↗</span>
+          {t(cta, locale)} <span aria-hidden="true"><ArrowIcon /></span>
         </Link>
       </div>
       <Link
@@ -135,7 +155,7 @@ export function Header({ locale }: { locale: Locale }) {
         hrefLang={other}
         lang={other}
         aria-label={
-          locale === "ar" ? "Switch to English" : "التبديل إلى العربية"
+          locale === "ar" ? "Switch to English" : "التبديل إلى العربية"
         }
       >
         <UtilityIcon name="language" />
@@ -179,7 +199,7 @@ export function ImageGallery({locale}:{locale:Locale}) {
  const [selected,setSelected]=useState(0);const [hovering,setHovering]=useState(false);const [focused,setFocused]=useState(false);const [reduced,setReduced]=useState(false);
  useEffect(()=>{const mq=matchMedia('(prefers-reduced-motion: reduce)');const sync=()=>setReduced(mq.matches);sync();mq.addEventListener('change',sync);return()=>mq.removeEventListener('change',sync)},[]);
  useEffect(()=>{if(hovering||focused||reduced)return;const timer=setInterval(()=>{if(document.visibilityState==='visible')setSelected(n=>(n+1)%site.images.length)},7000);return()=>clearInterval(timer)},[hovering,focused,reduced]);
- return <section className="city-hero" onMouseEnter={()=>setHovering(true)} onMouseLeave={()=>setHovering(false)} onFocusCapture={()=>setFocused(true)} onBlurCapture={e=>{if(!e.currentTarget.contains(e.relatedTarget))setFocused(false)}}><div className="city-slides" aria-live="off">{site.images.map((slide,i)=><div key={slide.id} className={`city-image ${selected===i?'is-active':''}`} aria-hidden={selected!==i} role="img" aria-label={t(slide.alt,locale)} style={slide.src?{backgroundImage:`url("${slide.src}")`}:undefined}>{!slide.src&&<div className="city-placeholder"><span>{locale==='ar'?'مساحة للصورة':'Image space'} {i+1}</span><p>{t(slide.alt,locale)}</p></div>}</div>)}</div><div className="city-copy"><span className="eyebrow">TOD ARABIA · HUMAN SYSTEMS</span><h1>{locale==='en'?<>{site.hero.en.replace(/human systems[.]?$/i,'')}<span className="hero-accent">human systems</span></>:<>{site.hero.ar.split('أنظمة إنسانية')[0]}<span className="hero-accent">أنظمة إنسانية</span></>}</h1><span className="gold-rule"/><p>{t(site.statement,locale)}</p><div className="actions"><Link className="button" href={pathFor(locale,'contact')}>{t(cta,locale)} <span aria-hidden="true">↗</span></Link><Link className="outline-link" href={pathFor(locale,'services')}>{locale==='ar'?'استكشف خدماتنا':'Explore Our Services'} ↗</Link></div></div><div className="city-gallery-controls" role="group" aria-label={locale==='ar'?'صور الرئيسية':'Home images'}>{site.images.map((x,i)=><button className="slide-dot" key={x.id} aria-pressed={selected===i} aria-label={`${locale==='ar'?'الصورة':'Image'} ${i+1}`} onClick={()=>setSelected(i)}><span aria-hidden="true"/></button>)}</div></section>
+ return <section className="city-hero" onMouseEnter={()=>setHovering(true)} onMouseLeave={()=>setHovering(false)} onFocusCapture={()=>setFocused(true)} onBlurCapture={e=>{if(!e.currentTarget.contains(e.relatedTarget))setFocused(false)}}><div className="city-slides" aria-live="off">{site.images.map((slide,i)=><div key={slide.id} className={`city-image ${selected===i?'is-active':''}`} aria-hidden={selected!==i} role="img" aria-label={t(slide.alt,locale)} style={slide.src?{backgroundImage:`url("${slide.src}")`}:undefined}>{!slide.src&&<div className="city-placeholder"><span>{locale==='ar'?'مساحة للصورة':'Image space'} {i+1}</span><p>{t(slide.alt,locale)}</p></div>}</div>)}</div><div className="city-copy"><span className="eyebrow">TOD ARABIA · HUMAN SYSTEMS</span><h1>{locale==='en'?<>{site.hero.en.replace(/human systems[.]?$/i,'')}<span className="hero-accent">human systems</span></>:<>{site.hero.ar.split('أنظمة إنسانية')[0]}<span className="hero-accent">أنظمة إنسانية</span></>}</h1><span className="gold-rule"/><p>{t(site.statement,locale)}</p><div className="actions"><Link className="button" href={pathFor(locale,'contact')}>{t(cta,locale)} <span aria-hidden="true"><ArrowIcon /></span></Link><Link className="outline-link" href={pathFor(locale,'services')}>{locale==='ar'?'استكشف خدماتنا':'Explore Our Services'} <ArrowIcon /></Link></div></div><div className="city-gallery-controls" role="group" aria-label={locale==='ar'?'صور الرئيسية':'Home images'}>{site.images.map((x,i)=><button className="slide-dot" key={x.id} aria-pressed={selected===i} aria-label={`${locale==='ar'?'الصورة':'Image'} ${i+1}`} onClick={()=>setSelected(i)}><span aria-hidden="true"/></button>)}</div></section>
 }
 export function Experience({
   locale,
@@ -210,7 +230,7 @@ export function Experience({
               ? "تشغيل الحركة"
               : "Resume motion"
             : locale === "ar"
-              ? "إيقاف الحركة"
+              ? "إيقاف الحركة"
               : "Pause motion"}{" "}
           {paused ? "▷" : "Ⅱ"}
         </button>
@@ -219,7 +239,7 @@ export function Experience({
         className={`marquee ${paused ? "paused" : ""}`}
         tabIndex={0}
         role="region"
-        aria-label={locale === "ar" ? "أسماء الجهات" : "Organization names"}
+        aria-label={locale === "ar" ? "أسماء الجهات" : "Organization names"}
         dir="ltr"
       >
         <div className="marquee-track">
@@ -360,7 +380,7 @@ export function Library({
         <div className="empty-state">
           <h2>
             {locale === "ar"
-              ? "مساحة للتعلّم ومشاركة الرؤى"
+              ? "مساحة للتعلّم ومشاركة الرؤى"
               : "A space for learning and perspective"}
           </h2>
           <p>
@@ -419,7 +439,7 @@ export function ArticleCard({
         <h3>{t(a.title, locale)}</h3>
         <p>{t(a.summary, locale)}</p>
         <span className="text-link">
-          {locale === "ar" ? "اقرأ المقال" : "Read article"} ↗
+          {locale === "ar" ? "اقرأ المقال" : "Read article"} <ArrowIcon />
         </span>
       </div>
     </Link>
@@ -436,7 +456,7 @@ export function ArticleShare({ locale }: { locale: Locale }) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        LinkedIn ↗
+        LinkedIn <ArrowIcon />
       </a>
       <button
         onClick={async () => {

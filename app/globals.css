@@ -1039,6 +1039,9 @@ summary:focus-visible,
 .practice-cycle li:last-child .cycle-arrow {
   display: none;
 }
+
+
+
 .practice-cycle p {
   font-size: 14px;
 }
