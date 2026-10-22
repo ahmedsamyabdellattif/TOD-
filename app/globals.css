@@ -2129,3 +2129,11 @@ html[lang=ar] .site-header .header-links nav>a{font-size:15px;font-weight:700}
     overflow-wrap: anywhere;
   }
 }
+
+@media (max-width: 700px) {
+  .values .diagram-core {
+    left: auto;
+    top: auto;
+    transform: none;
+  }
+}
