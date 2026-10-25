@@ -132,8 +132,8 @@
       "order": 17,
       "name": "Real Estate Authority, KSA",
       "group": "Government and national",
-      "logo": null,
-      "logoApproved": false,
+      "logo": "/uploads/5adaacc3af320dd580370edb.png",
+      "logoApproved": true,
       "attributionConfirmed": false
     },
     {
@@ -164,24 +164,24 @@
       "order": 21,
       "name": "Institute of Public Administration (IPA)",
       "group": "Government and national",
-      "logo": null,
-      "logoApproved": false,
+      "logo": "/uploads/2c4235cefacb4294ecbaf8a3.png",
+      "logoApproved": true,
       "attributionConfirmed": false
     },
     {
       "order": 22,
       "name": "Saudi Digital Academy",
       "group": "Government and national",
-      "logo": null,
-      "logoApproved": false,
+      "logo": "/uploads/1d33b2374a3532ef9a8351c4.png",
+      "logoApproved": true,
       "attributionConfirmed": false
     },
     {
       "order": 23,
       "name": "Princess Nourah University (PNU)",
       "group": "Government and national",
-      "logo": null,
-      "logoApproved": false,
+      "logo": "/uploads/081f12c4c62d87f46262e40a.webp",
+      "logoApproved": true,
       "attributionConfirmed": false
     },
     {
@@ -252,88 +252,88 @@
       "order": 32,
       "name": "Alinma Bank",
       "group": "Corporate, Saudi Arabia",
-      "logo": null,
-      "logoApproved": false,
+      "logo": "/uploads/f6c7592a8a5be8e8f54e9581.webp",
+      "logoApproved": true,
       "attributionConfirmed": false
     },
     {
       "order": 33,
       "name": "SATORP",
       "group": "Corporate, Saudi Arabia",
-      "logo": null,
-      "logoApproved": false,
+      "logo": "/uploads/ec16103ada61aef93b990e3e.png",
+      "logoApproved": true,
       "attributionConfirmed": false
     },
     {
       "order": 34,
       "name": "Government of Dubai",
       "group": "Regional",
-      "logo": null,
-      "logoApproved": false,
+      "logo": "/uploads/d6edc56f262a8f93251c54ae.png",
+      "logoApproved": true,
       "attributionConfirmed": false
     },
     {
       "order": 35,
       "name": "Ministry of Labor / Etimad Project, Oman",
       "group": "Regional",
-      "logo": null,
-      "logoApproved": false,
+      "logo": "/uploads/788b7038a35a6a9d82371d1b.png",
+      "logoApproved": true,
       "attributionConfirmed": false
     },
     {
       "order": 36,
       "name": "Asyad, Oman",
       "group": "Regional",
-      "logo": null,
-      "logoApproved": false,
+      "logo": "/uploads/c5e4c29ea99ee680902d2336.png",
+      "logoApproved": true,
       "attributionConfirmed": false
     },
     {
       "order": 37,
       "name": "OQ8, Oman",
       "group": "Regional",
-      "logo": null,
-      "logoApproved": false,
+      "logo": "/uploads/944535fa9e8507271ab1c35d.png",
+      "logoApproved": true,
       "attributionConfirmed": false
     },
     {
       "order": 38,
       "name": "Radisson Blu, Bahrain",
       "group": "Regional",
-      "logo": null,
-      "logoApproved": false,
+      "logo": "/uploads/bf4e21e4d0092d3d11f5361d.webp",
+      "logoApproved": true,
       "attributionConfirmed": false
     },
     {
       "order": 39,
       "name": "TNT, Bahrain",
       "group": "Regional",
-      "logo": null,
-      "logoApproved": false,
+      "logo": "/uploads/efe8421d5b238bc4cc9de15b.webp",
+      "logoApproved": true,
       "attributionConfirmed": false
     },
     {
       "order": 40,
       "name": "Fresenius Medical Care, Germany",
       "group": "International",
-      "logo": null,
-      "logoApproved": false,
+      "logo": "/uploads/2640b0d2b545b4dacab0d526.webp",
+      "logoApproved": true,
       "attributionConfirmed": false
     },
     {
       "order": 41,
       "name": "Daiichi Sankyo, Germany",
       "group": "International",
-      "logo": null,
-      "logoApproved": false,
+      "logo": "/uploads/494653bfc90be4aa39c4be3b.webp",
+      "logoApproved": true,
       "attributionConfirmed": false
     },
     {
       "order": 42,
       "name": "Tata Consultancy Services, India",
       "group": "International",
-      "logo": null,
-      "logoApproved": false,
+      "logo": "/uploads/6da0bf7d6258bb71af07ec9a.webp",
+      "logoApproved": true,
       "attributionConfirmed": false
     }
   ]
