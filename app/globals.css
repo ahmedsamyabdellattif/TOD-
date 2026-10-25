@@ -1967,42 +1967,45 @@ html[dir="rtl"] .city-slides .city-image {
   scale: -1 1;
 }
 
-/* الحفاظ على أبعاد الصورة في قسم About TOD */
-.brand-panel > img {
-  width: min(100%, 260px);
-  height: auto;
-  max-height: none;
-  object-fit: contain;
-  flex-shrink: 0;
+
+
+/* صور الأقسام بعرض الشاشة */
+.container > .page-image-slot {
+  position: relative;
+  width: 100vw;
+  max-width: none;
+  margin-inline: calc(50% - 50vw);
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+
+  height: clamp(320px, 42vw, 620px);
+  min-height: 0;
+  aspect-ratio: auto;
 }
 
-/* عند إضافة الصورة من لوحة الصور */
-.brand-panel .page-image-slot img {
+.container > .page-image-slot img {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
 }
 
-@media (max-width: 560px) {
-  .brand-panel {
-    flex-direction: column;
-    gap: 18px;
-    padding: 20px;
-  }
-
-  .brand-panel > img {
-    width: min(100%, 220px);
-    height: auto;
-    max-height: none;
-    object-fit: contain;
-  }
-
-  .brand-panel > span {
-    max-width: none;
-    text-align: center;
+/* الموبايل */
+@media (max-width: 600px) {
+  .container > .page-image-slot {
+    height: 280px;
   }
 }
 
+/* استثناء الصور الموجودة بجانب نص */
+.container.image-copy-row > .page-image-slot {
+  position: static;
+  width: 100%;
+  margin-inline: 0;
+  height: 100%;
+}
 
 /* Restore the approved Option 02 layout; content remains from the latest handover. */
 /* Option 02: city-led composition. Original option remains a separate project. */
@@ -2151,7 +2154,7 @@ html[lang=ar] .site-header .header-links nav>a{font-size:15px;font-weight:700}
 .service-symbol .page-image-slot{margin:0;width:100%;height:100%;min-height:150px;border:0}
 .service-symbol .page-image-slot img{width:100%;height:100%;object-fit:cover}
 .service-symbol .page-image-slot p{font-size:10px;padding:6px}.service-symbol .image-symbol{font-size:22px}
-.brand-panel .page-image-slot{margin:0;border:0;width:100%;height:100%;min-height:260px}.brand-panel .page-image-slot img{width:100%;height:100%;max-height:none;object-fit:cover}
+
 .library-slots .page-image-slot{margin:0 0 20px;min-height:170px;aspect-ratio:16/10}.library-slots .page-image-slot img{height:100%;width:100%;object-fit:cover}
 .contact-layout aside .page-image-slot{min-height:200px;aspect-ratio:4/3;margin-top:25px}
 
@@ -2172,5 +2175,107 @@ html[lang=ar] .site-header .header-links nav>a{font-size:15px;font-weight:700}
     left: auto;
     top: auto;
     transform: none;
+  }
+}
+
+/* About TOD: responsive image and text */
+.option-two-home .about-band {
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.45fr) minmax(0, 1fr);
+  gap: clamp(24px, 3vw, 48px);
+  align-items: center;
+}
+.option-two-home .about-band > *,
+.option-two-home .principle-stack > div > div { min-width: 0; }
+.option-two-home .about-band .brand-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 360px;
+  min-height: 0;
+  height: auto;
+  padding: 16px;
+  gap: 16px;
+  justify-self: center;
+  box-sizing: border-box;
+}
+.option-two-home .brand-panel .page-image-slot {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 1 / 1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  background: transparent;
+}
+.option-two-home .brand-panel .page-image-slot img {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: contain;
+}
+.option-two-home .brand-panel > img {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+.option-two-home .brand-panel > span {
+  max-width: 100%;
+  margin: 0;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.option-two-home .about-copy,
+.option-two-home .principle-stack { overflow-wrap: anywhere; }
+.option-two-home .about-copy h2 {
+  font-size: clamp(24px, 2.4vw, 34px);
+  line-height: 1.35;
+}
+.option-two-home .about-copy .outline-link {
+  max-width: 100%;
+  white-space: normal;
+}
+.option-two-home .principle-stack svg { flex-shrink: 0; }
+@media (max-width: 1000px) {
+  .option-two-home .about-band {
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+  }
+  .option-two-home .principle-stack {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 24px 0 0;
+    border-inline-start: 0;
+    border-top: 1px solid #ffffff30;
+  }
+}
+@media (max-width: 700px) {
+  .option-two-home .about-band {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 32px 20px;
+    gap: 28px;
+  }
+  .option-two-home .about-band .brand-panel { max-width: 320px; }
+  .option-two-home .principle-stack {
+    grid-column: auto;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+  .option-two-home .about-copy p {
+    font-size: 15px;
+    line-height: 1.8;
   }
 }

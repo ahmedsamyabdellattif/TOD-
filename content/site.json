@@ -67,7 +67,7 @@
   "pageImages": [
     {
       "page": "about",
-      "src": null,
+      "src": "/uploads/f617234a4cc2c109a341a7bc.jpg",
       "alt": {
         "en": "Image awaiting supply",
         "ar": "مساحة لصورة تُضاف لاحقًا"
@@ -75,7 +75,7 @@
     },
     {
       "page": "approach",
-      "src": null,
+      "src": "/uploads/37cb813e714c3238edd04f7a.jpg",
       "alt": {
         "en": "Image awaiting supply",
         "ar": "مساحة لصورة تُضاف لاحقًا"
@@ -83,7 +83,7 @@
     },
     {
       "page": "associates",
-      "src": "/uploads/62444738b706930ccb463570.png",
+      "src": "/uploads/3887c4ce1396eac156004ef3.jpg",
       "alt": {
         "en": "Image awaiting supply",
         "ar": "مساحة لصورة تُضاف لاحقًا"
@@ -91,7 +91,7 @@
     },
     {
       "page": "services",
-      "src": "/uploads/0e65e21d469b0f6eb61ecc01.png",
+      "src": "/uploads/65696713c8f0a4b66a431e20.jpg",
       "alt": {
         "en": "Image awaiting supply",
         "ar": "مساحة لصورة تُضاف لاحقًا"
@@ -99,7 +99,7 @@
     },
     {
       "page": "who-we-work-with",
-      "src": null,
+      "src": "/uploads/5d3d5840298390f5b2793cad.jpg",
       "alt": {
         "en": "Image awaiting supply",
         "ar": "مساحة لصورة تُضاف لاحقًا"
@@ -107,7 +107,7 @@
     },
     {
       "page": "library",
-      "src": null,
+      "src": "/uploads/ad6b32a6975ff35a1b3002ce.jpg",
       "alt": {
         "en": "Image awaiting supply",
         "ar": "مساحة لصورة تُضاف لاحقًا"
@@ -139,23 +139,23 @@
     },
     {
       "page": "home-about",
-      "src": null,
+      "src": "/uploads/8637d39026e22d3526a9c1cf.jpg",
       "alt": {
-        "en": "Image awaiting supply",
+        "en": "/uploads/d50e8f392040f95749786a6e.jpg",
         "ar": "مساحة لصورة تُضاف لاحقًا"
       }
     },
     {
       "page": "home-service-1",
-      "src": null,
+      "src": "/uploads/c580306b6d39ce45536f2fa8.jpg",
       "alt": {
         "en": "Image awaiting supply",
-        "ar": "مساحة لصورة تُضاف لاحقًا"
+        "ar": ""
       }
     },
     {
       "page": "home-service-2",
-      "src": null,
+      "src": "/uploads/7816d9de52efaa9cc0157048.jpg",
       "alt": {
         "en": "Image awaiting supply",
         "ar": "مساحة لصورة تُضاف لاحقًا"
@@ -163,7 +163,7 @@
     },
     {
       "page": "home-service-3",
-      "src": null,
+      "src": "/uploads/f750aab6574188ab6139da7f.jpg",
       "alt": {
         "en": "Image awaiting supply",
         "ar": "مساحة لصورة تُضاف لاحقًا"
@@ -171,7 +171,7 @@
     },
     {
       "page": "home-library-1",
-      "src": null,
+      "src": "/uploads/99983e855734d21f7e4fd0c3.png",
       "alt": {
         "en": "Image awaiting supply",
         "ar": "مساحة لصورة تُضاف لاحقًا"
@@ -179,7 +179,7 @@
     },
     {
       "page": "home-library-2",
-      "src": null,
+      "src": "/uploads/8c0ddd7a10d7fa43a895d707.png",
       "alt": {
         "en": "Image awaiting supply",
         "ar": "مساحة لصورة تُضاف لاحقًا"
@@ -187,7 +187,7 @@
     },
     {
       "page": "home-library-3",
-      "src": null,
+      "src": "/uploads/e98379013a58d7f8e81bfec5.png",
       "alt": {
         "en": "Image awaiting supply",
         "ar": "مساحة لصورة تُضاف لاحقًا"
@@ -195,7 +195,7 @@
     },
     {
       "page": "contact",
-      "src": null,
+      "src": "/uploads/078a8afe15416619141473fa.jpg",
       "alt": {
         "en": "Image awaiting supply",
         "ar": "مساحة لصورة تُضاف لاحقًا"
@@ -203,7 +203,7 @@
     },
     {
       "page": "legal",
-      "src": null,
+      "src": "/uploads/0010ce2f0fe32a46d17263e1.jpg",
       "alt": {
         "en": "Image awaiting supply",
         "ar": "مساحة لصورة تُضاف لاحقًا"
@@ -227,6 +227,6 @@
   "brandAssets": {
     "darkLogo": "/brand/logo-dark.png",
     "lightLogo": "/brand/logo-light.png",
-    "icon": "/uploads/7498ec4f41c713ee3c5a1fea.jpg"
+    "icon": "/uploads/d50e8f392040f95749786a6e.jpg"
   }
 }
