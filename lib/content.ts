@@ -183,7 +183,7 @@ export const metadataCopy: Record<string, { title: Text; description: Text }> =
       ),
     },
     associates: {
-      title: text("Associates | TOD", "خبراؤنا | TOD"),
+      title: text("Leadership and Associates | TOD", "قيادتنا وخبراؤنا | TOD"),
       description: text(
         "The consultants, coaches, mentors and specialists who deliver TOD's work.",
         "المستشارون والكوتشز والمرشدون والمتخصصون الذين يقدمون أعمال TOD.",

@@ -1,3 +1,5 @@
+import team from "@/content/team.json";
+import { TeamPreview } from "@/components/team-preview/team-preview";
 import { notFound, redirect } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -33,7 +35,7 @@ export function generateStaticParams() {
     [
       ...Object.keys(pageNames),
       ...articles.map((a) => "library/" + a.slug),
-      ...associates.map((a) => "associates/" + a.slug),
+      ...Array.from(new Set([...associates, ...team].map((a) => "associates/" + a.slug))),
     ].map((p) => ({ locale, slug: p ? p.split("/") : [] })),
   );
 }
@@ -42,10 +44,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const l: Locale = locale === "ar" ? "ar" : "en";
   const path = slug.join("/");
   const article = articles.find((a) => path === "library/" + a.slug);
+  const teamPerson = team.find((a) => path === "associates/" + a.slug);
   const person = associates.find((a) => path === "associates/" + a.slug);
   const title = article
     ? t(article.title, l) + " | TOD"
-    : person
+    : teamPerson
+      ? t(teamPerson.name, l) + " | TOD"
+      : person
       ? t(person.name, l) + " | TOD"
       : metadataCopy[path]
         ? t(metadataCopy[path].title, l)
@@ -54,7 +59,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           : "TOD";
   const description = article
     ? t(article.summary, l)
-    : person
+    : teamPerson
+      ? t(teamPerson.statement, l)
+      : person
       ? t(person.bio, l)
       : metadataCopy[path]
         ? t(metadataCopy[path].description, l)
@@ -108,6 +115,8 @@ export default async function Page({ params }: Props) {
     "services/learning-capability": "capability-workshops",
   };
   if (old[p]) redirect(pathFor(l, "services") + "#" + old[p]);
+  const teamPerson = team.find((a) => p === "associates/" + a.slug);
+  if (p === "associates" || teamPerson) return <TeamPreview locale={l} person={teamPerson} preview={false} />;
   const pages: Record<string, React.ReactNode> = {
     "": <Home locale={l} />,
     about: <About locale={l} />,

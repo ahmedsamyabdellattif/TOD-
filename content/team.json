@@ -1,0 +1,394 @@
+[
+  {
+    "slug": "aref-al-mubarak",
+    "group": "leadership",
+    "name": {
+      "en": "Aref Al Mubarak",
+      "ar": "عارف المبارك"
+    },
+    "role": {
+      "en": "Managing Partner",
+      "ar": "الشريك الإداري"
+    },
+    "tags": [
+      {
+        "en": "Executive Coaching",
+        "ar": "الكوتشينج التنفيذي"
+      },
+      {
+        "en": "Board Advisory",
+        "ar": "استشارات مجالس الإدارة"
+      },
+      {
+        "en": "Leadership Transformation",
+        "ar": "التحول القيادي"
+      }
+    ],
+    "location": {
+      "en": "Riyadh, Saudi Arabia",
+      "ar": "الرياض، المملكة العربية السعودية"
+    },
+    "statement": {
+      "en": "Partners with senior leaders, boards and executive teams to strengthen leadership effectiveness, navigate change and create sustainable organisational impact.",
+      "ar": "يعمل مع القيادات العليا ومجالس الإدارة والفرق التنفيذية لتعزيز فاعلية القيادة، والتعامل مع التغيير، وإحداث أثر مؤسسي مستدام."
+    },
+    "bio": [
+      {
+        "en": "Aref Al Mubarak is TOD’s Managing Partner and an ICF Master Certified Coach who works with senior executives, boards and leadership teams across government and business. Since 2009, he has delivered more than 20,000 coaching hours to over 1,200 leaders, including C-suite executives and senior public-sector leaders.",
+        "ar": "عارف المبارك هو الشريك الإداري في TOD وكوتش معتمد بدرجة الماستر (MCC) من الاتحاد الدولي للكوتشينج (ICF). يعمل مع كبار التنفيذيين ومجالس الإدارة وفرق القيادة في القطاعين الحكومي والخاص. وقد قدّم منذ عام 2009 أكثر من 20,000 ساعة كوتشينج لأكثر من 1,200 قائد، بمن فيهم قيادات تنفيذية عليا وكبار قادة القطاع العام."
+      },
+      {
+        "en": "His work spans executive and team coaching, organisational change, leadership transformation and family-business succession. Aref combines extensive coaching practice with expertise in systemic team coaching, board dynamics, applied behavioural science and leadership assessment. He holds an MBA in Human Resources and a bachelor’s degree in Sociology and works with leaders across Saudi Arabia and the wider GCC.",
+        "ar": "تشمل ممارسته الكوتشينج التنفيذي وكوتشينج الفرق، والتغيير المؤسسي، والتحول القيادي، والتعاقب في الأعمال العائلية. ويجمع بين خبرة عملية واسعة في الكوتشينج ومعرفة بالكوتشينج النظمي للفرق، وديناميكيات مجالس الإدارة، والعلوم السلوكية التطبيقية، وتقييم القيادة. يحمل ماجستير إدارة الأعمال في الموارد البشرية وبكالوريوس علم الاجتماع، ويعمل مع قادة في المملكة العربية السعودية ودول مجلس التعاون الخليجي."
+      }
+    ],
+    "expertise": [
+      {
+        "en": "Executive coaching",
+        "ar": "الكوتشينج التنفيذي"
+      },
+      {
+        "en": "Team and group coaching",
+        "ar": "كوتشينج الفرق والمجموعات"
+      },
+      {
+        "en": "Board dynamics and governance",
+        "ar": "ديناميكيات مجالس الإدارة والحوكمة"
+      },
+      {
+        "en": "Organisational change",
+        "ar": "التغيير المؤسسي"
+      },
+      {
+        "en": "Family-business succession",
+        "ar": "التعاقب في الأعمال العائلية"
+      },
+      {
+        "en": "Leadership transformation",
+        "ar": "التحول القيادي"
+      }
+    ],
+    "credentials": [
+      {
+        "en": "Master Certified Coach, ICF",
+        "ar": "كوتش معتمد بدرجة الماستر (MCC)، الاتحاد الدولي للكوتشينج ICF"
+      },
+      {
+        "en": "Certified Master Mentor, IMC",
+        "ar": "مرشد معتمد بدرجة الماستر، IMC"
+      },
+      {
+        "en": "Systemic Team Coaching, AoEC",
+        "ar": "الكوتشينج النظمي للفرق، AoEC"
+      },
+      {
+        "en": "Mastering Board Governance, IMD",
+        "ar": "إتقان حوكمة مجالس الإدارة، IMD"
+      },
+      {
+        "en": "MBA in Human Resources",
+        "ar": "ماجستير إدارة الأعمال في الموارد البشرية"
+      },
+      {
+        "en": "BSc in Sociology",
+        "ar": "بكالوريوس علم الاجتماع"
+      }
+    ],
+    "linkedin": "https://www.linkedin.com/in/aref-almubarak-mcc-coach-bcg-imd-pwc-associate-b622a126/",
+    "photo": "/images/team-preview/aref-al-mubarak.png"
+  },
+  {
+    "slug": "mensur-burhan",
+    "group": "leadership",
+    "name": {
+      "en": "Mensur Burhan",
+      "ar": "منصور برهان"
+    },
+    "role": {
+      "en": "Managing Director",
+      "ar": "المدير العام"
+    },
+    "tags": [
+      {
+        "en": "Leadership Development",
+        "ar": "تطوير القيادات"
+      },
+      {
+        "en": "Organisational Development",
+        "ar": "التطوير المؤسسي"
+      },
+      {
+        "en": "Assessment",
+        "ar": "التقييم"
+      }
+    ],
+    "location": {
+      "en": "Riyadh, Saudi Arabia",
+      "ar": "الرياض، المملكة العربية السعودية"
+    },
+    "statement": {
+      "en": "Helps organisations strengthen leadership, build cohesive teams and translate strategic priorities into practical capability and performance.",
+      "ar": "يساعد المؤسسات على تطوير قياداتها، وبناء فرق متماسكة، وتحويل الأولويات الاستراتيجية إلى قدرات عملية وأداء ملموس."
+    },
+    "bio": [
+      {
+        "en": "Mensur Burhan is TOD’s Managing Director and a bilingual learning and organisational development consultant, mentor, coach, facilitator and qualified assessor. He works with public, semi-government and private-sector organisations to strengthen leadership, improve team performance and translate strategic priorities into practical capability.",
+        "ar": "منصور برهان هو المدير العام في TOD، ومستشار ثنائي اللغة في التعلم والتطوير المؤسسي، ومرشد وكوتش وميسّر ومقيّم مؤهل. يعمل مع جهات حكومية وشبه حكومية ومؤسسات من القطاع الخاص لتعزيز القيادة، وتحسين أداء الفرق، وتحويل الأولويات الاستراتيجية إلى قدرات عملية."
+      },
+      {
+        "en": "His experience spans leadership development, professional mentoring, team coaching, learning design, organisational development and assessment quality. Mensur brings particular expertise in designing structured learning and assessment processes that support fairness, consistency and measurable development. A British national based in Riyadh, he works professionally in English and Arabic and has supported organisations across government, aviation, education, technology, real estate and professional services.",
+        "ar": "تشمل خبرته تطوير القيادات، والإرشاد المهني، وكوتشينج الفرق، وتصميم التعلم، والتطوير المؤسسي، وجودة التقييم. ويتمتع بخبرة متخصصة في تصميم عمليات منظمة للتعلم والتقييم تدعم الإنصاف والاتساق والتطوير القابل للقياس. وهو بريطاني الجنسية مقيم في الرياض، ويعمل مهنيًا بالعربية والإنجليزية، وقد دعم مؤسسات في قطاعات الحكومة والطيران والتعليم والتقنية والعقارات والخدمات المهنية."
+      }
+    ],
+    "expertise": [
+      {
+        "en": "Leadership development",
+        "ar": "تطوير القيادات"
+      },
+      {
+        "en": "Organisational development",
+        "ar": "التطوير المؤسسي"
+      },
+      {
+        "en": "Team coaching and alignment",
+        "ar": "كوتشينج الفرق وتحقيق التوافق"
+      },
+      {
+        "en": "Professional mentoring",
+        "ar": "الإرشاد المهني"
+      },
+      {
+        "en": "Assessment design and verification",
+        "ar": "تصميم التقييم والتحقق من جودته"
+      },
+      {
+        "en": "Learning design and facilitation",
+        "ar": "تصميم التعلم والتيسير"
+      }
+    ],
+    "credentials": [
+      {
+        "en": "Certified Professional Mentor, IMC",
+        "ar": "مرشد مهني معتمد، IMC"
+      },
+      {
+        "en": "BPS Certificate in Assessor Skills and Centre Management",
+        "ar": "شهادة مهارات المقيّمين وإدارة مراكز التقييم، BPS"
+      },
+      {
+        "en": "ICF-accredited team coaching certificate",
+        "ar": "شهادة كوتشينج الفرق المعتمدة من ICF"
+      },
+      {
+        "en": "HRCI Learning and Development",
+        "ar": "التعلم والتطوير، HRCI"
+      },
+      {
+        "en": "Certified Business Professional in Leadership",
+        "ar": "محترف أعمال معتمد في القيادة"
+      },
+      {
+        "en": "CELTA Qualified Adult Learning Facilitator, Cambridge English",
+        "ar": "مؤهل CELTA لتيسير تعلم الكبار، Cambridge English"
+      }
+    ],
+    "linkedin": "https://www.linkedin.com/mensurburhan",
+    "photo": "/images/team-preview/mensur-burhan.jpeg"
+  },
+  {
+    "slug": "eman-saeed",
+    "group": "associates",
+    "name": {
+      "en": "Eman Saeed",
+      "ar": "إيمان سعيد"
+    },
+    "role": {
+      "en": "Associate | Leadership and Team Coach",
+      "ar": "خبيرة متعاونة | كوتش القيادة والفرق"
+    },
+    "tags": [
+      {
+        "en": "Leadership Development",
+        "ar": "تطوير القيادات"
+      },
+      {
+        "en": "Team Coaching",
+        "ar": "كوتشينج الفرق"
+      },
+      {
+        "en": "Facilitation",
+        "ar": "التيسير"
+      }
+    ],
+    "location": {
+      "en": "Riyadh, Saudi Arabia",
+      "ar": "الرياض، المملكة العربية السعودية"
+    },
+    "statement": {
+      "en": "Connects leadership experience, facilitation and coaching to create learning that is practical, personal and sustainable.",
+      "ar": "تجمع بين الخبرة القيادية والتيسير والكوتشينج لتقديم تعلم عملي وشخصي ومستدام."
+    },
+    "bio": [
+      {
+        "en": "Eman Saeed is an ICF Professional Certified Coach and leadership facilitator with more than 22 years of experience across Saudi Arabia, Oman and Bahrain. Having served in general management, operations, business development, training and university teaching roles, she brings direct organisational experience to her coaching and facilitation work.",
+        "ar": "إيمان سعيد كوتش محترفة معتمدة (PCC) من الاتحاد الدولي للكوتشينج (ICF) وميسّرة لتطوير القيادة، بخبرة تزيد على 22 عامًا في المملكة العربية السعودية وعُمان والبحرين. شغلت أدوارًا في الإدارة العامة والعمليات وتطوير الأعمال والتدريب والتدريس الجامعي، مما يمنح ممارستها في الكوتشينج والتيسير فهمًا مباشرًا لواقع المؤسسات."
+      },
+      {
+        "en": "Eman designs practical leadership experiences that connect organisational priorities with reflection, application and sustained behavioural change. Her work includes executive, team and group coaching, leadership programmes, retreats and mentor coaching. She has supported organisations across government, healthcare, financial services, FMCG, energy, education and professional services and delivers professionally in Arabic and English.",
+        "ar": "تصمم إيمان تجارب قيادية عملية تربط الأولويات المؤسسية بالتأمل والتطبيق والتغيير السلوكي المستدام. يشمل عملها الكوتشينج التنفيذي وكوتشينج الفرق والمجموعات، والبرامج القيادية، والملتقيات التطويرية، والإرشاد المهني للكوتشز. وقد دعمت مؤسسات في القطاعات الحكومية والرعاية الصحية والخدمات المالية والسلع الاستهلاكية سريعة التداول والطاقة والتعليم والخدمات المهنية، وتقدم خدماتها بالعربية والإنجليزية."
+      }
+    ],
+    "expertise": [
+      {
+        "en": "Leadership development",
+        "ar": "تطوير القيادات"
+      },
+      {
+        "en": "Executive coaching",
+        "ar": "الكوتشينج التنفيذي"
+      },
+      {
+        "en": "Team and group coaching",
+        "ar": "كوتشينج الفرق والمجموعات"
+      },
+      {
+        "en": "Leadership facilitation",
+        "ar": "تيسير تطوير القيادة"
+      },
+      {
+        "en": "Mentor coaching",
+        "ar": "الإرشاد المهني للكوتشز"
+      },
+      {
+        "en": "Change and transformation",
+        "ar": "التغيير والتحول"
+      }
+    ],
+    "credentials": [
+      {
+        "en": "Professional Certified Coach, ICF",
+        "ar": "كوتش محترفة معتمدة (PCC)، الاتحاد الدولي للكوتشينج ICF"
+      },
+      {
+        "en": "Certified CoachME Mentor Coach",
+        "ar": "مرشدة كوتشينج معتمدة، CoachME"
+      },
+      {
+        "en": "Leadership Circle Profile practitioner",
+        "ar": "ممارسة معتمدة لأداة Leadership Circle Profile"
+      },
+      {
+        "en": "Harrison Assessments practitioner",
+        "ar": "ممارسة معتمدة لتقييمات Harrison"
+      },
+      {
+        "en": "PAPI psychometric practitioner",
+        "ar": "ممارسة معتمدة لأداة PAPI السيكومترية"
+      },
+      {
+        "en": "MBA with executive diplomas in HR and management",
+        "ar": "ماجستير إدارة الأعمال ودبلومات تنفيذية في الموارد البشرية والإدارة"
+      }
+    ],
+    "linkedin": "https://www.linkedin.com/in/emansaeed80",
+    "photo": "/images/team-preview/eman-saeed.jpeg"
+  },
+  {
+    "slug": "habib-albinsaad",
+    "group": "associates",
+    "name": {
+      "en": "Dr. Habib Albinsaad",
+      "ar": "د. حبيب البنسعد"
+    },
+    "role": {
+      "en": "Associate | Executive Coach and Leadership Advisor",
+      "ar": "خبير متعاون | كوتش تنفيذي ومستشار قيادة"
+    },
+    "tags": [
+      {
+        "en": "Executive Coaching",
+        "ar": "الكوتشينج التنفيذي"
+      },
+      {
+        "en": "Leadership Development",
+        "ar": "تطوير القيادات"
+      },
+      {
+        "en": "Organisational Transformation",
+        "ar": "التحول المؤسسي"
+      }
+    ],
+    "location": {
+      "en": "Dammam, Saudi Arabia",
+      "ar": "الدمام، المملكة العربية السعودية"
+    },
+    "statement": {
+      "en": "Works with executives and teams to strengthen leadership effectiveness, increase self-awareness and turn development into organisational performance.",
+      "ar": "يعمل مع التنفيذيين والفرق لتعزيز فاعلية القيادة، وزيادة الوعي بالذات، وتحويل التطوير إلى أداء مؤسسي."
+    },
+    "bio": [
+      {
+        "en": "Dr. Habib Albinsaad is an executive coach, leadership facilitator and organisational development specialist with more than 15 years of experience. He partners with executives, professionals and teams to strengthen leadership effectiveness, increase self-awareness and translate individual development into organisational performance.",
+        "ar": "د. حبيب البنسعد كوتش تنفيذي وميسّر لتطوير القيادة ومتخصص في التطوير المؤسسي، بخبرة تزيد على 15 عامًا. يعمل مع التنفيذيين والمهنيين والفرق لتعزيز فاعلية القيادة، وزيادة الوعي بالذات، وترجمة التطوير الفردي إلى أداء مؤسسي."
+      },
+      {
+        "en": "Habib has delivered more than 4,000 coaching hours and has supported government entities and organisations across aviation, defence, healthcare, finance, technology, manufacturing and energy. His work encompasses executive and team coaching, leadership development, change management, entrepreneurship and family business. He is an ICF Professional Certified Coach, ATD Master Trainer and accredited trainer and assessment practitioner.",
+        "ar": "قدّم حبيب أكثر من 4,000 ساعة كوتشينج، ودعم جهات حكومية ومؤسسات في قطاعات الطيران والدفاع والرعاية الصحية والتمويل والتقنية والتصنيع والطاقة. يشمل عمله الكوتشينج التنفيذي وكوتشينج الفرق، وتطوير القيادات، وإدارة التغيير، وريادة الأعمال، والأعمال العائلية. وهو كوتش محترف معتمد (PCC) من الاتحاد الدولي للكوتشينج، ومدرب ماستر من ATD، ومدرب وممارس تقييم معتمد."
+      }
+    ],
+    "expertise": [
+      {
+        "en": "Executive and team coaching",
+        "ar": "الكوتشينج التنفيذي وكوتشينج الفرق"
+      },
+      {
+        "en": "Leadership development",
+        "ar": "تطوير القيادات"
+      },
+      {
+        "en": "Organisational transformation",
+        "ar": "التحول المؤسسي"
+      },
+      {
+        "en": "Change management",
+        "ar": "إدارة التغيير"
+      },
+      {
+        "en": "Entrepreneurship and business strategy",
+        "ar": "ريادة الأعمال واستراتيجية الأعمال"
+      },
+      {
+        "en": "Family business",
+        "ar": "الأعمال العائلية"
+      }
+    ],
+    "credentials": [
+      {
+        "en": "Professional Certified Coach, ICF",
+        "ar": "كوتش محترف معتمد (PCC)، الاتحاد الدولي للكوتشينج ICF"
+      },
+      {
+        "en": "More than 4,000 coaching hours",
+        "ar": "أكثر من 4,000 ساعة كوتشينج"
+      },
+      {
+        "en": "ATD Master Trainer",
+        "ar": "مدرب ماستر، ATD"
+      },
+      {
+        "en": "TVTC Accredited Trainer",
+        "ar": "مدرب معتمد من المؤسسة العامة للتدريب التقني والمهني TVTC"
+      },
+      {
+        "en": "DBA, Collège de Paris",
+        "ar": "دكتوراه إدارة الأعمال، Collège de Paris"
+      },
+      {
+        "en": "MBA, Swiss Business School",
+        "ar": "ماجستير إدارة الأعمال، Swiss Business School"
+      }
+    ],
+    "linkedin": "https://www.linkedin.com/in/habib-albinsaad",
+    "photo": "/images/team-preview/habib-albinsaad.jpeg"
+  }
+]

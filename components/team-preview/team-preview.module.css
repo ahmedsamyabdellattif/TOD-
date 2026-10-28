@@ -1,0 +1,114 @@
+.preview{--team-muted:#686158;background:var(--ivory)}
+.wrap{width:min(88.8%,1180px);margin-inline:auto}
+.reviewBar{background:var(--charcoal);color:var(--ivory);font-size:12px}
+.reviewBar .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:11px}
+.reviewBar a{color:#ead5b8;display:flex;gap:12px;align-items:center;min-height:26px}
+.hero{position:relative;overflow:hidden;padding-block:74px 0;background:var(--charcoal);color:var(--ivory);isolation:isolate}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:clamp(48px,5.4vw,76px);font-weight:400;line-height:1.15;margin-bottom:27px;max-width:800px}
+.hero h1>span{color:var(--gold)}
+.hero :global(.eyebrow){color:var(--gold)}
+.hero p{max-width:570px;font-size:18px;line-height:1.9;margin-bottom:35px;color:#e0d8ce}
+.sectionNav{display:flex;gap:36px;border-top:1px solid #ffffff30;padding-block:23px;margin-top:40px;max-width:660px}
+.sectionNav a{display:flex;align-items:center;gap:32px;font-size:14px}
+.sectionNav a:hover{color:var(--gold)}
+.sectionNav a span{color:var(--gold)}
+.heroMark{position:absolute;width:350px;height:350px;inset-inline-end:6%;top:70px;display:grid;place-items:center;color:var(--gold);opacity:.6;z-index:0}
+.heroMark i{position:absolute;border:1px solid #b29773;border-radius:50%;width:100%;height:100%}
+.heroMark i:nth-child(2){width:74%;height:74%;transform:translateX(20%)}
+.heroMark i:nth-child(3){width:48%;height:48%;transform:translateX(-35%)}
+.heroMark span{font-size:12px;letter-spacing:.32em;line-height:1.8;transform:translateX(50%)}
+.teamSection{padding-block:76px 86px;scroll-margin-top:30px}
+.associates{background:var(--charcoal);color:var(--ivory);border-top:1px solid #ffffff25}
+.associates .sectionHeading>p{color:#e0d8ce}
+.associates .sectionHeading :global(.eyebrow){color:var(--gold)}
+.associates .card{color:var(--charcoal)}
+.hero a:focus-visible,.associates a:focus-visible{outline-color:var(--gold)}
+.sectionHeading{display:grid;grid-template-columns:.85fr 1.15fr;gap:75px;align-items:start;margin-bottom:42px}
+.sectionHeading h2{font-size:clamp(32px,3vw,44px);margin-bottom:0}
+.sectionHeading :global(.eyebrow){font-size:11px;margin-bottom:15px}
+.sectionHeading>p{font-size:16px;line-height:1.9;color:var(--team-muted);margin:0;padding-top:5px;max-width:650px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px;max-width:980px;margin-inline:auto}
+.card{background:var(--ivory);border:1px solid var(--line);display:flex;flex-direction:column;transition:border-color .2s}
+.card:hover{border-color:var(--bronze)}
+.portraitLink{display:block}
+.portrait{aspect-ratio:4/5;border:8px solid var(--charcoal);position:relative;overflow:hidden;background:linear-gradient(140deg,#e4dbce,#d3c7b6);display:flex;align-items:center;justify-content:center;isolation:isolate}
+.portrait::before{content:'';position:absolute;border:1px solid #b4a18a70;border-radius:50%;width:85%;aspect-ratio:1;inset-inline-start:30%;top:18%;z-index:-1}
+.portrait::after{content:'';position:absolute;inset:0;background:#3333330a;pointer-events:none}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:grayscale(1)}
+.monogram{font-size:clamp(60px,8vw,110px);font-weight:300;letter-spacing:-.06em;color:#78695570;line-height:1}
+.portraitNote{position:absolute;bottom:34px;inset-inline:22px;text-align:center;font-size:12px;color:#5f5548}
+.cardBody{padding:27px 28px 23px;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:28px;font-weight:450;margin-bottom:9px;line-height:1.4}
+.role{font-size:14px;color:var(--team-muted);line-height:1.8;margin-bottom:20px;min-height:50px}
+.tags{display:flex;gap:8px 12px;flex-wrap:wrap;list-style:none;padding:0;margin:0 0 22px;min-height:65px;align-content:flex-start}
+.tags li{font-size:12px;line-height:1.9;border-bottom:1px solid #cdbb9f;padding-bottom:3px}
+.location{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--team-muted);line-height:1.8;margin:0 0 22px}
+.location svg{flex-shrink:0;color:var(--bronze)}
+.profileLink{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:18px;font-size:13px;margin-top:auto;min-height:45px}
+.profileLink span{font-size:23px;color:var(--bronze)}
+.profileLink:hover{color:var(--bronze)}
+.profileHero{background:linear-gradient(115deg,var(--ivory),var(--beige));padding-block:30px 45px}
+.back{display:inline-flex;gap:12px;font-size:13px;margin-bottom:38px;color:var(--team-muted);min-height:30px;align-items:center}
+.profileHero h1{font-size:clamp(38px,4.5vw,62px);margin-bottom:14px;line-height:1.3}
+.profileHero :global(.eyebrow){font-size:11px;margin-bottom:14px}
+.profileRole{font-size:18px;margin:0;color:var(--team-muted)}
+.profileGrid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:75px;padding-block:65px 85px;align-items:start}
+.profileAside .location{margin-block:20px}
+.contact{display:flex;justify-content:space-between;gap:20px;background:var(--charcoal);color:white;padding:17px 20px;font-size:14px;align-items:center}
+.contact span{color:var(--gold);font-size:22px}
+.contact:hover{background:#46423c}
+.linkedin{display:flex;align-items:center;justify-content:space-between;font-size:13px;padding:18px 0;border-bottom:1px solid var(--line)}
+.linkedin:hover{color:var(--bronze)}
+.statement{font-size:clamp(22px,2.2vw,29px);line-height:1.65;margin:0 0 35px;padding-bottom:32px;border-bottom:1px solid var(--line)}
+.profileContent section+section{margin-top:38px}
+.profileContent h2{font-size:27px;margin-bottom:19px;line-height:1.5}
+.profileContent section>p{font-size:16px;color:#59544e;line-height:1.95;margin-bottom:20px}
+.expertise{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 25px;list-style:none;padding:0;margin:0}
+.expertise li{border-bottom:1px solid var(--line);padding:13px 0;font-size:14px;line-height:1.8}
+.credentials{padding-inline-start:19px;margin:0;color:#59544e;font-size:14px;line-height:1.9}
+.credentials li{padding-inline-start:5px;margin-bottom:10px}
+.credentials li::marker{color:var(--bronze)}
+.more{background:var(--beige);padding-block:55px}
+.more h2{font-size:34px}
+.moreLinks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.moreLinks a{border-top:1px solid #c2b5a2;padding-top:22px;display:flex;justify-content:space-between;gap:16px;font-size:20px;line-height:1.7}
+.moreLinks small{display:block;color:var(--team-muted);font-size:12px;margin-top:8px}
+.moreLinks a>span:last-child{color:var(--bronze)}
+:global(html[lang=ar]) .hero h1{line-height:1.45;font-size:clamp(43px,5vw,66px)}
+:global(html[lang=ar]) .heroMark{transform:scaleX(-1)}
+:global(html[lang=ar]) .heroMark span{transform:scaleX(-1)}
+:global(html[lang=ar]) .profileContent section>p{line-height:2.1}
+@media(min-width:1400px){.heroMark{inset-inline-end:12%}}
+@media(max-width:1000px){.heroMark{opacity:.22;inset-inline-end:-70px}.sectionHeading{gap:35px}.profileGrid{gap:38px}.cardBody{padding:22px}.cards{gap:24px}}
+@media(max-width:650px){.wrap{width:calc(100% - 40px)}.hero{padding-top:42px}.hero h1{font-size:45px}.hero p{font-size:16px;max-width:95%}.heroMark{width:230px;height:230px;top:50px;opacity:.13}.sectionNav{gap:26px;padding-block:18px;margin-top:28px}.sectionNav a{font-size:12px;gap:16px}.teamSection{padding-block:42px 48px}.sectionHeading{grid-template-columns:1fr;gap:18px;margin-bottom:28px}.sectionHeading>p{font-size:14px}.cards{grid-template-columns:1fr;gap:28px;max-width:420px}.cardBody{padding:23px}.role{min-height:0;margin-bottom:16px}.tags{min-height:0;margin-bottom:20px}.profileGrid{grid-template-columns:1fr;gap:35px;padding-block:35px 45px}.profileAside{max-width:420px;width:100%;margin-inline:auto}.profileHero{padding-bottom:30px}.back{margin-bottom:25px}.profileRole{font-size:15px}.statement{font-size:22px}.profileContent section>p{font-size:15px}.expertise{grid-template-columns:1fr}.moreLinks{grid-template-columns:1fr;gap:24px}.more{padding-block:40px}.more h2{font-size:28px}.reviewBar{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.card{transition:none}}
+
+/* Open profile layout with separated circular portraits. */
+.cards{max-width:1080px;column-gap:100px;row-gap:60px}
+.card{background:transparent;border:0;align-items:center;text-align:center}
+.card:hover{border-color:transparent}
+.portraitLink{width:min(100%,300px);margin-bottom:28px;border-radius:50%}
+.portrait{aspect-ratio:1;border-radius:50%;border:7px solid var(--charcoal);width:100%;background:var(--charcoal)}
+.portrait::before{display:none}
+.portrait::after{border-radius:50%}
+.portrait img{object-position:center 24%}
+.cardBody{width:100%;max-width:410px;padding:0 12px}
+.card h3{font-size:29px;margin-bottom:10px}
+.role{min-height:50px;margin-bottom:18px}
+.tags{justify-content:center;min-height:65px;gap:7px 14px}
+.location{justify-content:center}
+.profileLink{width:100%;max-width:260px;margin-inline:auto;justify-content:center;gap:32px}
+.associates .card{color:var(--ivory)}
+.associates .portrait{border-color:#70675b}
+.associates .role,.associates .location{color:#e0d8ce}
+.associates .tags li{border-color:#ffffff45}
+.associates .location svg,.associates .profileLink span{color:var(--gold)}
+.associates .profileLink{border-color:#ffffff35}
+.associates .profileLink:hover{color:var(--gold)}
+.profileAside .portrait{max-width:340px;margin-inline:auto}
+@media(max-width:1000px){.cards{column-gap:60px}.portraitLink{width:min(100%,270px)}}
+@media(max-width:650px){.cards{row-gap:54px;max-width:400px}.portraitLink{width:250px;margin-bottom:24px}.cardBody{padding:0}.role,.tags{min-height:0}.card h3{font-size:27px}.profileAside .portrait{max-width:290px}}
+
+/* Crop only the supplied blurred outer frame; keep the source photo intact. */
+.arefPortrait img{transform:scale(1.24);transform-origin:50% 50%;object-position:center center}

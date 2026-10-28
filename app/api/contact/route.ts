@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { buildContactEmail } from "@/lib/contact-email";
 import { site, streams } from "@/lib/content";
 const attempts = new Map<string, { count: number; expires: number }>();
 export const runtime = "nodejs";
@@ -79,6 +80,18 @@ export async function POST(request: Request) {
     const result = await verification.json();
     if (!result.success || result.hostname !== new URL(allowed).hostname)
       return respond("verification", 400);
+    const submittedAt = new Intl.DateTimeFormat("en-GB", {
+      dateStyle: "long", timeStyle: "short", timeZone: "Asia/Riyadh",
+    }).format(new Date());
+    const emailContent = buildContactEmail({
+      name, organization, email, message,
+      role: str("role", 200) || "Not provided",
+      phone: str("phone", 100) || "Not provided",
+      interest: streams.find(stream => stream.id === interest)?.name.en || "Not sure yet",
+      recipient: site.email,
+      policyUrl: `${allowed}/${d.locale === "ar" ? "ar" : "en"}/privacy`,
+      submittedAt,
+    });
     const resultEmail = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
@@ -90,8 +103,8 @@ export async function POST(request: Request) {
         from: process.env.CONTACT_FROM,
         to: [site.email],
         reply_to: email,
-        subject: "TOD website enquiry",
-        text: `Name: ${name}\nOrganization: ${organization}\nRole: ${str("role", 200)}\nEmail: ${email}\nPhone: ${str("phone", 100)}\nInterest: ${interest}\n\n${message}\n\nPrivacy consent: accepted\nConsent time: ${new Date().toISOString()}\nPolicy URL: ${allowed}/${d.locale === "ar" ? "ar" : "en"}/privacy`,
+        subject: "New Website Enquiry | TOD",
+        ...emailContent,
       }),
       signal: AbortSignal.timeout(15000),
     });

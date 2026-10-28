@@ -65,8 +65,8 @@ export function ContactForm({
       if (!response.ok) throw new Error(json.code || "failed");
       setStatus(
         ar
-          ? "شكرًا لك. تم استلام رسالتك وسنتواصل معك."
-          : "Thank you. We have received your message and will be in touch.",
+          ? "شكرًا لتواصلك مع TOD. تم إرسال رسالتك بنجاح، وسنتواصل معك عبر بريدك الإلكتروني."
+          : "Thank you for contacting TOD. Your message has been sent successfully, and we will contact you by email.",
       );
       form.reset();
     } catch {
@@ -86,11 +86,16 @@ export function ContactForm({
       {!enabled && (
         <p className="notice">
           {ar
-            ? "نموذج الإرسال بانتظار تفعيل خدمة البريد واعتماد سياسة الخصوصية. يمكنك التواصل الآن عبر"
-            : "The form is awaiting email-service setup and an approved privacy policy. You can contact us now at"}{" "}
-          <a href={`mailto:${email}`}>{email}</a>.
+            ? "للتواصل مع فريق TOD، راسلنا على"
+            : "To contact the TOD team, email us at"}{" "}
+          <a href={`mailto:${email}`} dir="ltr">{email}</a>.
         </p>
       )}
+      <p>
+        {ar
+          ? "أخبرنا عن احتياجك، وسيتواصل معك فريق TOD عبر البريد الإلكتروني الذي تسجّله."
+          : "Tell us what you need, and the TOD team will contact you at the email address you provide."}
+      </p>
       <div className="form-grid">
         {[
           ["name", ar ? "الاسم الكامل" : "Full name", "text", "name", true],
