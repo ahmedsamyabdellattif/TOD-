@@ -112,3 +112,6 @@
 
 /* Crop only the supplied blurred outer frame; keep the source photo intact. */
 .arefPortrait img{transform:scale(1.24);transform-origin:50% 50%;object-position:center center}
+
+/* Match Mensur’s face framing to the other circular headshots. */
+.mensurPortrait img{transform:scale(1.2);transform-origin:50% 28%;object-position:center center}

@@ -1,3 +1,4 @@
+import { ArrowIcon } from "@/components/arrow-icon";
 import team from "@/content/team.json";
 import { TeamPreview } from "@/components/team-preview/team-preview";
 import { notFound, redirect } from "next/navigation";
@@ -128,7 +129,7 @@ export default async function Page({ params }: Props) {
     contact: <ContactPage locale={l} />,
   };
   if (pages[p]) return <main id="main">{pages[p]}</main>;
-  if (p === "legal") return <main id="main"><PageHead locale={l} title={t(pageNames.legal,l)}/><section className="section"><nav className="container legal-links" aria-label={t(pageNames.legal,l)}>{["privacy","terms"].map(key=><Link className="text-link" key={key} href={pathFor(l,key)}>{t(pageNames[key],l)} ↗</Link>)}</nav><div className="container"><ImageSlot page="legal" locale={l}/></div></section></main>;
+  if (p === "legal") return <main id="main"><PageHead locale={l} title={t(pageNames.legal,l)}/><section className="section"><nav className="container legal-links" aria-label={t(pageNames.legal,l)}>{["privacy","terms"].map(key=><Link className="text-link" key={key} href={pathFor(l,key)}>{t(pageNames[key],l)} <ArrowIcon /></Link>)}</nav><div className="container"><ImageSlot page="legal" locale={l}/></div></section></main>;
   if (p === "privacy" || p === "terms")
     return (
       <main id="main">
@@ -277,7 +278,7 @@ export default async function Page({ params }: Props) {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  LinkedIn ↗
+                  LinkedIn <ArrowIcon />
                 </a>
               )}
             </div>

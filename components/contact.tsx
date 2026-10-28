@@ -1,6 +1,7 @@
 "use client";
 import { useState, useRef, useEffect, type FormEvent } from "react";
 import Link from "next/link";
+import { ArrowIcon } from "@/components/arrow-icon";
 import Script from "next/script";
 import { streams, site, t, pathFor, type Locale } from "@/lib/content";
 declare global {
@@ -199,7 +200,7 @@ export function ContactForm({
           : ar
             ? "إرسال الرسالة"
             : "Send message"}{" "}
-        ↗
+        <ArrowIcon />
       </button>
       <p role="status" className="form-status">
         {status}

@@ -1,3 +1,4 @@
+import { ArrowIcon } from "@/components/arrow-icon";
 import Link from "next/link";
 import {
   site,
@@ -26,25 +27,7 @@ import {
 import { Constellation, Layers, WayOfWorking, PracticeCycle } from "./diagrams";
 import { ContactForm } from "./contact";
 const tx = (l: Locale, en: string, ar: string) => (l === "en" ? en : ar);
-function ArrowIcon() {
-  return (
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      focusable="false"
-      style={{ display: "inline-block", width: "1em", height: "1em", flexShrink: 0, verticalAlign: "-0.125em" }}
-    >
-      <path d="M7 17 17 7M7 7h10v10" />
-    </svg>
-  );
-}
+
 
 export function Action({ locale, label }: { locale: Locale; label?: Text }) {
   return (

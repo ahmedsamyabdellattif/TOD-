@@ -1,4 +1,5 @@
 "use client";
+import { ArrowIcon } from "@/components/arrow-icon";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -14,25 +15,7 @@ import {
   type Locale,
   type Article,
 } from "@/lib/content";
-function ArrowIcon() {
-  return (
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      focusable="false"
-      style={{ display: "inline-block", width: "1em", height: "1em", flexShrink: 0, verticalAlign: "-0.125em" }}
-    >
-      <path d="M7 17 17 7M7 7h10v10" />
-    </svg>
-  );
-}
+
 
 export function UtilityIcon({ name }: { name: string }) {
   return (

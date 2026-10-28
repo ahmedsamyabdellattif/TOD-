@@ -1,5 +1,6 @@
 "use client";
 import { useState, useId, type CSSProperties } from "react";
+import { ArrowIcon } from "./arrow-icon";
 import { ValueIcon, SystemIcon } from "./icons";
 import {
   values,
@@ -214,7 +215,7 @@ export function WayOfWorking({
 }
 export function Layers({locale}:{locale:Locale}){
  const [active,setActive]=useState(0);const item=approach.layers[active];const id=useId();
- return <div className="seeing-layers"><div className="seeing-steps" role="group" aria-label={locale==='ar'?'طبقات الرؤية الخمس':'Five layers of seeing'}>{approach.layers.map((layer,i)=><button key={layer.name.en} aria-pressed={active===i} aria-controls={id} onClick={()=>setActive(i)} className={i<=active?'reached':''}><span>{new Intl.NumberFormat(locale==='ar'?'ar-SA':'en-US',{minimumIntegerDigits:2}).format(i+1)}</span><strong>{t(layer.name,locale)}</strong></button>)}</div><div id={id} className="seeing-detail" aria-live="polite"><div className="seeing-orbit" aria-hidden="true">{[0,1,2,3,4].map(i=><span key={i} className={i<=active?'reached':''} style={{'--i':i} as CSSProperties}/>)}<b>{new Intl.NumberFormat(locale==='ar'?'ar-SA':'en-US',{minimumIntegerDigits:2}).format(active+1)}</b></div><article key={active}><span className="eyebrow">{locale==='ar'?'طبقات الرؤية':'Layers of seeing'}</span><h3>{t(item.name,locale)}</h3><em>{t(item.question,locale)}</em><p>{t(item.focus,locale)}</p><button className="text-link" onClick={()=>setActive(n=>(n+1)%5)}>{locale==='ar'?'الطبقة التالية':'Next layer'} <span aria-hidden="true">{locale==='ar'?'←':'→'}</span></button></article></div></div>
+ return <div className="seeing-layers"><div className="seeing-steps" role="group" aria-label={locale==='ar'?'طبقات الرؤية الخمس':'Five layers of seeing'}>{approach.layers.map((layer,i)=><button key={layer.name.en} aria-pressed={active===i} aria-controls={id} onClick={()=>setActive(i)} className={i<=active?'reached':''}><span>{new Intl.NumberFormat(locale==='ar'?'ar-SA':'en-US',{minimumIntegerDigits:2}).format(i+1)}</span><strong>{t(layer.name,locale)}</strong></button>)}</div><div id={id} className="seeing-detail" aria-live="polite"><div className="seeing-orbit" aria-hidden="true">{[0,1,2,3,4].map(i=><span key={i} className={i<=active?'reached':''} style={{'--i':i} as CSSProperties}/>)}<b>{new Intl.NumberFormat(locale==='ar'?'ar-SA':'en-US',{minimumIntegerDigits:2}).format(active+1)}</b></div><article key={active}><span className="eyebrow">{locale==='ar'?'طبقات الرؤية':'Layers of seeing'}</span><h3>{t(item.name,locale)}</h3><em>{t(item.question,locale)}</em><p>{t(item.focus,locale)}</p><button className="text-link" onClick={()=>setActive(n=>(n+1)%5)}>{locale==='ar'?'الطبقة التالية':'Next layer'} <span aria-hidden="true"><ArrowIcon direction={locale === "ar" ? "left" : "right"} /></span></button></article></div></div>
 }
 export function PracticeCycle({ locale }: { locale: Locale }) {
   const names =
@@ -244,13 +245,13 @@ export function PracticeCycle({ locale }: { locale: Locale }) {
             <h3>{n}</h3>
             <p>{desc[i]}</p>
             <span className="cycle-arrow" aria-hidden="true">
-              {locale === "ar" ? "←" : "→"}
+              <ArrowIcon direction={locale === "ar" ? "left" : "right"} />
             </span>
           </li>
         ))}
       </ol>
       <p className="cycle-return">
-        ↶{" "}
+        <ArrowIcon direction="return" />{" "}
         {locale === "ar"
           ? "تعود المعرفة لتثري الممارسة"
           : "Knowledge returns to strengthen practice"}
