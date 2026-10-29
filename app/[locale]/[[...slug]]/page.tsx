@@ -89,9 +89,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: l === "ar" ? "ar_SA" : "en_US",
       images: [
         {
-          url: "/social-preview.png?v=3",
-          width: 600,
-          height: 600,
+          url: "/social-preview.png?v=4-small",
+          width: 240,
+          height: 240,
           alt: "TOD — Human Systems",
         },
       ],
@@ -100,7 +100,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary",
       title,
       description,
-      images: ["/social-preview.png?v=3"],
+      images: ["/social-preview.png?v=4-small"],
     },
   };
 }

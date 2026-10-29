@@ -1,3 +1,5 @@
+import { HomeAudiences } from "./home-audiences";
+import { HomeServices } from "./home-services";
 import { ArrowIcon } from "@/components/arrow-icon";
 import Link from "next/link";
 import {
@@ -41,14 +43,16 @@ export function PageHead({
   title,
   eyebrow,
   description,
+  className = "",
 }: {
   locale: Locale;
   title: string;
   eyebrow?: string;
   description?: string;
+  className?: string;
 }) {
   return (
-    <section className="page-head">
+    <section className={`page-head ${className}`}>
       <div className="container">
         <span className="eyebrow">{eyebrow || "TOD / HUMAN SYSTEMS"}</span>
         <h1>{title}</h1>
@@ -112,7 +116,7 @@ export function LineIcon({kind=0}:{kind?:number}) {
  const paths=['M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM4 22v-2a8 8 0 0 1 16 0v2','M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm8-1a2 2 0 1 0 0-4M2 21v-2a7 7 0 0 1 14 0v2m2-7a5 5 0 0 1 4 5v2','M2 9 12 2l10 7H2Zm2 3v8m5-8v8m6-8v8m5-8v8M2 22h20','M8 5a3 3 0 1 0 6 0 3 3 0 0 0-6 0ZM5 14v-2a6 6 0 0 1 12 0v2M2 15h20v7H2v-7m4 0v7m12-7v7','M3 7h18v14H3V7Zm5 0V3h8v4M3 13h18m-11-2v4h4v-4'];
  return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" aria-hidden="true"><path d={paths[kind%paths.length]} strokeLinecap="round" strokeLinejoin="round"/></svg>
 }
-export function Home({locale:l}:{locale:Locale}) {return <div className="option-two-home"><ImageGallery locale={l}/><section className="audience-band"><div className="center-heading"><span className="eyebrow">{tx(l,'WHO WE PARTNER WITH','شركاؤنا في العمل')}</span><span className="gold-rule"/></div><div className="audience-columns">{[audiences[1],audiences[2],audiences[3],audiences[0],audiences[5]].map((a,i)=><div key={a.title.en}><LineIcon kind={i}/><h2>{t(a.title,l)}</h2><p>{t(a.description,l)}</p></div>)}</div></section><section className="about-band"><div className="brand-panel">{site.pageImages.find(x=>x.page==='home-about')?.src?<ImageSlot page="home-about" locale={l}/>:<><img src={site.brandAssets.icon} alt="" width="260" height="260"/><span>HUMAN SYSTEMS</span></>}</div><div className="about-copy"><span className="eyebrow">{tx(l,'ABOUT TOD','عن TOD')}</span><h2>{t(intro.understand,l)}</h2><p>{t(intro.who,l)}</p><Link className="outline-link" href={pathFor(l,'about')}>{tx(l,'About TOD','عن TOD')} <ArrowIcon /></Link></div><div className="principle-stack">{stages.slice(0,3).map((step,i)=><div key={step.name.en}><LineIcon kind={i}/><div><h3>{t(step.name,l)}</h3><p>{t(step.description,l)}</p></div></div>)}<Link className="learn-more" href={pathFor(l,'approach')}>{tx(l,'Our Approach','منهجنا')} <ArrowIcon /></Link></div></section><section className="service-panels"><div className="center-heading"><span className="eyebrow">{tx(l,'OUR SERVICES','خدماتنا')}</span><span className="gold-rule"/></div><div className="service-panel-grid">{streams.map((s,i)=><Link className="service-panel" key={s.id} href={pathFor(l,'services')+'#'+s.id}><div className={'service-symbol symbol-'+i}><ImageSlot page={`home-service-${i+1}`} locale={l}/></div><div><h2>{t(s.name,l)}</h2><p>{t(s.intro,l)}</p><span className="learn-more">{tx(l,'Explore','استكشف')} <ArrowIcon /></span></div></Link>)}</div></section><section className="section experience-section"><div className="container"><Experience locale={l} home/></div></section><section className="section beige"><div className="container"><h2>{tx(l,'How we work','كيف نعمل')}</h2><WayOfWorking locale={l} compact/></div></section><section className="section white"><div className="container"><h2>{tx(l,'The Development Library','مكتبة التطوير')}</h2>{articles.length?<div className="article-grid">{articles.slice(0,3).map(a=><ArticleCard key={a.slug} article={a} locale={l}/>)}</div>:<div className="library-slots">{[1,2,3].map(i=><div key={i}><ImageSlot page={`home-library-${i}`} locale={l}/><span className="eyebrow">0{i}</span><p>{tx(l,'Article awaiting publication','مقالة بانتظار النشر')}</p></div>)}</div>}<Link className="text-link" href={pathFor(l,'library')}>{tx(l,'Visit the Library','تصفح المكتبة')} <ArrowIcon /></Link></div></section><Closing locale={l}/></div>}
+export function Home({locale:l}:{locale:Locale}) {return <div className="option-two-home"><ImageGallery locale={l}/><HomeAudiences locale={l}/><section className="about-band"><div className="brand-panel">{site.pageImages.find(x=>x.page==='home-about')?.src?<ImageSlot page="home-about" locale={l}/>:<><img src={site.brandAssets.icon} alt="" width="260" height="260"/><span>HUMAN SYSTEMS</span></>}</div><div className="about-copy"><span className="eyebrow">{tx(l,'ABOUT TOD','عن TOD')}</span><h2>{t(intro.understand,l)}</h2><p>{t(intro.who,l)}</p><Link className="outline-link" href={pathFor(l,'about')}>{tx(l,'About TOD','عن TOD')} <ArrowIcon /></Link></div><div className="principle-stack">{stages.slice(0,3).map((step,i)=><div key={step.name.en}><LineIcon kind={i}/><div><h3>{t(step.name,l)}</h3><p>{t(step.description,l)}</p></div></div>)}<Link className="learn-more" href={pathFor(l,'approach')}>{tx(l,'Our Approach','منهجنا')} <ArrowIcon /></Link></div></section><HomeServices locale={l}/><section className="section experience-section"><div className="container"><Experience locale={l} home/></div></section><section className="section beige"><div className="container"><h2>{tx(l,'How we work','كيف نعمل')}</h2><WayOfWorking locale={l} compact/></div></section><section className="section white"><div className="container"><h2>{tx(l,'The Development Library','مكتبة التطوير')}</h2>{articles.length?<div className="article-grid">{articles.slice(0,3).map(a=><ArticleCard key={a.slug} article={a} locale={l}/>)}</div>:<div className="library-slots">{[1,2,3].map(i=><div key={i}><ImageSlot page={`home-library-${i}`} locale={l}/><span className="eyebrow">0{i}</span><p>{tx(l,'Article awaiting publication','مقالة بانتظار النشر')}</p></div>)}</div>}<Link className="text-link" href={pathFor(l,'library')}>{tx(l,'Visit the Library','تصفح المكتبة')} <ArrowIcon /></Link></div></section><Closing locale={l}/></div>}
 export function AudienceGrid({ locale }: { locale: Locale }) {
   return (
     <div className="audience-grid">
@@ -471,6 +475,7 @@ export function ContactPage({ locale: l }: { locale: Locale }) {
     <>
       <PageHead
         locale={l}
+        className="contact-page-head"
         title={tx(l, "Start a conversation", "ابدأ حوارًا")}
         description={t(intro.contact, l)}
       />
@@ -479,13 +484,9 @@ export function ContactPage({ locale: l }: { locale: Locale }) {
           <aside>
             <h2>{tx(l, "Contact TOD", "تواصل مع TOD")}</h2>
             <Social locale={l} />
-            <p>{t(site.address, l)}</p>
-            <p className="muted">
-              
-          
-                
-              
-            </p>
+            <div className="contact-location-group">
+              <p>{t(site.address, l)}</p>
+            </div>
             <iframe
   title={l === "ar" ? "خريطة الرياض" : "Map of Riyadh"}
   src="https://maps.google.com/maps?q=Riyadh%2C%20Saudi%20Arabia&z=10&output=embed"

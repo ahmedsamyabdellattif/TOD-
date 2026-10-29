@@ -115,3 +115,6 @@
 
 /* Match Mensur’s face framing to the other circular headshots. */
 .mensurPortrait img{transform:scale(1.2);transform-origin:50% 28%;object-position:center center}
+
+/* Same frame as the shared header and footer, including narrow screens. */
+.preview .wrap{width:calc(100% - var(--page-gutter) - var(--page-gutter));max-width:none;margin-inline:auto}

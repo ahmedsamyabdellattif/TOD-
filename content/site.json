@@ -5,8 +5,8 @@
   "phone": "+966552714226",
   "phoneDisplay": "+966 55 271 4226",
   "address": {
-    "en": " Riyadh, Kingdom of Saudi Arabia",
-    "ar": "[الرياض، المملكة العربية السعوديةCR: 1010420000"
+    "en": "Riyadh, Kingdom of Saudi Arabia",
+    "ar": "الرياض، المملكة العربية السعودية"
   },
   "social": [
     {
@@ -228,5 +228,6 @@
     "darkLogo": "/brand/logo-dark.png",
     "lightLogo": "/brand/logo-light.png",
     "icon": "/uploads/d50e8f392040f95749786a6e.jpg"
-  }
+  },
+  "commercialRegistration": "1010420000"
 }

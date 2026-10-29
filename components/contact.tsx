@@ -23,6 +23,7 @@ export function ContactForm({
   siteKey: string;
 }) {
   const ar = locale === "ar";
+  const formElement = useRef<HTMLFormElement>(null);
   const [token, setToken] = useState("");
   const [scriptReady, setScriptReady] = useState(false);
   const [status, setStatus] = useState("");
@@ -30,6 +31,37 @@ export function ContactForm({
   const widget = useRef<HTMLDivElement>(null);
   const widgetId = useRef<string | null>(null);
   const email = site.email;
+  useEffect(() => {
+    const form = formElement.current;
+    const layout = form?.closest<HTMLElement>(".contact-layout");
+    const fields = form?.querySelector<HTMLElement>(".form-grid");
+    const aside = layout?.querySelector("aside");
+    if (!form || !layout || !fields || !aside || !window.ResizeObserver) return;
+    const desktop = window.matchMedia("(min-width: 1001px)");
+    const align = () => {
+      if (!desktop.matches) {
+        layout.style.removeProperty("--contact-aside-height");
+        layout.style.removeProperty("--contact-heading-gap");
+        return;
+      }
+      const heading = aside.querySelector("h2");
+      const firstInput = fields.querySelector('input[name="name"]');
+      if (heading && firstInput) {
+        const gap = firstInput.getBoundingClientRect().top - heading.getBoundingClientRect().bottom;
+        layout.style.setProperty("--contact-heading-gap", `${Math.max(0, gap)}px`);
+      }
+      const height = fields.getBoundingClientRect().bottom - aside.getBoundingClientRect().top;
+      layout.style.setProperty("--contact-aside-height", `${Math.ceil(height)}px`);
+    };
+    const observer = new ResizeObserver(align);
+    observer.observe(form);
+    observer.observe(fields);
+    const heading = aside.querySelector("h2");
+    if (heading) observer.observe(heading);
+    desktop.addEventListener("change", align);
+    align();
+    return () => { observer.disconnect(); desktop.removeEventListener("change", align); layout.style.removeProperty("--contact-aside-height"); layout.style.removeProperty("--contact-heading-gap"); };
+  }, [locale]);
   useEffect(() => {
     if (!enabled || !scriptReady || !widget.current || !window.turnstile)
       return;
@@ -83,15 +115,7 @@ export function ContactForm({
     }
   }
   return (
-    <form className="contact-form" onSubmit={submit}>
-      {!enabled && (
-        <p className="notice">
-          {ar
-            ? "للتواصل مع فريق TOD، راسلنا على"
-            : "To contact the TOD team, email us at"}{" "}
-          <a href={`mailto:${email}`} dir="ltr">{email}</a>.
-        </p>
-      )}
+    <form ref={formElement} className="contact-form" onSubmit={submit}>
       <p>
         {ar
           ? "أخبرنا عن احتياجك، وسيتواصل معك فريق TOD عبر البريد الإلكتروني الذي تسجّله."

@@ -1,6 +1,7 @@
 import "@fontsource-variable/source-serif-4";
 import "@fontsource-variable/inter";
 import "../globals.css";
+import "../alignment.css";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Header, Social } from "@/components/ui";
