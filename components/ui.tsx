@@ -255,14 +255,14 @@ export function ServiceFilter({ locale }: { locale: Locale }) {
     history.pushState(null, "", id === "all" ? location.pathname : `#${id}`);
   }
   return (
-    <>
+    <div className="services-catalog">
       <div
         className="filter-bar"
         role="group"
         aria-label={locale === "ar" ? "تصفية الخدمات" : "Filter services"}
       >
         <button aria-pressed={active === "all"} onClick={() => choose("all")}>
-          {locale === "ar" ? "جميع المسارات" : "All streams"} <span>24</span>
+          {locale === "ar" ? "جميع المسارات" : "All streams"} <span>{streams.reduce((total, stream) => total + stream.services.length, 0)}</span>
         </button>
         {streams.map((s, i) => (
           <button
@@ -270,13 +270,13 @@ export function ServiceFilter({ locale }: { locale: Locale }) {
             aria-pressed={active === s.id}
             onClick={() => choose(s.id)}
           >
-            0{i + 1} {t(s.name, locale)}
+            <span className="filter-number">0{i + 1}</span> <span>{t(s.name, locale)}</span>
           </button>
         ))}
       </div>
       <p className="sr-only" role="status">
         {active === "all"
-          ? 24
+          ? streams.reduce((total, stream) => total + stream.services.length, 0)
           : streams.find((s) => s.id === active)?.services.length}{" "}
         {locale === "ar" ? "خدمة معروضة" : "services shown"}
       </p>
@@ -294,7 +294,7 @@ export function ServiceFilter({ locale }: { locale: Locale }) {
             </div>
             <div className="service-grid">
               {s.services.map((item,index) => (
-                <article key={item.id}><span className="service-index" aria-hidden="true">{String(index+1).padStart(2,"0")}</span>
+                <article key={item.id} style={{ animationDelay: `${Math.min(index, 5) * 80}ms` }}><span className="service-index" aria-hidden="true">{String(index+1).padStart(2,"0")}</span>
                   <h3>{t(item.title, locale)}</h3>
                   <p>{t(item.description, locale)}</p>
                 </article>
@@ -302,7 +302,7 @@ export function ServiceFilter({ locale }: { locale: Locale }) {
             </div>
           </section>
         ))}
-    </>
+    </div>
   );
 }
 export function Library({

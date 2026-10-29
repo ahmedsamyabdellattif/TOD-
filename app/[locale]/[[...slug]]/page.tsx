@@ -1,3 +1,4 @@
+import { ServicesExplorer } from "@/components/services-explorer";
 import { ArrowIcon } from "@/components/arrow-icon";
 import team from "@/content/team.json";
 import { TeamPreview } from "@/components/team-preview/team-preview";
@@ -116,6 +117,7 @@ export default async function Page({ params }: Props) {
     "services/learning-capability": "capability-workshops",
   };
   if (old[p]) redirect(pathFor(l, "services") + "#" + old[p]);
+  if (p === "services") return <ServicesExplorer locale={l} preview={false} />;
   const teamPerson = team.find((a) => p === "associates/" + a.slug);
   if (p === "associates" || teamPerson) return <TeamPreview locale={l} person={teamPerson} preview={false} />;
   const pages: Record<string, React.ReactNode> = {
