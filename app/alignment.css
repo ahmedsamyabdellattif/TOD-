@@ -38,7 +38,7 @@ main p,
   text-justify: inter-word;
   overflow-wrap: break-word;
 }
-html[lang="en"] main p { hyphens: auto; }
+html[lang="en"] main p { hyphens: none; }
 html[lang="ar"] main p { hyphens: none; text-justify: auto; }
 /* Short identity labels, locations and diagram captions are not prose blocks. */
 .site-footer .footer-brand > p,
@@ -197,4 +197,11 @@ main .diagram-node p { text-align: center; }
     margin: 0;
     hyphens: none;
   }
+}
+
+/* About ordering preview only: hide the bottom 50px without shifting its copy. */
+.purpose-preview-crop{display:flow-root;overflow:hidden}
+.purpose-preview-crop>section{clip-path:inset(0 0 50px 0);margin-bottom:-50px}
+@media(max-width:1000px){
+ .purpose-preview-crop>section{clip-path:none;margin-bottom:0}
 }

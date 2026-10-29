@@ -118,3 +118,131 @@
 
 /* Same frame as the shared header and footer, including narrow screens. */
 .preview .wrap{width:calc(100% - var(--page-gutter) - var(--page-gutter));max-width:none;margin-inline:auto}
+
+/* Review-only refinement, pending approval for the public team route. */
+.refinement{overflow-x:clip}
+.refinement .teamSection:not(.associates){padding-top:0}
+.refinement .teamSection:not(.associates) .sectionHeading{
+ position:relative;isolation:isolate;padding-block:48px 52px;margin-bottom:48px;color:var(--ivory)
+}
+.refinement .teamSection:not(.associates) .sectionHeading::before{
+ content:'';position:absolute;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:var(--charcoal);z-index:-1
+}
+.refinement .teamSection:not(.associates) .sectionHeading :global(.eyebrow){color:var(--gold)}
+.refinement .teamSection:not(.associates) .sectionHeading>p{color:var(--beige);hyphens:none}
+.refinement .card .cardBody{display:grid;grid-template-rows:auto auto minmax(52px,auto) auto auto;gap:14px;align-content:start;flex:1}
+.refinement .card h3{margin:0;text-align:center;line-height:1.4}
+.refinement .card .cardBody .role{min-height:0;margin:0;text-align:center;text-align-last:center;line-height:1.7;hyphens:none}
+.refinement .card .tags{min-height:0;margin:0;align-content:start;align-items:start;justify-content:center;gap:6px 14px}
+.refinement .card .location{margin:0;text-align:center;text-align-last:center;justify-content:center;hyphens:none}
+.refinement .card .profileLink{margin-top:0;padding-top:16px;min-height:45px}
+.refinement .portraitLink{margin-bottom:22px}
+@media(max-width:650px){
+ .refinement .teamSection:not(.associates) .sectionHeading{padding-block:30px 34px;margin-bottom:34px}
+ .refinement .card .cardBody{grid-template-rows:auto auto auto auto auto;gap:14px}
+ .refinement .cards{row-gap:42px}
+}
+
+/* Review: charcoal hero above a light leadership introduction. */
+.refinement .hero{background:var(--charcoal);color:var(--ivory)}
+.refinement .hero h1>span,.refinement .hero :global(.eyebrow){color:var(--gold)}
+.refinement .hero p{color:var(--beige)}
+.refinement .teamSection:not(.associates) .sectionHeading{color:var(--charcoal)}
+.refinement .teamSection:not(.associates) .sectionHeading::before{background:var(--ivory)}
+.refinement .teamSection:not(.associates) .sectionHeading :global(.eyebrow){color:var(--bronze)}
+.refinement .teamSection:not(.associates) .sectionHeading>p{color:var(--stone)}
+
+/* Stronger brand-beige separator above the leadership portraits. */
+.refinement .teamSection:not(.associates) .sectionHeading::before{background:var(--beige);border-block:1px solid var(--line)}
+
+/* Approved brand palette; matched introduction strips for both groups. */
+.refinement{--charcoal:#2B2B2B;--gold:#C9A56A;--ivory:#F7F2EA;--beige:#EAE0D5}
+.refinement .associates{background:var(--charcoal);color:var(--ivory);border-top:0;padding-top:0}
+.refinement .teamSection .sectionHeading{
+ position:relative;isolation:isolate;padding-block:48px 52px;margin-bottom:48px;color:var(--charcoal)
+}
+.refinement .teamSection .sectionHeading::before{
+ content:'';position:absolute;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:var(--beige);border-block:1px solid var(--line);z-index:-1
+}
+.refinement .teamSection .sectionHeading h2{color:var(--charcoal)}
+.refinement .teamSection .sectionHeading>p{color:var(--charcoal);hyphens:none}
+.refinement .teamSection .sectionHeading :global(.eyebrow){color:var(--charcoal)}
+@media(max-width:650px){.refinement .teamSection .sectionHeading{padding-block:30px 34px;margin-bottom:34px}}
+
+/* Supplied team artwork, blended into the charcoal hero without editing its source. */
+.heroImage{position:absolute;inset:0;z-index:0;background-image:linear-gradient(90deg,#2b2b2b 0%,#2b2b2bf5 30%,#2b2b2b9c 56%,#2b2b2b70 100%),url('/images/team/leadership-hands.jpg');background-position:center,right center;background-size:cover,cover;background-repeat:no-repeat;pointer-events:none}
+:global(html[dir=rtl]) .heroImage{transform:scaleX(-1)}
+@media(max-width:700px){
+ .refinement .hero{padding-bottom:200px}
+ .heroImage{background-image:linear-gradient(180deg,#2b2b2b 0%,#2b2b2bf5 42%,#2b2b2b99 72%,#2b2b2b66 100%),url('/images/team/leadership-hands.jpg');background-position:center,80% bottom;background-size:cover,auto 340px}
+ .refinement .hero .sectionNav{margin-bottom:0}
+}
+
+/* Fit the whole artwork in its own area, with monochrome and charcoal treatment. */
+.heroImage{inset-block:0;inset-inline-start:auto;inset-inline-end:0;width:52%;background-image:linear-gradient(90deg,#2b2b2b 0%,#2b2b2b55 24%,#2b2b2b44 100%),url('/images/team/leadership-hands.jpg');background-size:cover,contain;background-position:center,center;background-repeat:no-repeat;filter:grayscale(1)}
+:global(html[dir=rtl]) .heroImage{inset-inline-start:0;inset-inline-end:auto;transform:scaleX(-1)}
+@media(max-width:700px){
+ .heroImage,:global(html[dir=rtl]) .heroImage{inset-block-start:auto;inset-block-end:0;inset-inline:0;width:100%;height:200px;background-image:linear-gradient(180deg,#2b2b2b 0%,#2b2b2b44 30%,#2b2b2b44 100%),url('/images/team/leadership-hands.jpg');background-size:cover,contain;background-position:center,center}
+}
+
+/* Neutral charcoal blend: fade artwork edges rather than laying a heavy gradient over it. */
+.heroImage{width:50%;background:none;filter:none}
+.heroImage::before{content:'';position:absolute;inset:7% 0;background:url('/images/team/leadership-hands.jpg') center/contain no-repeat;filter:grayscale(1) brightness(.72);mask-image:linear-gradient(180deg,transparent 0%,#000 19%,#000 81%,transparent 100%);-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 19%,#000 81%,transparent 100%)}
+.heroImage::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#2b2b2b 0%,transparent 24%,transparent 90%,#2b2b2b 100%);pointer-events:none}
+@media(max-width:700px){
+ .refinement .hero{display:flex;flex-direction:column;padding-bottom:0}
+ .refinement .hero>.wrap{order:0}
+ .heroImage,:global(html[dir=rtl]) .heroImage{position:relative;inset:auto;order:1;width:100%;height:auto;aspect-ratio:2.08;background:none;margin-top:18px}
+ .heroImage::before{inset:0 12px;filter:grayscale(1) brightness(.8);mask-image:linear-gradient(180deg,transparent 0%,#000 17%,#000 80%,transparent 100%);-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 17%,#000 80%,transparent 100%)}
+ .heroImage::after{background:linear-gradient(90deg,#2b2b2b 0%,transparent 12%,transparent 88%,#2b2b2b 100%)}
+}
+
+/* Crisp desktop artwork; subdued transparent treatment on smaller devices. */
+@media(min-width:1001px){
+ .heroImage::before{inset:7% 0;opacity:1;filter:grayscale(1);mask-image:none;-webkit-mask-image:none}
+ .heroImage::after{display:none}
+}
+@media(max-width:1000px){
+ .heroImage::before{opacity:.28;filter:grayscale(1);mask-image:none;-webkit-mask-image:none}
+ .heroImage::after{display:none}
+}
+
+/* Genuine transparent cutout replaces the rectangular image background. */
+.heroImage::before{background-image:url('/images/team/leadership-hands-transparent.png');background-size:contain;background-repeat:no-repeat;background-position:center;mask-image:none;-webkit-mask-image:none;filter:none}
+.heroImage::after{display:none}
+@media(min-width:1001px){.heroImage{width:45%;inset-inline-end:3%}.heroImage::before{inset:14% 6%;opacity:.92;filter:none}}
+@media(max-width:1000px){.heroImage::before{opacity:.4;filter:none}}
+@media(max-width:700px){.heroImage,:global(html[dir=rtl]) .heroImage{width:100%;inset:auto;aspect-ratio:2.1;margin-block:16px 22px}.heroImage::before{inset:0 24px;opacity:.6;filter:none}}
+
+/* Increase only the desktop charcoal hero, keeping the cutout proportions. */
+@media(min-width:1001px){
+ .refinement .hero{padding-top:174px;padding-bottom:100px}
+}
+
+/* Final hero spacing and phone section-navigation placement. */
+@media(min-width:1001px){
+ .refinement .hero{padding-top:124px;padding-bottom:50px}
+}
+@media(max-width:700px){
+ .refinement .hero>.wrap{display:contents}
+ .refinement .hero>.wrap>:not(.sectionNav){margin-inline:var(--page-gutter);width:calc(100% - var(--page-gutter) - var(--page-gutter))}
+ .refinement .hero>.wrap>.eyebrow{order:0}
+ .refinement .hero>.wrap>h1{order:1}
+ .refinement .hero>.wrap>p{order:2}
+ .refinement .hero .heroImage{order:3}
+ .refinement .hero .sectionNav{
+  order:4;display:flex;justify-content:center;flex-wrap:wrap;gap:12px;
+  width:calc(100% - var(--page-gutter) - var(--page-gutter));max-width:none;
+  margin:0 var(--page-gutter) 24px;padding:0;border:0;
+ }
+ .refinement .hero .sectionNav a{
+  flex:1 1 140px;justify-content:space-between;gap:14px;
+  min-height:48px;padding:12px 16px;border:1px solid var(--gold);color:var(--ivory);
+ }
+ .refinement .hero .sectionNav a span{color:var(--gold)}
+}
+
+/* Arabic hero artwork belongs on the physical left, away from the RTL copy. */
+@media(min-width:701px){
+ :global(html[dir=rtl]) .refinement .heroImage{inset-inline:auto;left:3%;right:auto;transform:scaleX(-1)}
+}

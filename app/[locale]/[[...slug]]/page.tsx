@@ -122,7 +122,7 @@ export default async function Page({ params }: Props) {
   if (p === "associates" || teamPerson) return <TeamPreview locale={l} person={teamPerson} preview={false} />;
   const pages: Record<string, React.ReactNode> = {
     "": <Home locale={l} />,
-    about: <About locale={l} />,
+    about: <About locale={l} purposeFirst />,
     approach: <Approach locale={l} />,
     services: <Services locale={l} />,
     "who-we-work-with": <ExperiencePage locale={l} />,

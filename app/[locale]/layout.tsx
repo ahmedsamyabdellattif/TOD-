@@ -3,6 +3,8 @@ import "@fontsource-variable/inter";
 import "../globals.css";
 import "../alignment.css";
 import "../services.css";
+import "../arabic-type.css";
+import "../review-fixes.css";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Header, Social } from "@/components/ui";

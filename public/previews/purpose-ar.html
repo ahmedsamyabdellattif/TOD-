@@ -1,0 +1,158 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>TOD · Purpose preview</title><style>@font-face{font-family:DM;src:url('/fonts/dm-sans-latin-wght-normal.woff2')}@font-face{font-family:RB;src:url('/fonts/rb-arabic-regular.ttf')}*{box-sizing:border-box}body{margin:0;background:#f7f3ec;color:#333;font:16px/1.85 DM,Arial,sans-serif}html[lang=ar] body{font-family:RB,Arial,sans-serif}.wrap{width:92%;margin:auto;min-width:0}.bar{background:#333;color:#f7f3ec;padding-block:12px;font-size:12px}.bar .wrap{display:flex;justify-content:space-between;gap:20px}.bar a{color:#c99e69}header{padding-block:24px}header img{width:125px;height:auto}.intro{padding-block:35px 48px;max-width:900px}.eyebrow{display:block;font-size:12px;letter-spacing:.15em;color:#8a6428;margin-bottom:18px}h1{font-size:clamp(34px,4.2vw,60px);font-weight:450;line-height:1.25;letter-spacing:-.035em;margin:0 0 26px}p{margin:0;text-align:justify;text-align-last:start;hyphens:none;overflow-wrap:break-word}.intro p{max-width:65ch;font-size:19px;color:#686158}.purpose{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid #d9cdbd}.purpose article{padding:clamp(26px,4vw,58px);min-width:0}.purpose article:first-child{background:#333;color:#f7f3ec}.purpose article:first-child .eyebrow{color:#c99e69}.purpose article:first-child p{color:#eae0d5}.purpose article:last-child{background:#eae0d5}.purpose h2{font-weight:450;font-size:clamp(27px,2.8vw,39px);line-height:1.4;margin:0 0 24px}.purpose p{font-size:16px;line-height:1.95}.cycle{padding-block:60px}.cycle h2{font-size:34px;font-weight:450;line-height:1.4;margin:0 0 18px}.cycle>p{color:#686158;max-width:75ch;margin-bottom:30px}.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;list-style:none;margin:0;padding:0}.steps li{border-top:1px solid #c99e69;padding-top:22px;min-width:0}.number{font-size:13px;color:#8a6428;display:block;margin-bottom:20px}.steps h3{font-size:25px;font-weight:450;line-height:1.4;margin:0 0 14px}.steps strong{display:block;font-size:16px;font-weight:500;margin-bottom:10px;line-height:1.7}.steps p{color:#686158;font-size:14px;line-height:1.9}.return{border-block:1px solid #d9cdbd;padding-block:20px;margin-top:32px!important;display:flex;align-items:center;gap:14px;max-width:none!important}.return svg{color:#8a6428;flex-shrink:0}.note{font-size:12px;color:#686158;padding-bottom:32px}html[lang=ar] h1{letter-spacing:0;line-height:1.5}@media(max-width:1000px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:700px){.purpose{grid-template-columns:minmax(0,1fr)}.steps{grid-template-columns:minmax(0,1fr);gap:26px}.intro{padding-block:20px 30px}.intro p{font-size:16px}.cycle{padding-block:38px}.cycle h2{font-size:28px}.steps li{display:grid;grid-template-columns:30px minmax(0,1fr);column-gap:18px}.steps .number{grid-row:1/4}.steps h3,.steps strong,.steps p{grid-column:2}.steps h3{font-size:24px}.bar{font-size:10px}}@media(max-width:560px){.wrap{width:calc(100% - 48px)}}
+/* Full-bleed map composition, preview only. */
+.purpose{position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto auto;gap:130px 8%;width:100vw;margin-inline:calc(50% - 50vw);border:0;background:#242424;padding:90px 4%;overflow:hidden;min-height:850px}
+.purpose::before{content:'';position:absolute;inset:0;z-index:-2;background:url('/images/purpose/saudi-map-charcoal-gold.png') center/cover no-repeat}
+.purpose::after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#1d1d1dd9,#1d1d1d40 48%,#1d1d1de6)}
+.purpose article,.purpose article:first-child,.purpose article:last-child{padding:0;background:transparent;color:#f7f3ec;min-width:0;max-width:560px;position:relative}
+.purpose article:first-child{grid-column:1;grid-row:1}
+.purpose article:last-child{grid-column:2;grid-row:2;justify-self:end}
+.purpose article .eyebrow,.purpose article:first-child .eyebrow{display:flex;align-items:center;gap:18px;color:#c99e69;letter-spacing:.14em;font-size:13px;margin-bottom:22px}
+.purpose .eyebrow::after{content:'';height:1px;flex:1;max-width:180px;background:#c99e69;transform-origin:left}
+.purpose h2{font-size:clamp(27px,2.8vw,40px);line-height:1.45;margin-bottom:24px}
+.purpose article p,.purpose article:first-child p{color:#eae0d5;font-size:16px;line-height:1.95}
+html[lang=ar] .purpose h2{line-height:1.7}
+html[lang=ar] .purpose .eyebrow::after{transform-origin:right}
+.purpose.motion article:not(.visible){opacity:0;transform:translateY(24px)}
+.purpose.motion article.visible{animation:purpose-enter 1.1s ease both}
+.purpose.motion article.visible .eyebrow::after{animation:purpose-line 1.3s .15s ease both}
+.purpose.motion article.visible h2{animation:purpose-enter 1s .15s ease both}
+.purpose.motion article.visible p{animation:purpose-enter 1s .3s ease both}
+@keyframes purpose-enter{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes purpose-line{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media(max-width:1000px){.purpose{gap:100px 7%;padding-block:65px}.purpose::before{background-position:52% center}}
+@media(max-width:700px){.purpose{grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto;gap:65px;min-height:0;padding:48px 24px}.purpose article:first-child,.purpose article:last-child{grid-column:1;grid-row:auto;justify-self:stretch;max-width:none}.purpose::before{background-position:52% center;opacity:.65}.purpose::after{background:#222222a6}.purpose h2{font-size:28px}.purpose article p{font-size:15px}}
+@media(prefers-reduced-motion:reduce){.purpose.motion article,.purpose.motion article h2,.purpose.motion article p,.purpose.motion article .eyebrow::after{animation:none!important;opacity:1!important;transform:none!important}}
+
+/* Infographic callouts: identical heading hierarchy, visible dots and gold rules. */
+.purpose{gap:120px 10%;padding-block:90px;min-height:860px}
+.purpose article,.purpose article:first-child,.purpose article:last-child{max-width:590px;width:100%}
+.purpose-title{display:flex;align-items:center;gap:22px;margin-bottom:28px;position:relative}
+.purpose .purpose-title h2{font-family:DM,Arial,sans-serif;font-size:clamp(30px,3.6vw,48px);font-weight:450;letter-spacing:-.035em;line-height:1.3;margin:0;flex-shrink:0;animation:none}
+html[lang=ar] .purpose .purpose-title h2{font-family:RB,Arial,sans-serif;font-weight:700;letter-spacing:0;line-height:1.5}
+.connector{display:block;position:relative;flex:1;height:2px;background:#c99e69;min-width:35px;transform-origin:left}
+.connector i{position:absolute;inset-inline-start:0;top:50%;width:11px;height:11px;background:#c99e69;border-radius:50%;transform:translateY(-50%);box-shadow:0 0 0 5px #c99e6918}
+html[lang=ar] .connector{transform-origin:right}
+.purpose .purpose-lead{font-size:clamp(21px,2vw,27px);font-family:DM,Arial,sans-serif;font-weight:450;line-height:1.55;letter-spacing:-.02em;margin:0 0 18px;color:#e4c49d}
+html[lang=ar] .purpose .purpose-lead{font-family:RB,Arial,sans-serif;letter-spacing:0;font-weight:400;line-height:1.85}
+.purpose article p{max-width:58ch}
+.purpose.motion article.visible .connector{animation:purpose-line 1.2s .15s ease both}
+.purpose.motion article.visible .purpose-lead{animation:purpose-enter 1s .2s ease both}
+.purpose.motion article.visible p{animation-delay:.32s}
+@media(max-width:700px){.purpose{gap:65px;padding-block:48px;min-height:0}.purpose-title{gap:16px;margin-bottom:22px}.purpose .purpose-title h2{font-size:30px}.purpose .purpose-lead{font-size:22px}.connector i{width:9px;height:9px}}
+@media(prefers-reduced-motion:reduce){.purpose .connector,.purpose .purpose-lead{animation:none!important;transform:none!important}}
+
+/* Edge-to-title rules follow physical sides in both language layouts. */
+.purpose{direction:ltr}
+.purpose article{direction:ltr}
+html[lang=ar] .purpose article{direction:rtl}
+.purpose-title{display:block;width:100%}
+.purpose .purpose-title h2{display:table;position:relative;width:max-content;max-width:100%;overflow:visible}
+.purpose-title>.connector{display:none}
+.purpose .purpose-title h2::before{content:'';position:absolute;top:50%;width:9px;height:9px;background:#c99e69;border-radius:50%;box-shadow:0 0 0 5px #c99e6918}
+.purpose .purpose-title h2::after{content:'';position:absolute;top:50%;height:2px;width:100vw;background:#c99e69}
+/* Mission is on the left; its rule extends from the right screen edge. */
+.purpose article:first-child .purpose-title h2::before{left:calc(100% + 18px)}
+.purpose article:first-child .purpose-title h2::after{left:calc(100% + 22px);transform-origin:right}
+/* Vision is on the right; its rule extends from the left screen edge. */
+.purpose article:last-child .purpose-title h2{margin-left:auto}
+.purpose article:last-child .purpose-title h2::before{right:calc(100% + 18px)}
+.purpose article:last-child .purpose-title h2::after{right:calc(100% + 22px);transform-origin:left}
+.purpose.motion article.visible .purpose-title h2::after{animation:purpose-line 1.2s .15s ease both}
+@media(max-width:700px){.purpose article:first-child .purpose-title h2{margin-left:0;margin-right:auto}.purpose article:last-child .purpose-title h2{margin-left:auto;margin-right:0}}
+@media(prefers-reduced-motion:reduce){.purpose .purpose-title h2::after{animation:none!important}}
+
+/* Centre both dot and rule on the same title axis. */
+.purpose .purpose-title h2::before{width:11px;height:11px;top:50%;transform:translateY(-50%);box-shadow:0 0 0 5px #c99e6918}
+.purpose .purpose-title h2::after{top:calc(50% - 1px)}
+.purpose article:first-child .purpose-title h2::after{left:calc(100% + 23.5px)}
+.purpose article:last-child .purpose-title h2::after{right:calc(100% + 23.5px)}
+@media(max-width:700px){.purpose .purpose-title h2::before{width:9px;height:9px}.purpose article:first-child .purpose-title h2::after{left:calc(100% + 22.5px)}.purpose article:last-child .purpose-title h2::after{right:calc(100% + 22.5px)}}
+
+/* Short callouts: mission on the right, vision on the left. */
+.purpose article:first-child{grid-column:2;grid-row:1;justify-self:end}
+.purpose article:last-child{grid-column:1;grid-row:2;justify-self:start}
+.purpose article:first-child .purpose-title h2{margin-left:auto;margin-right:0}
+.purpose article:last-child .purpose-title h2{margin-left:0;margin-right:auto}
+.purpose .purpose-title h2::after{width:clamp(45px,7vw,100px);top:calc(50% - 1px)}
+.purpose article:first-child .purpose-title h2::before{left:auto;right:calc(100% + 18px)}
+.purpose article:first-child .purpose-title h2::after{left:auto;right:calc(100% + 23.5px);transform-origin:left}
+.purpose article:last-child .purpose-title h2::before{right:auto;left:calc(100% + 18px)}
+.purpose article:last-child .purpose-title h2::after{right:auto;left:calc(100% + 23.5px);transform-origin:right}
+@media(max-width:700px){.purpose article:first-child,.purpose article:last-child{grid-column:1;grid-row:auto;justify-self:stretch}.purpose article:first-child .purpose-title h2{margin-left:auto;margin-right:0}.purpose article:last-child .purpose-title h2{margin-left:0;margin-right:auto}.purpose .purpose-title h2::after{width:42px}.purpose article:first-child .purpose-title h2::after{right:calc(100% + 22.5px);left:auto}.purpose article:last-child .purpose-title h2::after{left:calc(100% + 22.5px);right:auto}}
+
+/* Place the short rule on the outer/page-edge side of each heading. */
+.purpose article:first-child .purpose-title h2{margin-right:clamp(65px,9vw,120px)}
+.purpose article:last-child .purpose-title h2{margin-left:clamp(65px,9vw,120px)}
+.purpose article:first-child .purpose-title h2::before{right:auto;left:calc(100% + 18px)}
+.purpose article:first-child .purpose-title h2::after{right:auto;left:calc(100% + 23.5px);transform-origin:right}
+.purpose article:last-child .purpose-title h2::before{left:auto;right:calc(100% + 18px)}
+.purpose article:last-child .purpose-title h2::after{left:auto;right:calc(100% + 23.5px);transform-origin:left}
+@media(max-width:700px){.purpose article:first-child .purpose-title h2{margin-right:64px}.purpose article:last-child .purpose-title h2{margin-left:64px}.purpose article:first-child .purpose-title h2::after{left:calc(100% + 22.5px);right:auto}.purpose article:last-child .purpose-title h2::after{right:calc(100% + 22.5px);left:auto}}
+
+/* Rules reach the physical viewport edge; the section clips the excess. */
+.purpose .purpose-title h2::after{width:100vw}
+@media(max-width:700px){.purpose .purpose-title h2::after{width:100vw}}
+
+/* Heading and copy share one starting edge; offset the complete callouts. */
+.purpose article:first-child .purpose-title h2,
+.purpose article:last-child .purpose-title h2{margin-left:0;margin-right:0;margin-inline-start:0;margin-inline-end:auto}
+@media(min-width:1200px){
+ .purpose article:first-child{position:relative;left:-200px}
+ .purpose article:last-child{position:relative;left:200px}
+}
+@media(min-width:701px) and (max-width:1199px){
+ .purpose article:first-child{position:relative;left:-8vw}
+ .purpose article:last-child{position:relative;left:8vw}
+}
+@media(max-width:700px){
+ .purpose article:first-child,.purpose article:last-child{left:0}
+ .purpose article:first-child .purpose-title h2,.purpose article:last-child .purpose-title h2{margin-inline:0}
+}
+
+@media(min-width:1200px){
+ .purpose article:first-child{left:-100px}
+ .purpose article:last-child{left:400px}
+}
+
+/* Keep the vision marker in view on phones; lift the desktop callout. */
+@media(min-width:1200px){.purpose article:last-child{top:-200px}}
+@media(max-width:700px){
+ .purpose article:last-child .purpose-title h2{margin-left:auto;margin-right:0;margin-inline-start:auto;margin-inline-end:0}
+ html[lang=ar] .purpose article:last-child .purpose-title h2{margin-left:auto;margin-right:0}
+ .purpose article:last-child .purpose-title h2::before{right:calc(100% + 18px);left:auto}
+ .purpose article:last-child .purpose-title h2::after{right:calc(100% + 22.5px);left:auto;transform-origin:left}
+}
+
+@media(min-width:1200px){.purpose article:last-child{top:-100px;left:330px}}
+@media(max-width:700px){
+ .purpose .purpose-title h2::after{width:55vw}
+}
+
+/* Keep phone rules connected to the viewport, not a fixed percentage length. */
+@media(max-width:700px){.purpose .purpose-title h2::after{width:100vw}}
+@media(min-width:1200px){.purpose article:last-child{top:-80px}}
+
+@media(min-width:1200px){
+ .purpose article:last-child{top:-60px}
+ .purpose article:last-child .purpose-title h2::after{width:120px}
+}
+
+/* Centre the mobile vision title; keep its rule attached to the left edge. */
+@media(min-width:1200px){.purpose article:last-child .purpose-title h2::after{width:100vw}}
+@media(max-width:700px){
+ .purpose article:last-child .purpose-title h2,
+ html[lang=ar] .purpose article:last-child .purpose-title h2{margin-left:auto;margin-right:auto;margin-inline:auto}
+ .purpose article:last-child .purpose-title h2::after{width:100vw}
+}
+
+@media(min-width:1200px){.purpose article:last-child{top:-40px}}
+</style></head><body><div class="bar"><div class="wrap"><span>مقترح للمحتوى والتصميم للمراجعة. صفحة «عن TOD» الحالية لم تتغيّر.</span><a href="purpose-en.html">English</a></div></div><header class="wrap"><img src="/brand/logo-dark.png" alt="TOD"></header><main class="wrap"><div class="intro"><span class="eyebrow">غايتنا</span><h1>مؤسسات أكثر قدرة.<br>وأثر يستمر.</h1><p>رسالتنا أن نعزّز قدرة مؤسستك اليوم، وطموحنا أن نحوّل ما نتعلّمه إلى ممارسة أفضل باستمرار.</p></div><section class="purpose"><article><div class="purpose-title"><h2>رسالتنا</h2><span class="connector" aria-hidden="true"><i></i></span></div><h3 class="purpose-lead">نبني القدرة داخل مؤسستك.</h3><p>نساعد المؤسسات على بناء علاقات أكثر صحة، وقيادة أكثر حكمة، وثقافات أقوى، وقدرة أكبر على التكيّف. نجمع بين الممارسة المستنيرة بالأدلة وفهم الأنظمة الإنسانية، ليترك عملنا الأفراد والمؤسسات أكثر قدرة مما كانوا عليه.</p></article><article><div class="purpose-title"><h2>رؤيتنا</h2><span class="connector" aria-hidden="true"><i></i></span></div><h3 class="purpose-lead">نحوّل الخبرة إلى معرفة، والمعرفة إلى ممارسة أفضل.</h3><p>نطمح لأن نصبح مرجعًا معرفيًا ومهنيًا معترفًا به لفهم الأنظمة الإنسانية وتطويرها؛ حيث تعزّز الممارسة والتعلّم والبحث وإنتاج المعرفة بعضها بعضًا باستمرار.</p></article></section><section class="cycle"><h2>كيف تتطوّر ممارستنا</h2><p>تقود الخبرة إلى التعلّم، ويعمّق التعلّم الاستقصاء، ثم تعود المعرفة لتحسّن عملنا مع المؤسسات.</p><ol class="steps"><li><span class="number">01</span><h3>الممارسة</h3><strong>نبدأ من واقع المؤسسة.</strong><p>نعمل مع العلاقات والقيادة والتحديات ضمن سياق كل عميل.</p></li><li><span class="number">02</span><h3>التعلّم</h3><strong>نتأمّل ما تكشفه التجربة.</strong><p>نستفيد من الخبرة والتأمل لتعميق الفهم وبناء القدرات.</p></li><li><span class="number">03</span><h3>البحث</h3><strong>نسأل ونستقصي.</strong><p>نفحص الأسئلة الناشئة من خلال استقصاء منضبط.</p></li><li><span class="number">04</span><h3>المعرفة</h3><strong>نعيد الرؤى إلى الممارسة.</strong><p>نوظّف ما نتعلّمه لتعزيز عملنا اللاحق مع الأفراد والمؤسسات.</p></li></ol><p class="return"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m9 4-5 5 5 5M4 9h9a6 6 0 0 1 0 12"/></svg>دورة مستمرة: تعود المعرفة لتقوّي الممارسة.</p></section></main><script>
+const purpose=document.querySelector('.purpose');
+const preference=matchMedia('(prefers-reduced-motion: reduce)');
+if(purpose && !preference.matches && 'IntersectionObserver' in window){
+ purpose.classList.add('motion');
+ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.15});
+ purpose.querySelectorAll('article').forEach(article=>observer.observe(article));
+ preference.addEventListener('change',event=>{if(event.matches)purpose.classList.remove('motion')});
+}
+</script></body></html>

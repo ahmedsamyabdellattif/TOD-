@@ -1,0 +1,19 @@
+/* Retain approved RB faces; control the hierarchy through size, not a blanket weight reset. */
+html[lang="ar"] body { font-weight: 400; }
+html[lang="ar"] :is(h1,h2,h3,h4,h5,h6) {
+  font-weight: 700;
+}
+html[lang="ar"] :is(p,li,label,input,textarea,select) { font-weight: 400; }
+html[lang="ar"] .eyebrow { font-weight: 400; }
+html[lang="ar"] .site-header .header-links nav > a { font-weight: 400; }
+html[lang="ar"] .site-header .header-links nav > a[aria-current="page"] { color: var(--bronze); }
+/* Keep intentional inline emphasis distinct from normal prose. */
+html[lang="ar"] :is(strong,b) { font-weight: 700; }
+
+/* Match the approved responsive type scale while retaining RB. */
+html[lang="ar"] .page-head h1 { font-size:clamp(34px,3.5vw,52px);line-height:1.45;max-width:24ch; }
+html[lang="ar"] .page-head .lead { font-size:clamp(17px,1.4vw,20px);line-height:1.85; }
+html[lang="ar"] main h2 { font-size:clamp(26px,2.4vw,36px);line-height:1.5; }
+html[lang="ar"] main h3 { font-size:clamp(19px,1.6vw,24px);line-height:1.5; }
+/* Preserve the special diagram scale rather than enlarging its inner heading. */
+html[lang="ar"] .values .diagram-core h3 {font-size:27px;line-height:1.3;}

@@ -63,3 +63,17 @@
 @keyframes icon-arrive{from{opacity:0;transform:translateY(10px) scale(.92)}to{opacity:1;transform:none}}
 @media(max-width:700px){.detailIcon{margin-bottom:20px}.detailIcon svg{width:42px;height:42px}.listIcon svg{width:23px;height:23px}.mobileDetail:not([hidden]) .detailIcon{animation:icon-arrive .65s ease both}}
 @media(prefers-reduced-motion:reduce){.detailIcon,.detail h3,.detail p,.detail .action{animation:none!important}}
+
+.allBar{display:flex;margin-bottom:18px}
+.allButton{display:flex;align-items:center;gap:18px;padding:12px 19px;border:1px solid var(--line);background:transparent;color:var(--charcoal);font-size:14px;min-height:48px}
+.allButton span{display:inline-grid;place-items:center;min-width:28px;height:28px;border-radius:50%;background:var(--beige);color:var(--bronze);font-size:12px}
+.allButton[aria-pressed=true]{background:var(--charcoal);color:var(--ivory);border-color:var(--charcoal)}
+.allButton[aria-pressed=true] span{background:#ffffff15;color:var(--gold)}
+.streamSection+.streamSection{margin-top:64px;padding-top:42px;border-top:1px solid var(--line)}
+.streams button{border-top:3px solid var(--gold);grid-template-columns:42px minmax(0,1fr);padding:25px 22px;min-height:142px}
+.streams button[aria-pressed=true]{border-top-color:var(--gold);box-shadow:inset 0 -3px 0 var(--gold)}
+.streamIcon{align-self:center;display:flex}
+.streamIcon svg{width:34px;height:34px}
+.streamNumber{font-size:12px;color:var(--bronze)}
+.streams button[aria-pressed=true] .streamNumber{color:var(--gold)}
+@media(max-width:700px){.streams button{grid-template-columns:32px minmax(0,1fr) auto;min-height:78px;padding:16px}.streamIcon svg{width:28px;height:28px}.streamSection+.streamSection{margin-top:38px;padding-top:28px}}

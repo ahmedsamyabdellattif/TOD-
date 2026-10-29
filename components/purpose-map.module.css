@@ -1,0 +1,181 @@
+/* Full-bleed map composition, preview only. */
+.purpose{position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto auto;gap:130px 8%;width:100%;margin-inline:0;border:0;background:#242424;padding:90px 4%;overflow:hidden;min-height:850px}
+.purpose::before{content:'';position:absolute;inset:0;z-index:-2;background:url('/images/purpose/saudi-map-charcoal-gold.png') center/cover no-repeat}
+.purpose::after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#1d1d1dd9,#1d1d1d40 48%,#1d1d1de6)}
+.purpose article,.purpose article:first-child,.purpose article:last-child{padding:0;background:transparent;color:#f7f3ec;min-width:0;max-width:560px;position:relative}
+.purpose article:first-child{grid-column:1;grid-row:1}
+.purpose article:last-child{grid-column:2;grid-row:2;justify-self:end}
+.purpose article .eyebrow,.purpose article:first-child .eyebrow{display:flex;align-items:center;gap:18px;color:#c99e69;letter-spacing:.14em;font-size:13px;margin-bottom:22px}
+.purpose .eyebrow::after{content:'';height:1px;flex:1;max-width:180px;background:#c99e69;transform-origin:left}
+.purpose h2{font-size:clamp(27px,2.8vw,40px);line-height:1.45;margin-bottom:24px}
+.purpose article p,.purpose article:first-child p{color:#eae0d5;font-size:16px;line-height:1.95}
+:global(html[lang=ar]) .purpose h2{line-height:1.7}
+:global(html[lang=ar]) .purpose .eyebrow::after{transform-origin:right}
+.purpose.motion article:not(.visible){opacity:0;transform:translateY(24px)}
+.purpose.motion article.visible{animation:purpose-enter 1.1s ease both}
+.purpose.motion article.visible .eyebrow::after{animation:purpose-line 1.3s .15s ease both}
+.purpose.motion article.visible h2{animation:purpose-enter 1s .15s ease both}
+.purpose.motion article.visible p{animation:purpose-enter 1s .3s ease both}
+@keyframes purpose-enter{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes purpose-line{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media(max-width:1000px){.purpose{gap:100px 7%;padding-block:65px}.purpose::before{background-position:52% center}}
+@media(max-width:700px){.purpose{grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto;gap:65px;min-height:0;padding:48px 24px}.purpose article:first-child,.purpose article:last-child{grid-column:1;grid-row:auto;justify-self:stretch;max-width:none}.purpose::before{background-position:52% center;opacity:.65}.purpose::after{background:#222222a6}.purpose h2{font-size:28px}.purpose article p{font-size:15px}}
+@media(prefers-reduced-motion:reduce){.purpose.motion article,.purpose.motion article h2,.purpose.motion article p,.purpose.motion article .eyebrow::after{animation:none!important;opacity:1!important;transform:none!important}}
+
+/* Infographic callouts: identical heading hierarchy, visible dots and gold rules. */
+.purpose{gap:120px 10%;padding-block:90px;min-height:860px}
+.purpose article,.purpose article:first-child,.purpose article:last-child{max-width:590px;width:100%}
+.purpose-title{display:flex;align-items:center;gap:22px;margin-bottom:28px;position:relative}
+.purpose .purpose-title h2{font-family:DM,Arial,sans-serif;font-size:clamp(30px,3.6vw,48px);font-weight:450;letter-spacing:-.035em;line-height:1.3;margin:0;flex-shrink:0;animation:none}
+:global(html[lang=ar]) .purpose .purpose-title h2{font-family:RB,Arial,sans-serif;font-weight:700;letter-spacing:0;line-height:1.5}
+.connector{display:block;position:relative;flex:1;height:2px;background:#c99e69;min-width:35px;transform-origin:left}
+.connector i{position:absolute;inset-inline-start:0;top:50%;width:11px;height:11px;background:#c99e69;border-radius:50%;transform:translateY(-50%);box-shadow:0 0 0 5px #c99e6918}
+:global(html[lang=ar]) .connector{transform-origin:right}
+.purpose .purpose-lead{font-size:clamp(21px,2vw,27px);font-family:DM,Arial,sans-serif;font-weight:450;line-height:1.55;letter-spacing:-.02em;margin:0 0 18px;color:#e4c49d}
+:global(html[lang=ar]) .purpose .purpose-lead{font-family:RB,Arial,sans-serif;letter-spacing:0;font-weight:400;line-height:1.85}
+.purpose article p{max-width:58ch}
+.purpose.motion article.visible .connector{animation:purpose-line 1.2s .15s ease both}
+.purpose.motion article.visible .purpose-lead{animation:purpose-enter 1s .2s ease both}
+.purpose.motion article.visible p{animation-delay:.32s}
+@media(max-width:700px){.purpose{gap:65px;padding-block:48px;min-height:0}.purpose-title{gap:16px;margin-bottom:22px}.purpose .purpose-title h2{font-size:30px}.purpose .purpose-lead{font-size:22px}.connector i{width:9px;height:9px}}
+@media(prefers-reduced-motion:reduce){.purpose .connector,.purpose .purpose-lead{animation:none!important;transform:none!important}}
+
+/* Edge-to-title rules follow physical sides in both language layouts. */
+.purpose{direction:ltr}
+.purpose article{direction:ltr}
+:global(html[lang=ar]) .purpose article{direction:rtl}
+.purpose-title{display:block;width:100%}
+.purpose .purpose-title h2{display:table;position:relative;width:max-content;max-width:100%;overflow:visible}
+.purpose-title>.connector{display:none}
+.purpose .purpose-title h2::before{content:'';position:absolute;top:50%;width:9px;height:9px;background:#c99e69;border-radius:50%;box-shadow:0 0 0 5px #c99e6918}
+.purpose .purpose-title h2::after{content:'';position:absolute;top:50%;height:2px;width:100vw;background:#c99e69}
+/* Mission is on the left; its rule extends from the right screen edge. */
+.purpose article:first-child .purpose-title h2::before{left:calc(100% + 18px)}
+.purpose article:first-child .purpose-title h2::after{left:calc(100% + 22px);transform-origin:right}
+/* Vision is on the right; its rule extends from the left screen edge. */
+.purpose article:last-child .purpose-title h2{margin-left:auto}
+.purpose article:last-child .purpose-title h2::before{right:calc(100% + 18px)}
+.purpose article:last-child .purpose-title h2::after{right:calc(100% + 22px);transform-origin:left}
+.purpose.motion article.visible .purpose-title h2::after{animation:purpose-line 1.2s .15s ease both}
+@media(max-width:700px){.purpose article:first-child .purpose-title h2{margin-left:0;margin-right:auto}.purpose article:last-child .purpose-title h2{margin-left:auto;margin-right:0}}
+@media(prefers-reduced-motion:reduce){.purpose .purpose-title h2::after{animation:none!important}}
+
+/* Centre both dot and rule on the same title axis. */
+.purpose .purpose-title h2::before{width:11px;height:11px;top:50%;transform:translateY(-50%);box-shadow:0 0 0 5px #c99e6918}
+.purpose .purpose-title h2::after{top:calc(50% - 1px)}
+.purpose article:first-child .purpose-title h2::after{left:calc(100% + 23.5px)}
+.purpose article:last-child .purpose-title h2::after{right:calc(100% + 23.5px)}
+@media(max-width:700px){.purpose .purpose-title h2::before{width:9px;height:9px}.purpose article:first-child .purpose-title h2::after{left:calc(100% + 22.5px)}.purpose article:last-child .purpose-title h2::after{right:calc(100% + 22.5px)}}
+
+/* Short callouts: mission on the right, vision on the left. */
+.purpose article:first-child{grid-column:2;grid-row:1;justify-self:end}
+.purpose article:last-child{grid-column:1;grid-row:2;justify-self:start}
+.purpose article:first-child .purpose-title h2{margin-left:auto;margin-right:0}
+.purpose article:last-child .purpose-title h2{margin-left:0;margin-right:auto}
+.purpose .purpose-title h2::after{width:clamp(45px,7vw,100px);top:calc(50% - 1px)}
+.purpose article:first-child .purpose-title h2::before{left:auto;right:calc(100% + 18px)}
+.purpose article:first-child .purpose-title h2::after{left:auto;right:calc(100% + 23.5px);transform-origin:left}
+.purpose article:last-child .purpose-title h2::before{right:auto;left:calc(100% + 18px)}
+.purpose article:last-child .purpose-title h2::after{right:auto;left:calc(100% + 23.5px);transform-origin:right}
+@media(max-width:700px){.purpose article:first-child,.purpose article:last-child{grid-column:1;grid-row:auto;justify-self:stretch}.purpose article:first-child .purpose-title h2{margin-left:auto;margin-right:0}.purpose article:last-child .purpose-title h2{margin-left:0;margin-right:auto}.purpose .purpose-title h2::after{width:42px}.purpose article:first-child .purpose-title h2::after{right:calc(100% + 22.5px);left:auto}.purpose article:last-child .purpose-title h2::after{left:calc(100% + 22.5px);right:auto}}
+
+/* Place the short rule on the outer/page-edge side of each heading. */
+.purpose article:first-child .purpose-title h2{margin-right:clamp(65px,9vw,120px)}
+.purpose article:last-child .purpose-title h2{margin-left:clamp(65px,9vw,120px)}
+.purpose article:first-child .purpose-title h2::before{right:auto;left:calc(100% + 18px)}
+.purpose article:first-child .purpose-title h2::after{right:auto;left:calc(100% + 23.5px);transform-origin:right}
+.purpose article:last-child .purpose-title h2::before{left:auto;right:calc(100% + 18px)}
+.purpose article:last-child .purpose-title h2::after{left:auto;right:calc(100% + 23.5px);transform-origin:left}
+@media(max-width:700px){.purpose article:first-child .purpose-title h2{margin-right:64px}.purpose article:last-child .purpose-title h2{margin-left:64px}.purpose article:first-child .purpose-title h2::after{left:calc(100% + 22.5px);right:auto}.purpose article:last-child .purpose-title h2::after{right:calc(100% + 22.5px);left:auto}}
+
+/* Rules reach the physical viewport edge; the section clips the excess. */
+.purpose .purpose-title h2::after{width:100vw}
+@media(max-width:700px){.purpose .purpose-title h2::after{width:100vw}}
+
+/* Heading and copy share one starting edge; offset the complete callouts. */
+.purpose article:first-child .purpose-title h2,
+.purpose article:last-child .purpose-title h2{margin-left:0;margin-right:0;margin-inline-start:0;margin-inline-end:auto}
+@media(min-width:1200px){
+ .purpose article:first-child{position:relative;left:-200px}
+ .purpose article:last-child{position:relative;left:200px}
+}
+@media(min-width:701px) and (max-width:1199px){
+ .purpose article:first-child{position:relative;left:-8vw}
+ .purpose article:last-child{position:relative;left:8vw}
+}
+@media(max-width:700px){
+ .purpose article:first-child,.purpose article:last-child{left:0}
+ .purpose article:first-child .purpose-title h2,.purpose article:last-child .purpose-title h2{margin-inline:0}
+}
+
+@media(min-width:1200px){
+ .purpose article:first-child{left:-100px}
+ .purpose article:last-child{left:400px}
+}
+
+/* Keep the vision marker in view on phones; lift the desktop callout. */
+@media(min-width:1200px){.purpose article:last-child{top:-200px}}
+@media(max-width:700px){
+ .purpose article:last-child .purpose-title h2{margin-left:auto;margin-right:0;margin-inline-start:auto;margin-inline-end:0}
+ :global(html[lang=ar]) .purpose article:last-child .purpose-title h2{margin-left:auto;margin-right:0}
+ .purpose article:last-child .purpose-title h2::before{right:calc(100% + 18px);left:auto}
+ .purpose article:last-child .purpose-title h2::after{right:calc(100% + 22.5px);left:auto;transform-origin:left}
+}
+
+@media(min-width:1200px){.purpose article:last-child{top:-100px;left:330px}}
+@media(max-width:700px){
+ .purpose .purpose-title h2::after{width:55vw}
+}
+
+/* Keep phone rules connected to the viewport, not a fixed percentage length. */
+@media(max-width:700px){.purpose .purpose-title h2::after{width:100vw}}
+@media(min-width:1200px){.purpose article:last-child{top:-80px}}
+
+@media(min-width:1200px){
+ .purpose article:last-child{top:-60px}
+ .purpose article:last-child .purpose-title h2::after{width:120px}
+}
+
+/* Centre the mobile vision title; keep its rule attached to the left edge. */
+@media(min-width:1200px){.purpose article:last-child .purpose-title h2::after{width:100vw}}
+@media(max-width:700px){
+ .purpose article:last-child .purpose-title h2,
+ :global(html[lang=ar]) .purpose article:last-child .purpose-title h2{margin-left:auto;margin-right:auto;margin-inline:auto}
+ .purpose article:last-child .purpose-title h2::after{width:100vw}
+}
+
+@media(min-width:1200px){.purpose article:last-child{top:-40px}}
+
+.purpose article p{margin:0;text-align:justify;text-align-last:start;overflow-wrap:break-word;hyphens:none}
+.purpose-title h2,.purpose-lead{font-family:"DM Sans Variable",Arial,sans-serif!important}
+:global(html[lang=ar]) .purpose-title h2,:global(html[lang=ar]) .purpose-lead{font-family:"TOD RB Arabic",Arial,sans-serif!important}
+
+/* Arabic offsets apply to complete callouts, keeping headings and copy together. */
+@media(min-width:1200px){
+ :global(html[lang=ar]) .purpose article:first-child{left:-150px}
+ :global(html[lang=ar]) .purpose article:last-child{left:130px}
+}
+@media(min-width:1001px) and (max-width:1199px){
+ :global(html[lang=ar]) .purpose article:first-child{left:calc(-8vw - 50px)}
+ :global(html[lang=ar]) .purpose article:last-child{left:calc(8vw - 200px)}
+}
+@media(max-width:700px){
+ :global(html[lang=ar]) .purpose article{width:80%;max-width:80%}
+ :global(html[lang=ar]) .purpose article:first-child{justify-self:start;left:0}
+ :global(html[lang=ar]) .purpose article:last-child{justify-self:end;left:0}
+ :global(html[lang=ar]) .purpose article:first-child .purpose-title h2,
+ :global(html[lang=ar]) .purpose article:last-child .purpose-title h2{margin-inline:0;margin-left:0;margin-right:0}
+}
+
+/* Centre the Arabic vision heading on the phone viewport, not its inset copy block. */
+@media(max-width:700px){
+ :global(html[lang=ar]) .purpose article:last-child .purpose-title{
+  position:relative;width:calc(100% / .8);left:-20%;
+ }
+ :global(html[lang=ar]) .purpose article:last-child .purpose-title h2{
+  margin-inline:auto;margin-left:auto;margin-right:auto;
+ }
+}
+@media(max-width:700px){
+ :global(html[lang=ar]) .purpose article:last-child .purpose-title{left:0}
+}

@@ -7,26 +7,35 @@ import { ArrowIcon } from "./arrow-icon";
 import s from "./services-explorer.module.css";
 
 export function ServicesExplorer({ locale, preview = true }: { locale: Locale; preview?: boolean }) {
-  const [streamIndex, setStreamIndex] = useState(0);
-  const [serviceIndex, setServiceIndex] = useState<number | null>(0);
+  const [streamIndex, setStreamIndex] = useState(-1);
   useEffect(() => {
     const sync = () => {
       const index = streams.findIndex(item => item.id === window.location.hash.slice(1));
-      if (index >= 0) { setStreamIndex(index); setServiceIndex(0); }
+      setStreamIndex(index);
     };
     sync();
     window.addEventListener("hashchange", sync);
     window.addEventListener("popstate", sync);
     return () => { window.removeEventListener("hashchange", sync); window.removeEventListener("popstate", sync); };
   }, []);
-  const stream = streams[streamIndex];
-  const service = serviceIndex === null ? null : stream.services[serviceIndex];
   const ar = locale === "ar";
   return <main id="main" className={s.root}>
     {preview && <div className={s.review}><div className="container"><span>{ar ? "معاينة للمراجعة · صفحة الخدمات الحالية لم تتغيّر" : "Design preview · Current services page unchanged"}</span><Link href={pathFor(ar ? "en" : "ar", "preview/services")}>{ar ? "English" : "العربية"}</Link></div></div>}
     <section className={s.hero}><div className="container"><span className="eyebrow">{ar ? "الخدمات" : "Our services"}</span><h1>{ar ? "ابدأ بما يحتاجه نظامك." : "Start with what your system needs."}</h1><p>{ar ? "اختر المسار، ثم استكشف الخدمات المناسبة لسياقك." : "Choose a stream, then explore the services that fit your context."}</p></div></section>
     <section className={`container ${s.explorer}`}>
-      <div className={s.streams} role="group" aria-label={ar ? "اختر المسار" : "Choose a stream"}>{streams.map((item, index) => <button key={item.id} aria-pressed={streamIndex === index} onClick={() => { setStreamIndex(index); setServiceIndex(0); window.history.pushState(null, "", `#${item.id}`); }}><span>0{index + 1}</span><strong>{t(item.name, locale)}</strong><small>{item.services.length} {ar ? "خدمات" : "services"}</small></button>)}</div>
+      <div className={s.allBar}><button className={s.allButton} aria-pressed={streamIndex === -1} onClick={() => { setStreamIndex(-1); window.history.pushState(null, "", window.location.pathname); }}>{ar ? "جميع المسارات" : "All streams"}<span>{streams.reduce((total, item) => total + item.services.length, 0)}</span></button></div>
+      <div className={s.streams} role="group" aria-label={ar ? "اختر المسار" : "Choose a stream"}>{streams.map((item, index) => <button key={item.id} aria-pressed={streamIndex === index} onClick={() => { setStreamIndex(index); window.history.pushState(null, "", `#${item.id}`); }}><span className={s.streamIcon}><ServiceIcon id={item.services[0].id}/></span><strong><span className={s.streamNumber}>0{index + 1} / </span>{t(item.name, locale)}</strong><small>{item.services.length} {ar ? "خدمات" : "services"}</small></button>)}</div>
+      {(streamIndex === -1 ? streams.map((_, index) => index) : [streamIndex]).map(index => <StreamExplorer key={streams[index].id} streamIndex={index} locale={locale} />)}
+    </section>
+  </main>;
+}
+
+function StreamExplorer({ streamIndex, locale }: { streamIndex: number; locale: Locale }) {
+  const [serviceIndex, setServiceIndex] = useState<number | null>(0);
+  const stream = streams[streamIndex];
+  const service = serviceIndex === null ? null : stream.services[serviceIndex];
+  const ar = locale === "ar";
+  return <section className={s.streamSection} id={stream.id}>
       <div className={s.intro}><span className="eyebrow">0{streamIndex + 1}</span><h2>{t(stream.name, locale)}</h2><p>{t(stream.intro, locale)}</p></div>
       <div className={s.layout}>
         <div className={s.list} aria-label={ar ? "خدمات المسار" : "Stream services"}>{stream.services.map((item, index) => {
@@ -47,6 +56,5 @@ export function ServicesExplorer({ locale, preview = true }: { locale: Locale; p
           {!service && <div className={s.empty}>{ar ? "اختر خدمة لعرض تفاصيلها." : "Choose a service to explore the details."}</div>}
         </div>
       </div>
-    </section>
-  </main>;
+  </section>;
 }

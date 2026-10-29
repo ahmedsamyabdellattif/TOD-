@@ -1,3 +1,4 @@
+import { PurposeMap } from "./purpose-map";
 import { HomeAudiences } from "./home-audiences";
 import { HomeServices } from "./home-services";
 import { ArrowIcon } from "@/components/arrow-icon";
@@ -150,7 +151,7 @@ function CopySection({
     </section>
   );
 }
-export function About({ locale: l }: { locale: Locale }) {
+export function About({ locale: l, purposeFirst = false }: { locale: Locale; purposeFirst?: boolean }) {
   return (
     <>
       <PageHead
@@ -159,6 +160,7 @@ export function About({ locale: l }: { locale: Locale }) {
         eyebrow={tx(l, "ABOUT TOD", "عن TOD")}
         description={t(about[0].paragraphs[0], l)}
       />
+      {purposeFirst && <div className="purpose-preview-crop"><PurposeMap locale={l} /></div>}
       <section className="section">
         <div className="container two-col image-copy-row">
           <ImageSlot page="about" locale={l} />
@@ -177,23 +179,8 @@ export function About({ locale: l }: { locale: Locale }) {
           <p className="measure">{t(about[2].paragraphs[1], l)}</p>
         </div>
       </section>
-      <section className="section">
-        <div className="container">
-          <div className="two-col">
-            <article>
-              <span className="eyebrow">{tx(l, "MISSION", "الرسالة")}</span>
-              <h2>{tx(l, "Our mission", "رسالتنا")}</h2>
-              <p>{t(intro.mission, l)}</p>
-            </article>
-            <article>
-              <span className="eyebrow">{tx(l, "VISION", "الرؤية")}</span>
-              <h2>{tx(l, "Our vision", "رؤيتنا")}</h2>
-              <p>{t(intro.vision, l)}</p>
-            </article>
-          </div>
-          <PracticeCycle locale={l} />
-        </div>
-      </section>
+      {!purposeFirst && <PurposeMap locale={l} />}
+      <section className="section"><div className="container"><PracticeCycle locale={l} /></div></section>
       <section className="section values-section">
         <div className="container">
           <div className="center-heading">

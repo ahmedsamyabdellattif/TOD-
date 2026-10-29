@@ -1,0 +1,26 @@
+{
+  "ar": [
+    {
+      "title": "رسالتنا",
+      "lead": "نبني القدرة داخل مؤسستك.",
+      "body": "نساعد المؤسسات على بناء علاقات أكثر صحة، وقيادة أكثر حكمة، وثقافات أقوى، وقدرة أكبر على التكيّف. نجمع بين الممارسة المستنيرة بالأدلة وفهم الأنظمة الإنسانية، ليترك عملنا الأفراد والمؤسسات أكثر قدرة مما كانوا عليه."
+    },
+    {
+      "title": "رؤيتنا",
+      "lead": "نحوّل الخبرة إلى معرفة، والمعرفة إلى ممارسة أفضل.",
+      "body": "نطمح لأن نصبح مرجعًا معرفيًا ومهنيًا معترفًا به لفهم الأنظمة الإنسانية وتطويرها؛ حيث تعزّز الممارسة والتعلّم والبحث وإنتاج المعرفة بعضها بعضًا باستمرار."
+    }
+  ],
+  "en": [
+    {
+      "title": "Our mission",
+      "lead": "Build capability within your organization.",
+      "body": "We help organizations develop healthier relationships, wiser leadership, stronger cultures and greater capacity to adapt. Our work combines evidence-informed practice with an understanding of human systems, leaving people and organizations more capable than before."
+    },
+    {
+      "title": "Our vision",
+      "lead": "Turn experience into knowledge. Bring knowledge back into practice.",
+      "body": "We aspire to become a recognized body of knowledge and professional practice for understanding and developing human systems. Practice, learning, research and knowledge creation should continually strengthen one another."
+    }
+  ]
+}
