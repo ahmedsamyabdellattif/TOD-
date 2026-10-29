@@ -185,8 +185,8 @@ export const metadataCopy: Record<string, { title: Text; description: Text }> =
     associates: {
       title: text("Leadership and Associates | TOD", "قيادتنا وخبراؤنا | TOD"),
       description: text(
-        "The consultants, coaches, mentors and specialists who deliver TOD's work.",
-        "المستشارون والكوتشز والمرشدون والمتخصصون الذين يقدمون أعمال TOD.",
+        "Meet the leaders and specialist practitioners behind TOD’s work in leadership, organizations and human systems.",
+        "تعرّف على قيادات TOD وخبرائها المتخصصين في القيادة والتطوير المؤسسي والأنظمة الإنسانية.",
       ),
     },
     library: {

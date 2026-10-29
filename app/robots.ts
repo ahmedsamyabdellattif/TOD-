@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       disallow:
         process.env.SITE_INDEXABLE === "true" ? ["/admin/", "/api/"] : "/",
     },
-    sitemap: `${process.env.SITE_URL || "https://todarabia.com"}/sitemap.xml`,
+    sitemap: `${process.env.SITE_URL || "https://www.todarabia.com"}/sitemap.xml`,
   };
 }

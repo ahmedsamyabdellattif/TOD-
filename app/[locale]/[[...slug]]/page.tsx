@@ -68,7 +68,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         ? t(metadataCopy[path].description, l)
         : title;
   return {
-    metadataBase: new URL(process.env.SITE_URL || "https://todarabia.com"),
+    metadataBase: new URL(process.env.SITE_URL || "https://www.todarabia.com"),
     title,
     description,
     alternates: {
@@ -89,18 +89,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: l === "ar" ? "ar_SA" : "en_US",
       images: [
         {
-          url: "/social-preview.png",
-          width: 1200,
-          height: 630,
+          url: "/social-preview.png?v=3",
+          width: 600,
+          height: 600,
           alt: "TOD — Human Systems",
         },
       ],
     },
     twitter: {
-      card: "summary_large_image",
+      card: "summary",
       title,
       description,
-      images: ["/social-preview.png"],
+      images: ["/social-preview.png?v=3"],
     },
   };
 }
